@@ -3,6 +3,7 @@ import { getResearchList } from '@/content';
 import { getLocalizedText } from '@/types/content';
 import type { Locale } from '@/i18n/config';
 import SectionHeader from '@/components/public/SectionHeader';
+import AsciiDecoration from '@/components/public/AsciiDecoration';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,7 +19,8 @@ export default async function ResearchPage({ params }: { params: Promise<{ lang:
   return (
     <>
       {/* Hero */}
-      <section className="ascii-bg py-24 border-b border-border">
+      <section className="ascii-bg scanline-overlay crt-lines relative py-24 border-b border-border">
+        <AsciiDecoration />
         <div className="container-wide">
           <p className="mono-xs text-muted-foreground mb-4">// RESEARCH</p>
           <h1 className="heading-xl mb-6">{dict.research.title}</h1>

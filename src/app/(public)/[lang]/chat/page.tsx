@@ -5,6 +5,7 @@ import { getDictionary } from '@/i18n/dictionaries';
 import type { ChatMessage, ChatSource } from '@/types/content';
 import type { Locale } from '@/i18n/config';
 import { useParams } from 'next/navigation';
+import AsciiDecoration from '@/components/public/AsciiDecoration';
 
 export default function ChatPage() {
   const params = useParams();
@@ -85,7 +86,8 @@ export default function ChatPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-12 border-b border-border">
+      <section className="ascii-bg scanline-overlay crt-lines relative py-12 border-b border-border">
+        <AsciiDecoration />
         <div className="container-wide">
           <p className="mono-xs text-muted-foreground mb-3">// AI ASSISTANT</p>
           <h1 className="heading-lg mb-2">{dict.chat.title}</h1>

@@ -62,15 +62,16 @@ body {
 
 .ascii-bg {
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: clip;
 }
 
 .ascii-bg::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Ctext x='0' y='12' font-family='monospace' font-size='10' fill='%23e5e5e5' opacity='0.4'%3E01001001 01101110 01110100 01100101 01101100 01101100%3C/text%3E%3Ctext x='20' y='24' font-family='monospace' font-size='10' fill='%23e5e5e5' opacity='0.3'%3E01100101 01100011 01110100 00100000 01000001 01110010%3C/text%3E%3Ctext x='5' y='36' font-family='monospace' font-size='10' fill='%23e5e5e5' opacity='0.35'%3E01110100 00101110 00100000 01000011 01110101 01101100%3C/text%3E%3Ctext x='30' y='48' font-family='monospace' font-size='10' fill='%23e5e5e5' opacity='0.25'%3E01110100 01110101 01110010 01100101 00101110 00001010%3C/text%3E%3Ctext x='10' y='60' font-family='monospace' font-size='10' fill='%23e5e5e5' opacity='0.3'%3E00110000 00110001 00110000 00110001 00110001 00110000%3C/text%3E%3Ctext x='0' y='72' font-family='monospace' font-size='10' fill='%23e5e5e5' opacity='0.2'%3E01000001 01001001 00100110 01000001 01110010 01110100%3C/text%3E%3C/svg%3E");
-  background-size: 400px 72px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Ctext x='0' y='12' font-family='monospace' font-size='11' fill='%23999' opacity='0.18'%3E01001001 01101110 01110100 01100101 01101100 01101100 01101001 01100111%3C/text%3E%3Ctext x='15' y='24' font-family='monospace' font-size='11' fill='%23888' opacity='0.15'%3E01100101 01100011 01110100 00100000 01000001 01110010 01110100 00101110%3C/text%3E%3Ctext x='5' y='36' font-family='monospace' font-size='11' fill='%23999' opacity='0.2'%3E01110100 00101110 00100000 01000011 01110101 01101100 01110100 01110101%3C/text%3E%3Ctext x='25' y='48' font-family='monospace' font-size='11' fill='%23777' opacity='0.12'%3E01110100 01110101 01110010 01100101 00101110 00001010 01000001 01001001%3C/text%3E%3Ctext x='10' y='60' font-family='monospace' font-size='11' fill='%23888' opacity='0.16'%3E00110000 00110001 00110000 00110001 00110001 00110000 00110001 00110000%3C/text%3E%3Ctext x='0' y='72' font-family='monospace' font-size='11' fill='%23999' opacity='0.14'%3E01000001 01001001 00100110 01000001 01110010 01110100 00101110 01000011%3C/text%3E%3Ctext x='20' y='84' font-family='monospace' font-size='11' fill='%23777' opacity='0.18'%3E01110010 01100101 01100001 01110100 01101001 01110110 01100101 00101110%3C/text%3E%3Ctext x='8' y='96' font-family='monospace' font-size='11' fill='%23888' opacity='0.13'%3E01000100 01101001 01100111 01101001 01110100 01100001 01101100 00101110%3C/text%3E%3C/svg%3E");
+  background-size: 600px 96px;
   pointer-events: none;
   z-index: 0;
 }
@@ -84,6 +85,64 @@ body {
 .ascii-dense::before {
   background-size: 300px 72px;
   opacity: 0.6;
+}
+
+/* ASCII border decoration */
+.ascii-border-top {
+  position: relative;
+}
+
+.ascii-border-top::before {
+  content: '─── 01001010 01000011 01010011 ─── 01000001 01001001 ─── 01000001 01110010 01110100 ─── 01000011 01110101 01101100 01110100 ───';
+  display: block;
+  font-family: var(--font-geist-mono, monospace);
+  font-size: 9px;
+  color: var(--muted-fg);
+  opacity: 0.25;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+}
+
+/* Animated data stream column */
+@keyframes dataFlow {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.data-stream {
+  position: absolute;
+  font-family: var(--font-geist-mono, monospace);
+  font-size: 10px;
+  line-height: 1.6;
+  color: var(--muted-fg);
+  opacity: 0.08;
+  white-space: pre;
+  pointer-events: none;
+  animation: dataFlow 20s linear infinite;
+}
+
+/* Grid overlay effect */
+.grid-overlay {
+  position: relative;
+}
+
+.grid-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.grid-overlay > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ============================================
@@ -139,11 +198,31 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.03), transparent);
-  animation: scanline 8s linear infinite;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06), transparent);
+  animation: scanline 6s linear infinite;
   pointer-events: none;
   z-index: 2;
+}
+
+/* Horizontal scan lines (CRT effect) */
+.crt-lines {
+  position: relative;
+}
+
+.crt-lines::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.015) 2px,
+    rgba(0, 0, 0, 0.015) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* ============================================
@@ -245,6 +324,22 @@ body {
 
 .card-featured {
   border-left: 3px solid var(--foreground);
+}
+
+.card-ascii {
+  position: relative;
+}
+
+.card-ascii::after {
+  content: '01010011';
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  font-family: var(--font-geist-mono, monospace);
+  font-size: 9px;
+  color: var(--muted-fg);
+  opacity: 0.15;
+  letter-spacing: 0.1em;
 }
 
 /* ============================================

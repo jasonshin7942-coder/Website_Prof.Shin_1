@@ -7,6 +7,7 @@ import type { Activity } from '@/types/content';
 import type { Locale } from '@/i18n/config';
 import { useParams } from 'next/navigation';
 import SectionHeader from '@/components/public/SectionHeader';
+import AsciiDecoration from '@/components/public/AsciiDecoration';
 
 const activityTypes = ['all', 'conference', 'talk', 'workshop', 'exhibition', 'collaboration', 'exchange'] as const;
 
@@ -33,7 +34,8 @@ export default function ActivitiesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="ascii-bg py-24 border-b border-border">
+      <section className="ascii-bg scanline-overlay crt-lines relative py-24 border-b border-border">
+        <AsciiDecoration />
         <div className="container-wide">
           <p className="mono-xs text-muted-foreground mb-4">// ACTIVITIES</p>
           <h1 className="heading-xl mb-6">{dict.activities.title}</h1>

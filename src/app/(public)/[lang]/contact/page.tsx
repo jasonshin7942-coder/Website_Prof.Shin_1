@@ -5,6 +5,7 @@ import { getDictionary } from '@/i18n/dictionaries';
 import type { Locale } from '@/i18n/config';
 import type { Profile } from '@/types/content';
 import { useParams } from 'next/navigation';
+import AsciiDecoration from '@/components/public/AsciiDecoration';
 
 export default function ContactPage() {
   const params = useParams();
@@ -56,7 +57,8 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="ascii-bg py-24 border-b border-border">
+      <section className="ascii-bg scanline-overlay crt-lines relative py-24 border-b border-border">
+        <AsciiDecoration />
         <div className="container-wide">
           <p className="mono-xs text-muted-foreground mb-4">// CONTACT</p>
           <h1 className="heading-xl mb-6">{dict.contact.title}</h1>
@@ -75,8 +77,8 @@ export default function ContactPage() {
             <div className="space-y-8">
               {/* Profile Image */}
               {profile?.profileImage && !profile.profileImage.includes('placeholder') && (
-                <div className="w-full aspect-square max-w-[200px] border border-border overflow-hidden bg-muted">
-                  <img src={profile.profileImage} alt={displayName} className="w-full h-full object-cover" />
+                <div className="w-full max-w-[250px] border border-border overflow-hidden bg-muted">
+                  <img src={profile.profileImage} alt={displayName} className="w-full h-auto object-contain" />
                 </div>
               )}
 

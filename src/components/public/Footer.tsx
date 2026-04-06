@@ -11,10 +11,13 @@ export default function Footer({ lang }: FooterProps) {
 
   return (
     <footer className="border-t border-border bg-background mt-auto">
-      {/* ASCII decoration */}
-      <div className="overflow-hidden h-8 flex items-center justify-center">
-        <p className="font-mono text-[9px] text-muted-foreground/30 tracking-[0.3em] whitespace-nowrap select-none">
-          01001010 01000011 01010011 00100000 · 01000001 01001001 00100000 01000001 01110010 01110100 00100000 01000011 01110101 01101100 01110100
+      {/* ASCII decoration band */}
+      <div className="overflow-hidden h-12 flex flex-col items-center justify-center gap-1 select-none" aria-hidden="true">
+        <p className="font-mono text-[9px] text-muted-foreground/40 tracking-[0.2em] whitespace-nowrap">
+          ═══ 01001010 01000011 01010011 ═══ 01000001 01001001 ═══ 01000001 01110010 01110100 ═══ 01000011 01110101 01101100 01110100 ═══
+        </p>
+        <p className="font-mono text-[8px] text-muted-foreground/25 tracking-[0.3em] whitespace-nowrap">
+          ░░▒▒░░ 10110101 11001010 01101100 10010011 01110101 11000110 10101001 01011010 ░░▒▒░░
         </p>
       </div>
 

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import AdminPageHeader from '@/components/admin/AdminPageHeader';
 import BilingualInput from '@/components/admin/BilingualInput';
+import { showToast } from '@/components/admin/Toast';
 import type { Profile } from '@/types/content';
 
 export default function AdminProfilePage() {
@@ -52,10 +53,14 @@ export default function AdminProfilePage() {
       });
       if (res.ok) {
         setSaved(true);
+        showToast('success', '프로필이 저장되었습니다');
         setTimeout(() => setSaved(false), 3000);
+      } else {
+        showToast('error', '저장에 실패했습니다');
       }
     } catch (error) {
       console.error('Failed to save profile:', error);
+      showToast('error', '저장 중 오류가 발생했습니다');
     } finally {
       setSaving(false);
     }
@@ -162,10 +167,46 @@ export default function AdminProfilePage() {
         {/* Profile Image */}
         <div className="card">
           <h3 className="font-semibold text-sm mb-4">프로필 이미지</h3>
+          {form.profileImage && !form.profileImage.includes('placeholder') && (
+            <div className="mb-4 flex items-center gap-4">
+              <img src={form.profileImage} alt="프로필" className="w-32 h-auto max-h-40 object-contain border border-border" />
+              <button
+                onClick={() => { setForm(prev => prev ? { ...prev, profileImage: '' } : prev); setSaved(false); }}
+                className="text-sm text-danger hover:underline"
+              >
+                이미지 삭제
+              </button>
+            </div>
+          )}
           <div className="border-2 border-dashed border-border p-8 text-center">
             <p className="text-muted-foreground text-sm mb-2">이미지를 드래그하거나 클릭하여 업로드</p>
-            <p className="mono-xs text-muted-foreground">JPG, PNG · 최대 5MB</p>
-            <input type="file" accept="image/*" className="hidden" id="profileImage" />
+            <p className="mono-xs text-muted-foreground">JPG, PNG, WebP, GIF · 최대 5MB</p>
+            <input
+              type="file"
+              accept="image/jpeg,image/png,image/webp,image/gif"
+              className="hidden"
+              id="profileImage"
+              onChange={async (e) => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                const formData = new FormData();
+                formData.append('file', file);
+                try {
+                  const res = await fetch('/api/upload', { method: 'POST', body: formData });
+                  if (res.ok) {
+                    const data = await res.json();
+                    setForm(prev => prev ? { ...prev, profileImage: data.url } : prev);
+                    setSaved(false);
+                    showToast('success', '이미지가 업로드되었습니다. 저장 버튼을 눌러주세요.');
+                  } else {
+                    showToast('error', '이미지 업로드에 실패했습니다');
+                  }
+                } catch {
+                  showToast('error', '이미지 업로드 중 오류가 발생했습니다');
+                }
+                e.target.value = '';
+              }}
+            />
             <label htmlFor="profileImage" className="btn-secondary inline-block mt-4 cursor-pointer">
               파일 선택
             </label>
