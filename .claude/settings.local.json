@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(cd /tmp)",
+      "Bash(rm -rf prof-shin-temp)",
+      "Bash(npx create-next-app@latest prof-shin-temp --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(npm install:*)",
+      "Bash(ls \"C:/Users/PC/Documents/Project/Website/Website_Prof.Shin_1/\"*.config* \"C:/Users/PC/Documents/Project/Website/Website_Prof.Shin_1/\"*.css)",
+      "Bash(npx next:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(grep -r \"FormData\\\\|multipart\\\\|file.*upload\\\\|upload.*file\" C:UsersPCDocumentsProjectWebsiteWebsite_Prof.Shin_1src --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
+      "Bash(grep -r \"POST\\\\|upload\\\\|FormData\\\\|formData\\\\|file\" C:UsersPCDocumentsProjectWebsiteWebsite_Prof.Shin_1srcappapi --include=*.ts --include=*.tsx)",
+      "Bash(grep -r \"fs\\\\|writeFile\\\\|mkdir\\\\|upload\" C:UsersPCDocumentsProjectWebsiteWebsite_Prof.Shin_1src --include=*.ts --include=*.tsx --include=*.js)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -r type.*file C:UsersPCDocumentsProjectWebsiteWebsite_Prof.Shin_1srcappadmin --include=*.tsx --include=*.ts)",
+      "Bash(cat \"C:\\\\Users\\\\PC\\\\Documents\\\\Project\\\\Website\\\\Website_Prof.Shin_1\\\\src\\\\app\\\\admin\\\\\\(dashboard\\)\\\\profile\\\\page.tsx\")",
+      "Bash(start http://localhost:3000/ko)",
+      "Bash(start http://localhost:3000/admin)",
+      "Bash(taskkill /PID 7008 /F)",
+      "Bash(cmd //c \"taskkill /PID 7008 /F\")"
+    ]
+  }
+}
