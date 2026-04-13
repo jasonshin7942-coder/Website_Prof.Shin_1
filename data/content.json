@@ -14,7 +14,7 @@
       "en": "Department of Cartoon & Animation, Chosun University"
     },
     "shortIntro": {
-      "ko": "인공지능, 예술, 문화의 교차점에서 기술과 인문학의 창조적 융합을 연구합니다. 디지털 미디어 아트, AI 기반 창작, 문화콘텐츠 기획 분야에서 학제적 연구와 교육을 수행하고 있습니다.",
+      "ko": "인공지능, 예술, 문화의 교차점에서 기술과 인문학의 창조적 융합을 연구합니다. \n뉴미디어 아트, AI 기반 창작, 문화콘텐츠 기획 분야에서 학제적 연구와 교육을 수행하고 있습니다.",
       "en": "Researching the creative convergence of technology and humanities at the intersection of AI, art, and culture. Conducting interdisciplinary research and education in digital media art, AI-based creation, and cultural content planning."
     },
     "biography": {
@@ -234,11 +234,11 @@
       },
       "year": 2026,
       "category": "",
-      "featured": false,
+      "featured": true,
       "published": true,
       "id": "res-1775489166466",
       "createdAt": "2026-04-06",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2026-04-13"
     }
   ],
   "publications": [
@@ -499,10 +499,10 @@
         "ko": "세미나, 기술 융합, 문화콘텐츠, 연구 방법론",
         "en": "Seminar, Technology Convergence, Cultural Content, Research Methodology"
       },
-      "featured": false,
+      "featured": true,
       "published": true,
       "createdAt": "2024-01-01",
-      "updatedAt": "2024-08-01"
+      "updatedAt": "2026-04-13"
     },
     {
       "title": {
@@ -652,10 +652,10 @@
         "ko": "광주광역시가 주최하는 제3회 AI 아트 페스티벌에 심사위원으로 참여했습니다. 전국에서 출품된 AI 기반 예술 작품을 평가하고, \"AI 예술의 현재와 미래\" 주제의 패널 토론에도 참여했습니다.",
         "en": "Participated as a jury member at the 3rd AI Art Festival hosted by Gwangju Metropolitan City. Evaluated AI-based artworks submitted from across the country and participated in a panel discussion on \"The Present and Future of AI Art.\""
       },
-      "featured": false,
+      "featured": true,
       "published": true,
       "createdAt": "2024-11-01",
-      "updatedAt": "2024-11-01"
+      "updatedAt": "2026-04-13"
     },
     {
       "id": "act-6",
@@ -693,6 +693,26 @@
       "en": "Welcome to the Prof. Shin's Lab!"
     },
     "defaultLanguage": "ko",
-    "contactEmail": "jasonshin0904@gmail.com"
+    "contactEmail": "jasonshin0904@gmail.com",
+    "researchKeyTopics": [
+      {
+        "title": {
+          "ko": "인문학적 기술 융합",
+          "en": "Fuzzy & Techie"
+        }
+      },
+      {
+        "title": {
+          "ko": "뉴미디어 아트",
+          "en": ""
+        }
+      },
+      {
+        "title": {
+          "ko": "밈 현상",
+          "en": ""
+        }
+      }
+    ]
   }
 }

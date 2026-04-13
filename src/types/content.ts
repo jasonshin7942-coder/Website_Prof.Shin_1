@@ -51,6 +51,7 @@ export interface Research extends BaseContent {
   keywords: BilingualText;
   imageUrl?: string;
   category?: string;
+  keyTopic?: BilingualText;
 }
 
 // Publication
@@ -114,6 +115,21 @@ export interface ChatbotSource {
   sourceType: 'document' | 'publication' | 'profile' | 'research' | 'teaching' | 'activity';
 }
 
+// Teaching Philosophy (editable from admin)
+export interface TeachingPhilosophy {
+  paragraph1: BilingualText;
+  paragraph2: BilingualText;
+  principles: {
+    title: BilingualText;
+    desc: BilingualText;
+  }[];
+}
+
+// Research Key Topics (editable from admin)
+export interface ResearchKeyTopic {
+  title: BilingualText;
+}
+
 // Site Settings
 export interface SiteSettings {
   siteName: BilingualText;
@@ -123,6 +139,8 @@ export interface SiteSettings {
   seoTitle?: BilingualText;
   seoDescription?: BilingualText;
   analyticsId?: string;
+  teachingPhilosophy?: TeachingPhilosophy;
+  researchKeyTopics?: ResearchKeyTopic[];
 }
 
 // Chat Message

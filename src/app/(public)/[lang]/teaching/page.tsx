@@ -1,5 +1,5 @@
 import { getDictionary } from '@/i18n/dictionaries';
-import { getTeachingList } from '@/content';
+import { getTeachingList, getSettings } from '@/content';
 import { getLocalizedText } from '@/types/content';
 import type { Locale } from '@/i18n/config';
 import SectionHeader from '@/components/public/SectionHeader';
@@ -13,6 +13,8 @@ export default async function TeachingPage({ params }: { params: Promise<{ lang:
   const dict = getDictionary(locale);
   const allTeaching = await getTeachingList({ published: true });
   const featured = allTeaching.filter(t => t.featured);
+  const settings = await getSettings();
+  const phil = settings?.teachingPhilosophy;
 
   return (
     <>
@@ -39,29 +41,29 @@ export default async function TeachingPage({ params }: { params: Promise<{ lang:
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <p className="body-md text-muted-foreground leading-relaxed">
-                {locale === 'ko'
+              <p className="body-md text-muted-foreground leading-relaxed whitespace-pre-line">
+                {phil ? getLocalizedText(phil.paragraph1, locale) : (locale === 'ko'
                   ? '교육은 단순한 지식 전달이 아닌, 학생들이 스스로 사고하고 창조할 수 있는 역량을 키우는 과정입니다. 기술과 인문학의 경계를 넘나들며, 학생들이 AI 시대에 필요한 융합적 사고력과 창의성을 갖출 수 있도록 안내합니다.'
-                  : 'Education is not merely knowledge transfer, but a process of cultivating students\' ability to think and create independently. Crossing the boundaries between technology and humanities, we guide students to develop the convergent thinking and creativity needed in the AI era.'}
+                  : 'Education is not merely knowledge transfer, but a process of cultivating students\' ability to think and create independently. Crossing the boundaries between technology and humanities, we guide students to develop the convergent thinking and creativity needed in the AI era.')}
               </p>
-              <p className="body-md text-muted-foreground leading-relaxed">
-                {locale === 'ko'
+              <p className="body-md text-muted-foreground leading-relaxed whitespace-pre-line">
+                {phil ? getLocalizedText(phil.paragraph2, locale) : (locale === 'ko'
                   ? '프로젝트 기반 학습을 통해 이론과 실습을 유기적으로 연결하며, 동료 학습과 멘토링을 통해 협업 능력을 강화합니다.'
-                  : 'Through project-based learning, we organically connect theory and practice, while strengthening collaboration skills through peer learning and mentoring.'}
+                  : 'Through project-based learning, we organically connect theory and practice, while strengthening collaboration skills through peer learning and mentoring.')}
               </p>
             </div>
             <div className="space-y-4">
-              {[
-                { icon: '◇', title: locale === 'ko' ? '창의적 사고' : 'Creative Thinking', desc: locale === 'ko' ? '고정관념을 넘어선 새로운 시각' : 'New perspectives beyond stereotypes' },
-                { icon: '◇', title: locale === 'ko' ? '기술적 역량' : 'Technical Competency', desc: locale === 'ko' ? '도구를 다루는 실질적 능력' : 'Practical ability to handle tools' },
-                { icon: '◇', title: locale === 'ko' ? '비판적 분석' : 'Critical Analysis', desc: locale === 'ko' ? '깊이 있는 사고와 평가 능력' : 'In-depth thinking and evaluation' },
-                { icon: '◇', title: locale === 'ko' ? '협업과 소통' : 'Collaboration', desc: locale === 'ko' ? '다양한 배경의 팀원과 함께' : 'Working with diverse team members' },
-              ].map((val, i) => (
+              {(phil?.principles || [
+                { title: { ko: '창의적 사고', en: 'Creative Thinking' }, desc: { ko: '고정관념을 넘어선 새로운 시각', en: 'New perspectives beyond stereotypes' } },
+                { title: { ko: '기술적 역량', en: 'Technical Competency' }, desc: { ko: '도구를 다루는 실질적 능력', en: 'Practical ability to handle tools' } },
+                { title: { ko: '비판적 분석', en: 'Critical Analysis' }, desc: { ko: '깊이 있는 사고와 평가 능력', en: 'In-depth thinking and evaluation' } },
+                { title: { ko: '협업과 소통', en: 'Collaboration' }, desc: { ko: '다양한 배경의 팀원과 함께', en: 'Working with diverse team members' } },
+              ]).map((val, i) => (
                 <div key={i} className="card flex items-start gap-4">
-                  <span className="text-lg mt-0.5">{val.icon}</span>
+                  <span className="text-lg mt-0.5">◇</span>
                   <div>
-                    <h4 className="font-semibold text-sm mb-1">{val.title}</h4>
-                    <p className="text-sm text-muted-foreground">{val.desc}</p>
+                    <h4 className="font-semibold text-sm mb-1">{getLocalizedText(val.title, locale)}</h4>
+                    <p className="text-sm text-muted-foreground">{getLocalizedText(val.desc, locale)}</p>
                   </div>
                 </div>
               ))}

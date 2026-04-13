@@ -4,16 +4,27 @@ import { useState, useEffect } from 'react';
 import AdminPageHeader from '@/components/admin/AdminPageHeader';
 import BilingualInput from '@/components/admin/BilingualInput';
 import ContentTable from '@/components/admin/ContentTable';
-import type { Research } from '@/types/content';
+import { showToast } from '@/components/admin/Toast';
+import type { Research, ResearchKeyTopic } from '@/types/content';
+
+const defaultKeyTopics: ResearchKeyTopic[] = [
+  { title: { ko: '', en: '' } },
+  { title: { ko: '', en: '' } },
+  { title: { ko: '', en: '' } },
+];
 
 export default function AdminResearchPage() {
   const [items, setItems] = useState<Research[]>([]);
   const [editing, setEditing] = useState<Research | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [keyTopics, setKeyTopics] = useState<ResearchKeyTopic[]>(defaultKeyTopics);
+  const [showKeyTopics, setShowKeyTopics] = useState(false);
+  const [savingKeyTopics, setSavingKeyTopics] = useState(false);
 
   useEffect(() => {
     loadData();
+    loadKeyTopics();
   }, []);
 
   const loadData = async () => {
@@ -24,6 +35,49 @@ export default function AdminResearchPage() {
     } catch (error) {
       console.error('Failed to load research:', error);
     }
+  };
+
+  const loadKeyTopics = async () => {
+    try {
+      const res = await fetch('/api/content?type=settings');
+      const data = await res.json();
+      if (data?.researchKeyTopics?.length) {
+        setKeyTopics(data.researchKeyTopics);
+      }
+    } catch (error) {
+      console.error('Failed to load key topics:', error);
+    }
+  };
+
+  const handleSaveKeyTopics = async () => {
+    setSavingKeyTopics(true);
+    try {
+      const settingsRes = await fetch('/api/content?type=settings');
+      const settings = await settingsRes.json();
+      const res = await fetch('/api/content?type=settings', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...settings, researchKeyTopics: keyTopics }),
+      });
+      if (res.ok) {
+        showToast('success', '핵심 주제가 저장되었습니다');
+      } else {
+        showToast('error', '저장에 실패했습니다');
+      }
+    } catch (error) {
+      console.error('Failed to save key topics:', error);
+      showToast('error', '저장 중 오류가 발생했습니다');
+    } finally {
+      setSavingKeyTopics(false);
+    }
+  };
+
+  const handleKeyTopicChange = (index: number, lang: 'ko' | 'en', value: string) => {
+    setKeyTopics(prev => {
+      const updated = [...prev];
+      updated[index] = { ...updated[index], title: { ...updated[index].title, [lang]: value } };
+      return updated;
+    });
   };
 
   const emptyItem: Partial<Research> = {
@@ -162,6 +216,59 @@ export default function AdminResearchPage() {
           </button>
         }
       />
+
+      {/* Key Topics Editor */}
+      <div className="mb-8 max-w-4xl">
+        <button
+          onClick={() => setShowKeyTopics(!showKeyTopics)}
+          className="btn-secondary text-sm mb-4"
+        >
+          {showKeyTopics ? '▲ 핵심 주제 편집 닫기' : '▼ 핵심 주제 편집'}
+        </button>
+
+        {showKeyTopics && (
+          <div className="space-y-6">
+            <div className="card space-y-6">
+              <h3 className="font-semibold text-sm">핵심 주제 (연구 페이지 상단에 표시)</h3>
+              {keyTopics.map((topic, i) => (
+                <div key={i} className="border border-border p-4 space-y-3">
+                  <p className="mono-xs text-muted-foreground">핵심 주제 {i + 1}</p>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-medium mb-1">한국어</label>
+                      <input type="text" value={topic.title.ko} onChange={e => handleKeyTopicChange(i, 'ko', e.target.value)} className="input-field" />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-medium mb-1">English</label>
+                      <input type="text" value={topic.title.en} onChange={e => handleKeyTopicChange(i, 'en', e.target.value)} className="input-field" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setKeyTopics(prev => [...prev, { title: { ko: '', en: '' } }])}
+                  className="btn-secondary text-sm"
+                >
+                  + 주제 추가
+                </button>
+                {keyTopics.length > 1 && (
+                  <button
+                    onClick={() => setKeyTopics(prev => prev.slice(0, -1))}
+                    className="btn-secondary text-sm text-danger"
+                  >
+                    마지막 주제 삭제
+                  </button>
+                )}
+              </div>
+            </div>
+
+            <button onClick={handleSaveKeyTopics} disabled={savingKeyTopics} className="btn-primary disabled:opacity-50">
+              {savingKeyTopics ? '저장 중...' : '핵심 주제 저장'}
+            </button>
+          </div>
+        )}
+      </div>
 
       {showForm ? (
         <div className="space-y-6 max-w-4xl">

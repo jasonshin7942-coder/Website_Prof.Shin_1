@@ -61,7 +61,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             <h1 className="heading-xl mb-8 animate-fade-in-up">
               {dict.home.heroTitle}
             </h1>
-            <p className="body-lg text-muted-foreground max-w-2xl animate-fade-in-up animate-delay-100">
+            <p className="body-lg text-muted-foreground max-w-2xl animate-fade-in-up animate-delay-100 whitespace-pre-line">
               {getLocalizedText(profile.shortIntro, locale)}
             </p>
           </div>

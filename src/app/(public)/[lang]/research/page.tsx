@@ -1,5 +1,5 @@
 import { getDictionary } from '@/i18n/dictionaries';
-import { getResearchList } from '@/content';
+import { getResearchList, getSettings } from '@/content';
 import { getLocalizedText } from '@/types/content';
 import type { Locale } from '@/i18n/config';
 import SectionHeader from '@/components/public/SectionHeader';
@@ -13,8 +13,14 @@ export default async function ResearchPage({ params }: { params: Promise<{ lang:
   const dict = getDictionary(locale);
   const allResearch = await getResearchList({ published: true });
   const featured = allResearch.filter(r => r.featured);
+  const settings = await getSettings();
 
-  const themes = [...new Set(allResearch.map(r => getLocalizedText(r.theme, locale)))];
+  const savedTopics = settings?.researchKeyTopics
+    ?.map(t => getLocalizedText(t.title, locale))
+    .filter(t => t.trim()) || [];
+  const themes = savedTopics.length > 0
+    ? savedTopics
+    : [...new Set(allResearch.map(r => getLocalizedText(r.theme, locale)))];
 
   return (
     <>
@@ -39,7 +45,7 @@ export default async function ResearchPage({ params }: { params: Promise<{ lang:
             label={`// ${dict.research.keyThemes.toUpperCase()}`}
             title={dict.research.keyThemes}
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className={`grid grid-cols-1 sm:grid-cols-2 ${themes.length <= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4'} gap-4`}>
             {themes.map((theme, i) => (
               <div key={i} className="card text-center py-8">
                 <span className="font-mono text-3xl text-muted-foreground/20 block mb-3">
