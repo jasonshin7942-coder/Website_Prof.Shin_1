@@ -87,7 +87,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           </div>
 
           {/* Right data stream */}
-          <div className="hidden xl:block data-stream right-6 top-0" style={{ animationDuration: '15s', animationDirection: 'reverse' }} aria-hidden="true">
+          <div className="hidden xl:block data-stream right-0 top-0" style={{ animationDuration: '15s', animationDirection: 'reverse' }} aria-hidden="true">
 {`10110101
 11001010
 01101100
