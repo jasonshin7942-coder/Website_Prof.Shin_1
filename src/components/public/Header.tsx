@@ -44,11 +44,11 @@ export default function Header({ lang }: HeaderProps) {
       <div className="container-wide flex items-center justify-between h-16">
         {/* Logo */}
         <Link href={`/${lang}`} className="flex items-center gap-3 group">
-          <span className="font-mono text-[10px] tracking-widest text-muted-foreground opacity-60 group-hover:opacity-100 transition-opacity">
-            {lang === 'ko' ? "{ Prof. Shin' Lab }" : '{ 신교수의 연구실 }'}
+          <span className="font-mono text-xs tracking-widest text-muted-foreground opacity-60 group-hover:opacity-100 transition-opacity">
+            {lang === 'ko' ? "{ Prof. Shin's Lab }" : '{ 신교수의 연구실 }'}
           </span>
-          <span className="font-semibold text-sm tracking-tight">
-            {lang === 'ko' ? '신교수의 연구실' : "Prof. Shin' Lab"}
+          <span className="font-semibold text-base tracking-tight">
+            {lang === 'ko' ? '신교수의 연구실' : "Prof. Shin's Lab"}
           </span>
         </Link>
 
@@ -58,7 +58,7 @@ export default function Header({ lang }: HeaderProps) {
             <Link
               key={item.href}
               href={item.href}
-              className={`px-3 py-2 text-[15px] font-medium transition-colors ${
+              className={`px-5 py-2 text-[15px] font-medium transition-colors ${
                 isActive(item.href)
                   ? 'text-foreground'
                   : 'text-muted-foreground hover:text-foreground'

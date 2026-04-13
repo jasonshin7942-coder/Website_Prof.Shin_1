@@ -20,7 +20,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
   return (
     <>
       {/* Hero */}
-      <section className="ascii-bg scanline-overlay crt-lines relative min-h-[50vh] flex items-center border-b border-border">
+      <section className="ascii-bg scanline-overlay crt-lines relative min-h-[40vh] flex items-center border-b border-border">
         {/* Left data stream */}
         <div className="hidden lg:block data-stream left-6 top-0" aria-hidden="true">
 {`01001010
@@ -53,7 +53,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 01110100`}
         </div>
 
-        <div className="container-wide py-16 md:py-24">
+        <div className="container-wide py-12 md:py-16">
           <div className="max-w-4xl">
             <p className="text-base md:text-lg text-muted-foreground mb-6 animate-fade-in">
               {getLocalizedText(profile.affiliation, locale)} {getLocalizedText(profile.name, locale)} {locale === 'ko' ? '교수' : 'Professor'}
@@ -67,7 +67,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           </div>
 
           {/* Decorative ASCII columns */}
-          <div className="hidden xl:block absolute right-12 top-1/2 -translate-y-1/2 opacity-[0.12] select-none pointer-events-none">
+          <div className="hidden xl:block absolute right-4 top-1/2 -translate-y-1/2 opacity-[0.12] select-none pointer-events-none">
             <pre className="font-mono text-[11px] leading-relaxed">
 {`01001010 01000011 01010011
 01010011 00101110 01000001

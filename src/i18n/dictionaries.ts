@@ -109,7 +109,7 @@ export const dictionaries = {
       english: 'English',
     },
     footer: {
-      copyright: '© 2024 신종천. All rights reserved.',
+      copyright: '© 2026 신종천. All rights reserved.',
       affiliation: '조선대학교 만화애니메이션학과',
     },
   },
@@ -219,7 +219,7 @@ export const dictionaries = {
       english: 'English',
     },
     footer: {
-      copyright: '© 2024 Jongcheon Shin. All rights reserved.',
+      copyright: '© 2026 Jongcheon Shin. All rights reserved.',
       affiliation: 'Department of Cartoon & Animation, Chosun University',
     },
   },
