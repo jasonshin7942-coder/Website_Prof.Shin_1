@@ -45,13 +45,13 @@ export default function ContactPage() {
   const displayPhone = profile?.phone || '';
   const displayOffice = profile?.office || '';
   const displayName = profile?.name
-    ? (locale === 'ko' ? profile.name.ko : profile.name.en)
-    : (locale === 'ko' ? '신종천' : 'Jongcheon Shin');
+    ? (locale === 'ko' ? profile.name.ko : locale === 'zh' ? (profile.name.zh || profile.name.en) : profile.name.en)
+    : (locale === 'ko' ? '신종천' : locale === 'zh' ? '申钟天' : 'Jongcheon Shin');
   const displayTitle = profile?.title
-    ? (locale === 'ko' ? profile.title.ko : profile.title.en)
-    : (locale === 'ko' ? '교수' : 'Professor');
+    ? (locale === 'ko' ? profile.title.ko : locale === 'zh' ? (profile.title.zh || profile.title.en) : profile.title.en)
+    : (locale === 'ko' ? '교수' : locale === 'zh' ? '教授' : 'Professor');
   const displayAffiliation = profile?.affiliation
-    ? (locale === 'ko' ? profile.affiliation.ko : profile.affiliation.en)
+    ? (locale === 'ko' ? profile.affiliation.ko : locale === 'zh' ? (profile.affiliation.zh || profile.affiliation.en) : profile.affiliation.en)
     : '';
 
   return (
@@ -65,6 +65,8 @@ export default function ContactPage() {
           <p className="body-lg text-muted-foreground max-w-2xl">
             {locale === 'ko'
               ? '연구 협업, 초청 강연, 학생 상담 등 다양한 문의를 환영합니다.'
+              : locale === 'zh'
+              ? '欢迎就合作研究、受邀演讲、学生咨询等各类事宜进行联系。'
               : 'Inquiries for research collaboration, speaking invitations, student consultations, and more are welcome.'}
           </p>
         </div>
@@ -106,7 +108,7 @@ export default function ContactPage() {
                   {profile?.website && (
                     <div className="card">
                       <p className="mono-xs text-muted-foreground mb-1">
-                        {locale === 'ko' ? '웹사이트' : 'Website'}
+                        {locale === 'ko' ? '웹사이트' : locale === 'zh' ? '网站' : 'Website'}
                       </p>
                       <a href={profile.website} target="_blank" rel="noopener noreferrer"
                         className="font-medium text-sm hover:underline underline-offset-4">
@@ -152,23 +154,25 @@ export default function ContactPage() {
                 <div className="card text-center py-16">
                   <p className="font-mono text-4xl text-muted-foreground/20 mb-4">✓</p>
                   <p className="heading-sm mb-2">
-                    {locale === 'ko' ? '메시지가 전송되었습니다' : 'Message Sent'}
+                    {locale === 'ko' ? '메시지가 전송되었습니다' : locale === 'zh' ? '消息已发送' : 'Message Sent'}
                   </p>
                   <p className="text-muted-foreground text-sm">
                     {locale === 'ko'
                       ? '빠른 시일 내에 답변드리겠습니다. 감사합니다.'
+                      : locale === 'zh'
+                      ? '我们将尽快回复您。谢谢。'
                       : 'Thank you. We will respond as soon as possible.'}
                   </p>
                   <button
                     onClick={() => { setSubmitted(false); setFormData({ name: '', email: '', inquiryType: '', subject: '', message: '' }); }}
                     className="btn-secondary mt-6"
                   >
-                    {locale === 'ko' ? '새 메시지 작성' : 'Write New Message'}
+                    {locale === 'ko' ? '새 메시지 작성' : locale === 'zh' ? '撰写新消息' : 'Write New Message'}
                   </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div>
                       <label className="block text-sm font-medium mb-2">{dict.contact.name}</label>
                       <input
@@ -199,7 +203,7 @@ export default function ContactPage() {
                       onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
                       className="input-field"
                     >
-                      <option value="">{locale === 'ko' ? '선택해주세요' : 'Select...'}</option>
+                      <option value="">{locale === 'ko' ? '선택해주세요' : locale === 'zh' ? '请选择' : 'Select...'}</option>
                       {inquiryTypes.map((type) => (
                         <option key={type.value} value={type.value}>{type.label}</option>
                       ))}

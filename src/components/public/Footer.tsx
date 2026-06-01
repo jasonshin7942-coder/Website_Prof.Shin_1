@@ -26,17 +26,17 @@ export default function Footer({ lang }: FooterProps) {
           {/* Identity */}
           <div>
             <p className="font-semibold text-sm mb-2">
-              {lang === 'ko' ? '신종천' : 'Jongcheon Shin'}
+              {lang === 'ko' ? '신종천' : lang === 'zh' ? '申钟天' : 'Jongcheon Shin'}
             </p>
             <p className="text-muted-foreground text-sm">
-              {lang === 'ko' ? '상지대학교 문화콘텐츠학과 교수' : 'Professor of Cultural Content, Sangji University'}
+              {lang === 'ko' ? '상지대학교 문화콘텐츠학과 교수' : lang === 'zh' ? '朝鲜大学漫画动画系 教授' : 'Professor of Cultural Content, Sangji University'}
             </p>
           </div>
 
           {/* Quick links */}
           <div>
             <p className="mono-xs text-muted-foreground mb-3">
-              {lang === 'ko' ? '바로가기' : 'Quick Links'}
+              {lang === 'ko' ? '바로가기' : lang === 'zh' ? '快速链接' : 'Quick Links'}
             </p>
             <div className="flex flex-col gap-1.5">
               <Link href={`/${lang}/research`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -57,7 +57,7 @@ export default function Footer({ lang }: FooterProps) {
           {/* Contact */}
           <div>
             <p className="mono-xs text-muted-foreground mb-3">
-              {lang === 'ko' ? '연락처' : 'Contact'}
+              {lang === 'ko' ? '연락처' : lang === 'zh' ? '联系方式' : 'Contact'}
             </p>
             <p className="text-sm text-muted-foreground">shin7942@sangji.ac.kr</p>
           </div>

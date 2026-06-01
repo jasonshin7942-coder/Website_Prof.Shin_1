@@ -7,8 +7,6 @@ import {
   getTeachingList,
   getActivityList,
   getDashboardStats,
-  getSettings,
-  updateSettings,
   createResearch,
   updateResearch,
   deleteResearch,
@@ -27,11 +25,9 @@ export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const type = searchParams.get('type');
   const id = searchParams.get('id');
-  const isAdmin = searchParams.get('admin') === 'true';
+  const isAdmin = searchParams.get('admin') === '1';
 
   try {
-    const filter = isAdmin ? {} : { published: true };
-
     switch (type) {
       case 'profile':
         return NextResponse.json(await getProfile());
@@ -40,15 +36,13 @@ export async function GET(request: NextRequest) {
           const item = await getResearchList().then(items => items.find(i => i.id === id));
           return NextResponse.json(item || null);
         }
-        return NextResponse.json(await getResearchList(filter));
+        return NextResponse.json(await getResearchList(isAdmin ? undefined : { published: true }));
       case 'publications':
-        return NextResponse.json(await getPublicationList(filter));
+        return NextResponse.json(await getPublicationList(isAdmin ? undefined : { published: true }));
       case 'teaching':
-        return NextResponse.json(await getTeachingList(filter));
+        return NextResponse.json(await getTeachingList(isAdmin ? undefined : { published: true }));
       case 'activities':
-        return NextResponse.json(await getActivityList(filter));
-      case 'settings':
-        return NextResponse.json(await getSettings());
+        return NextResponse.json(await getActivityList(isAdmin ? undefined : { published: true }));
       case 'stats':
         return NextResponse.json(await getDashboardStats());
       default:
@@ -88,7 +82,7 @@ export async function PUT(request: NextRequest) {
   const type = searchParams.get('type');
   const id = searchParams.get('id');
 
-  if (!id && type !== 'profile' && type !== 'settings') {
+  if (!id && type !== 'profile') {
     return NextResponse.json({ error: 'ID is required' }, { status: 400 });
   }
 
@@ -98,8 +92,6 @@ export async function PUT(request: NextRequest) {
     switch (type) {
       case 'profile':
         return NextResponse.json(await updateProfile(body));
-      case 'settings':
-        return NextResponse.json(await updateSettings(body));
       case 'research':
         return NextResponse.json(await updateResearch(id!, body));
       case 'publications':

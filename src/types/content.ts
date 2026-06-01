@@ -6,6 +6,7 @@
 export interface BilingualText {
   ko: string;
   en: string;
+  zh?: string;
 }
 
 // Base content item with common fields
@@ -134,7 +135,7 @@ export interface ResearchKeyTopic {
 export interface SiteSettings {
   siteName: BilingualText;
   siteDescription: BilingualText;
-  defaultLanguage: 'ko' | 'en';
+  defaultLanguage: 'ko' | 'en' | 'zh';
   contactEmail: string;
   seoTitle?: BilingualText;
   seoDescription?: BilingualText;
@@ -160,10 +161,10 @@ export interface ChatSource {
 }
 
 // Locale type
-export type Locale = 'ko' | 'en';
+export type Locale = 'ko' | 'en' | 'zh';
 
 // Helper to get localized text
 export function getLocalizedText(text: BilingualText | undefined, locale: Locale): string {
   if (!text) return '';
-  return text[locale] || text.ko || text.en || '';
+  return text[locale] || text.en || text.ko || '';
 }

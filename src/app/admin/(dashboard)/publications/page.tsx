@@ -27,7 +27,7 @@ export default function AdminPublicationsPage() {
 
   const loadData = async () => {
     try {
-      const res = await fetch('/api/content?type=publications');
+      const res = await fetch('/api/content?type=publications&admin=1');
       const data = await res.json();
       setItems(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -36,10 +36,10 @@ export default function AdminPublicationsPage() {
   };
 
   const emptyItem: Partial<Publication> = {
-    title: { ko: '', en: '' },
-    abstract: { ko: '', en: '' },
-    venue: { ko: '', en: '' },
-    keywords: { ko: '', en: '' },
+    title: { ko: '', en: '', zh: '' },
+    abstract: { ko: '', en: '', zh: '' },
+    venue: { ko: '', en: '', zh: '' },
+    keywords: { ko: '', en: '', zh: '' },
     year: new Date().getFullYear(),
     category: 'journal',
     authors: '',
@@ -60,10 +60,11 @@ export default function AdminPublicationsPage() {
 
   const handleChange = (field: string, value: string) => {
     setForm(prev => {
-      if (field.includes('_ko') || field.includes('_en')) {
-        const baseName = field.replace('_ko', '').replace('_en', '');
-        const lang = field.endsWith('_ko') ? 'ko' : 'en';
-        const current = (prev as any)[baseName] as { ko: string; en: string } || { ko: '', en: '' };
+      const langSuffix = ['_ko', '_en', '_zh'].find(s => field.endsWith(s));
+      if (langSuffix) {
+        const baseName = field.slice(0, -langSuffix.length);
+        const lang = langSuffix.slice(1);
+        const current = (prev as any)[baseName] || { ko: '', en: '' };
         return { ...prev, [baseName]: { ...current, [lang]: value } };
       }
       return { ...prev, [field]: value };
@@ -179,27 +180,31 @@ export default function AdminPublicationsPage() {
 
           <div className="card space-y-6">
             <BilingualInput
-              label="제목" nameKo="title_ko" nameEn="title_en"
+              label="제목" nameKo="title_ko" nameEn="title_en" nameZh="title_zh"
               valueKo={(form.title as any)?.ko || ''}
               valueEn={(form.title as any)?.en || ''}
+              valueZh={(form.title as any)?.zh || ''}
               onChange={handleChange} required
             />
             <BilingualInput
-              label="초록" nameKo="abstract_ko" nameEn="abstract_en"
+              label="초록" nameKo="abstract_ko" nameEn="abstract_en" nameZh="abstract_zh"
               valueKo={(form.abstract as any)?.ko || ''}
               valueEn={(form.abstract as any)?.en || ''}
+              valueZh={(form.abstract as any)?.zh || ''}
               onChange={handleChange} multiline rows={4}
             />
             <BilingualInput
-              label="학회/학술지" nameKo="venue_ko" nameEn="venue_en"
+              label="학회/학술지" nameKo="venue_ko" nameEn="venue_en" nameZh="venue_zh"
               valueKo={(form.venue as any)?.ko || ''}
               valueEn={(form.venue as any)?.en || ''}
+              valueZh={(form.venue as any)?.zh || ''}
               onChange={handleChange}
             />
             <BilingualInput
-              label="키워드" nameKo="keywords_ko" nameEn="keywords_en"
+              label="키워드" nameKo="keywords_ko" nameEn="keywords_en" nameZh="keywords_zh"
               valueKo={(form.keywords as any)?.ko || ''}
               valueEn={(form.keywords as any)?.en || ''}
+              valueZh={(form.keywords as any)?.zh || ''}
               onChange={handleChange}
             />
 

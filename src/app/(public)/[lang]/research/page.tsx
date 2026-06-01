@@ -33,6 +33,8 @@ export default async function ResearchPage({ params }: { params: Promise<{ lang:
           <p className="body-lg text-muted-foreground max-w-2xl">
             {locale === 'ko'
               ? '인공지능, 예술, 문화의 교차점에서 기술과 인문학의 창조적 융합을 연구합니다.'
+              : locale === 'zh'
+              ? '在人工智能、艺术与文化的交汇处，研究技术与人文学的创造性融合。'
               : 'Exploring the creative convergence of technology and humanities at the intersection of AI, art, and culture.'}
           </p>
         </div>
@@ -138,21 +140,27 @@ export default async function ResearchPage({ params }: { params: Promise<{ lang:
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: locale === 'ko' ? '실험적 창작 연구' : 'Experimental Creative Research',
+                title: locale === 'ko' ? '실험적 창작 연구' : locale === 'zh' ? '实验性创作研究' : 'Experimental Creative Research',
                 desc: locale === 'ko'
                   ? 'AI 도구와 알고리즘을 활용한 실험적 예술 작품 제작을 통해 연구 가설을 검증합니다.'
+                  : locale === 'zh'
+                  ? '通过利用AI工具和算法制作实验性艺术作品来验证研究假设。'
                   : 'Verifying research hypotheses through experimental artwork production using AI tools and algorithms.',
               },
               {
-                title: locale === 'ko' ? '학제간 융합 연구' : 'Interdisciplinary Research',
+                title: locale === 'ko' ? '학제간 융합 연구' : locale === 'zh' ? '跨学科融合研究' : 'Interdisciplinary Research',
                 desc: locale === 'ko'
                   ? '컴퓨터 과학, 예술학, 문화학, 교육학 등 다양한 분야의 방법론을 통합합니다.'
+                  : locale === 'zh'
+                  ? '整合计算机科学、艺术学、文化学、教育学等多个领域的方法论。'
                   : 'Integrating methodologies from computer science, art studies, cultural studies, and education.',
               },
               {
-                title: locale === 'ko' ? '질적·양적 혼합 연구' : 'Mixed Methods Research',
+                title: locale === 'ko' ? '질적·양적 혼합 연구' : locale === 'zh' ? '质性与量化混合研究' : 'Mixed Methods Research',
                 desc: locale === 'ko'
                   ? '작품 분석, 설문 조사, 인터뷰, 데이터 분석 등 질적·양적 방법을 결합합니다.'
+                  : locale === 'zh'
+                  ? '结合作品分析、问卷调查、访谈、数据分析等质性与量化方法。'
                   : 'Combining qualitative and quantitative methods including work analysis, surveys, interviews, and data analysis.',
               },
             ].map((method, i) => (
@@ -179,15 +187,19 @@ export default async function ResearchPage({ params }: { params: Promise<{ lang:
             {[
               locale === 'ko'
                 ? 'AI와 인간의 공동 창작을 위한 새로운 프레임워크 개발'
+                : locale === 'zh' ? '开发人工智能与人类共同创作的新框架'
                 : 'Development of new frameworks for AI-human co-creation',
               locale === 'ko'
                 ? '한국 문화 요소를 반영한 AI 콘텐츠 생성 시스템 연구'
+                : locale === 'zh' ? '研究融合韩国文化元素的AI内容生成系统'
                 : 'Research on AI content generation systems reflecting Korean cultural elements',
               locale === 'ko'
                 ? '메타버스 및 XR 환경에서의 AI 예술 경험 설계'
+                : locale === 'zh' ? '设计元宇宙及XR环境中的AI艺术体验'
                 : 'Design of AI art experiences in metaverse and XR environments',
               locale === 'ko'
                 ? 'AI 윤리와 예술적 자율성에 관한 철학적 탐구'
+                : locale === 'zh' ? '关于AI伦理与艺术自主性的哲学探索'
                 : 'Philosophical exploration of AI ethics and artistic autonomy',
             ].map((dir, i) => (
               <div key={i} className="flex gap-4 items-start">

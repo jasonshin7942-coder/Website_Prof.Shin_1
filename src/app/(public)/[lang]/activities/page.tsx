@@ -27,6 +27,8 @@ export default function ActivitiesPage() {
 
   const typeLabels: Record<string, string> = locale === 'ko'
     ? { all: '전체', conference: '학술대회', talk: '강연', workshop: '워크숍', exhibition: '전시', collaboration: '협업', exchange: '교류' }
+    : locale === 'zh'
+    ? { all: '全部', conference: '学术会议', talk: '演讲', workshop: '研讨会', exhibition: '展览', collaboration: '合作', exchange: '交流' }
     : { all: 'All', conference: 'Conference', talk: 'Talk', workshop: 'Workshop', exhibition: 'Exhibition', collaboration: 'Collaboration', exchange: 'Exchange' };
 
   const filtered = filter === 'all' ? activities : activities.filter(a => a.type === filter);
@@ -42,20 +44,22 @@ export default function ActivitiesPage() {
           <p className="body-lg text-muted-foreground max-w-2xl">
             {locale === 'ko'
               ? '국내외 학술대회, 전시, 강연, 워크숍 등 다양한 학술·문화 활동을 수행하고 있습니다.'
+              : locale === 'zh'
+              ? '参与国内外学术会议、展览、演讲、研讨会等多样化的学术与文化活动。'
               : 'Engaging in diverse academic and cultural activities including conferences, exhibitions, lectures, and workshops.'}
           </p>
         </div>
       </section>
 
       {/* Filter */}
-      <section className="py-6 border-b border-border sticky top-16 bg-background/95 backdrop-blur-sm z-10">
+      <section className="py-4 border-b border-border sticky top-16 md:top-[84px] bg-background/95 backdrop-blur-sm z-10">
         <div className="container-wide">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex overflow-x-auto gap-2 pb-1 scrollbar-hide">
             {activityTypes.map(type => (
               <button
                 key={type}
                 onClick={() => setFilter(type)}
-                className={`mono-xs px-3 py-1.5 border transition-colors ${
+                className={`mono-xs px-3 py-2 border shrink-0 transition-colors ${
                   filter === type
                     ? 'bg-foreground text-background border-foreground'
                     : 'border-border hover:border-foreground text-muted-foreground'

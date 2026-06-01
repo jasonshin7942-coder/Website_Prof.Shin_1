@@ -4,32 +4,21 @@ import { useState, useEffect } from 'react';
 import AdminPageHeader from '@/components/admin/AdminPageHeader';
 import BilingualInput from '@/components/admin/BilingualInput';
 import ContentTable from '@/components/admin/ContentTable';
-import { showToast } from '@/components/admin/Toast';
-import type { Research, ResearchKeyTopic } from '@/types/content';
-
-const defaultKeyTopics: ResearchKeyTopic[] = [
-  { title: { ko: '', en: '' } },
-  { title: { ko: '', en: '' } },
-  { title: { ko: '', en: '' } },
-];
+import type { Research } from '@/types/content';
 
 export default function AdminResearchPage() {
   const [items, setItems] = useState<Research[]>([]);
   const [editing, setEditing] = useState<Research | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [saving, setSaving] = useState(false);
-  const [keyTopics, setKeyTopics] = useState<ResearchKeyTopic[]>(defaultKeyTopics);
-  const [showKeyTopics, setShowKeyTopics] = useState(false);
-  const [savingKeyTopics, setSavingKeyTopics] = useState(false);
 
   useEffect(() => {
     loadData();
-    loadKeyTopics();
   }, []);
 
   const loadData = async () => {
     try {
-      const res = await fetch('/api/content?type=research');
+      const res = await fetch('/api/content?type=research&admin=1');
       const data = await res.json();
       setItems(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -37,55 +26,12 @@ export default function AdminResearchPage() {
     }
   };
 
-  const loadKeyTopics = async () => {
-    try {
-      const res = await fetch('/api/content?type=settings');
-      const data = await res.json();
-      if (data?.researchKeyTopics?.length) {
-        setKeyTopics(data.researchKeyTopics);
-      }
-    } catch (error) {
-      console.error('Failed to load key topics:', error);
-    }
-  };
-
-  const handleSaveKeyTopics = async () => {
-    setSavingKeyTopics(true);
-    try {
-      const settingsRes = await fetch('/api/content?type=settings');
-      const settings = await settingsRes.json();
-      const res = await fetch('/api/content?type=settings', {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...settings, researchKeyTopics: keyTopics }),
-      });
-      if (res.ok) {
-        showToast('success', '핵심 주제가 저장되었습니다');
-      } else {
-        showToast('error', '저장에 실패했습니다');
-      }
-    } catch (error) {
-      console.error('Failed to save key topics:', error);
-      showToast('error', '저장 중 오류가 발생했습니다');
-    } finally {
-      setSavingKeyTopics(false);
-    }
-  };
-
-  const handleKeyTopicChange = (index: number, lang: 'ko' | 'en', value: string) => {
-    setKeyTopics(prev => {
-      const updated = [...prev];
-      updated[index] = { ...updated[index], title: { ...updated[index].title, [lang]: value } };
-      return updated;
-    });
-  };
-
   const emptyItem: Partial<Research> = {
-    title: { ko: '', en: '' },
-    theme: { ko: '', en: '' },
-    summary: { ko: '', en: '' },
-    description: { ko: '', en: '' },
-    keywords: { ko: '', en: '' },
+    title: { ko: '', en: '', zh: '' },
+    theme: { ko: '', en: '', zh: '' },
+    summary: { ko: '', en: '', zh: '' },
+    description: { ko: '', en: '', zh: '' },
+    keywords: { ko: '', en: '', zh: '' },
     year: new Date().getFullYear(),
     category: '',
     featured: false,
@@ -111,10 +57,11 @@ export default function AdminResearchPage() {
 
   const handleChange = (field: string, value: string) => {
     setForm(prev => {
-      if (field.includes('_ko') || field.includes('_en')) {
-        const baseName = field.replace('_ko', '').replace('_en', '');
-        const lang = field.endsWith('_ko') ? 'ko' : 'en';
-        const current = (prev as any)[baseName] as { ko: string; en: string } || { ko: '', en: '' };
+      const langSuffix = ['_ko', '_en', '_zh'].find(s => field.endsWith(s));
+      if (langSuffix) {
+        const baseName = field.slice(0, -langSuffix.length);
+        const lang = langSuffix.slice(1);
+        const current = (prev as any)[baseName] || { ko: '', en: '' };
         return { ...prev, [baseName]: { ...current, [lang]: value } };
       }
       return { ...prev, [field]: value };
@@ -217,59 +164,6 @@ export default function AdminResearchPage() {
         }
       />
 
-      {/* Key Topics Editor */}
-      <div className="mb-8 max-w-4xl">
-        <button
-          onClick={() => setShowKeyTopics(!showKeyTopics)}
-          className="btn-secondary text-sm mb-4"
-        >
-          {showKeyTopics ? '▲ 핵심 주제 편집 닫기' : '▼ 핵심 주제 편집'}
-        </button>
-
-        {showKeyTopics && (
-          <div className="space-y-6">
-            <div className="card space-y-6">
-              <h3 className="font-semibold text-sm">핵심 주제 (연구 페이지 상단에 표시)</h3>
-              {keyTopics.map((topic, i) => (
-                <div key={i} className="border border-border p-4 space-y-3">
-                  <p className="mono-xs text-muted-foreground">핵심 주제 {i + 1}</p>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label className="block text-xs font-medium mb-1">한국어</label>
-                      <input type="text" value={topic.title.ko} onChange={e => handleKeyTopicChange(i, 'ko', e.target.value)} className="input-field" />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-medium mb-1">English</label>
-                      <input type="text" value={topic.title.en} onChange={e => handleKeyTopicChange(i, 'en', e.target.value)} className="input-field" />
-                    </div>
-                  </div>
-                </div>
-              ))}
-              <div className="flex gap-3">
-                <button
-                  onClick={() => setKeyTopics(prev => [...prev, { title: { ko: '', en: '' } }])}
-                  className="btn-secondary text-sm"
-                >
-                  + 주제 추가
-                </button>
-                {keyTopics.length > 1 && (
-                  <button
-                    onClick={() => setKeyTopics(prev => prev.slice(0, -1))}
-                    className="btn-secondary text-sm text-danger"
-                  >
-                    마지막 주제 삭제
-                  </button>
-                )}
-              </div>
-            </div>
-
-            <button onClick={handleSaveKeyTopics} disabled={savingKeyTopics} className="btn-primary disabled:opacity-50">
-              {savingKeyTopics ? '저장 중...' : '핵심 주제 저장'}
-            </button>
-          </div>
-        )}
-      </div>
-
       {showForm ? (
         <div className="space-y-6 max-w-4xl">
           <div className="flex items-center justify-between">
@@ -280,42 +174,47 @@ export default function AdminResearchPage() {
           <div className="card space-y-6">
             <BilingualInput
               label="제목"
-              nameKo="title_ko" nameEn="title_en"
+              nameKo="title_ko" nameEn="title_en" nameZh="title_zh"
               valueKo={(form.title as any)?.ko || ''}
               valueEn={(form.title as any)?.en || ''}
+              valueZh={(form.title as any)?.zh || ''}
               onChange={handleChange}
               required
             />
             <BilingualInput
               label="주제"
-              nameKo="theme_ko" nameEn="theme_en"
+              nameKo="theme_ko" nameEn="theme_en" nameZh="theme_zh"
               valueKo={(form.theme as any)?.ko || ''}
               valueEn={(form.theme as any)?.en || ''}
+              valueZh={(form.theme as any)?.zh || ''}
               onChange={handleChange}
             />
             <BilingualInput
               label="요약"
-              nameKo="summary_ko" nameEn="summary_en"
+              nameKo="summary_ko" nameEn="summary_en" nameZh="summary_zh"
               valueKo={(form.summary as any)?.ko || ''}
               valueEn={(form.summary as any)?.en || ''}
+              valueZh={(form.summary as any)?.zh || ''}
               onChange={handleChange}
               multiline
               rows={3}
             />
             <BilingualInput
               label="상세 설명"
-              nameKo="description_ko" nameEn="description_en"
+              nameKo="description_ko" nameEn="description_en" nameZh="description_zh"
               valueKo={(form.description as any)?.ko || ''}
               valueEn={(form.description as any)?.en || ''}
+              valueZh={(form.description as any)?.zh || ''}
               onChange={handleChange}
               multiline
               rows={5}
             />
             <BilingualInput
               label="키워드"
-              nameKo="keywords_ko" nameEn="keywords_en"
+              nameKo="keywords_ko" nameEn="keywords_en" nameZh="keywords_zh"
               valueKo={(form.keywords as any)?.ko || ''}
               valueEn={(form.keywords as any)?.en || ''}
+              valueZh={(form.keywords as any)?.zh || ''}
               onChange={handleChange}
             />
 

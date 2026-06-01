@@ -3,33 +3,39 @@
     "id": "prof-shin",
     "name": {
       "ko": "신종천",
-      "en": "Jongcheon Shin"
+      "en": "Jongcheon Shin",
+      "zh": "辛鍾天"
     },
     "title": {
       "ko": "교수",
-      "en": "Professor"
+      "en": "Professor",
+      "zh": "教授"
     },
     "affiliation": {
       "ko": "상지대학교 문화콘텐츠학과",
-      "en": "Department of Cartoon & Animation, Chosun University"
+      "en": "Department of Cultural Contents, Sangji University",
+      "zh": "尙志大学 文化信息系"
     },
     "shortIntro": {
-      "ko": "인공지능, 예술, 문화의 교차점에서 기술과 인문학의 창조적 융합을 연구합니다. \n뉴미디어 아트, AI 기반 창작, 문화콘텐츠 기획 분야에서 학제적 연구와 교육을 수행하고 있습니다.",
-      "en": "Researching the creative convergence of technology and humanities at the intersection of AI, art, and culture. Conducting interdisciplinary research and education in digital media art, AI-based creation, and cultural content planning."
+      "ko": "\"철학자-기술자-예술가\"\n인공지능, 예술, 문화의 교차점에서 기술과 인문학의 창조적 융합을 연구합니다. \n뉴미디어아트, AI 기반 창작, 문화콘텐츠 기획 및 제작 분야에서 학제적 연구와 교육을 수행하고 있습니다.",
+      "en": "\"Philosopher-Engineer-Artist\"\nResearching the creative convergence of technology and humanities at the intersection of AI, art, and culture. Conducting interdisciplinary research and education in new media art, AI-based creation, and cultural content planning and production.",
+      "zh": "\"哲学家-技术员-艺术家\"\n在人工智能、艺术与文化的交汇处，研究技术与人文学的创造性融合。在数字媒体艺术、AI创作、文化内容策划领域开展跨学科研究与教育。"
     },
     "biography": {
-      "ko": "신종천 교수는 조선대학교 만화애니메이션학과에서 디지털 미디어 아트, 인공지능 기반 창작, 문화콘텐츠 기획을 연구하고 가르치고 있습니다. 기술과 인문학의 경계를 넘나들며 AI와 예술의 창조적 융합 가능성을 탐구하는 것이 주요 연구 관심사입니다.\n\n예술적 실천과 학술적 연구를 병행하며, 국내외 학술대회와 전시에서 활발히 활동하고 있습니다. 특히 AI 기술을 활용한 새로운 형태의 예술 창작과 교육 방법론 개발에 주력하고 있으며, 학생들이 기술적 역량과 인문학적 사고력을 동시에 갖출 수 있도록 융합 교육 프로그램을 운영하고 있습니다.",
-      "en": "Professor Jongcheon Shin researches and teaches digital media art, AI-based creation, and cultural content planning at the Department of Cartoon & Animation, Chosun University. His primary research interest lies in exploring the creative convergence possibilities of AI and art, transcending the boundaries between technology and humanities.\n\nCombining artistic practice with academic research, he is actively engaged in domestic and international academic conferences and exhibitions. He particularly focuses on developing new forms of artistic creation and educational methodologies utilizing AI technology, and operates convergence education programs that enable students to simultaneously develop technical competency and humanistic thinking."
+      "ko": "신종천 교수는 상지대학교 문화콘텐츠학과에서 뉴미디어아트, AI 기반 창작, 문화콘텐츠 기획 및 제작을 연구하고 가르치고 있습니다. 기술과 인문학의 경계를 넘나들며 AI와 예술과 문화의 창조적 융합 가능성을 탐구하는 것이 주요 연구 관심사입니다.\n\n예술적 실천과 학술적 연구를 병행하며, 국내외 학술대회와 전시에서 활발히 활동하고 있습니다. 특히 AI 기술을 활용한 새로운 형태의 예술 창작과 교육 방법론 개발에 주력하고 있으며, 학생들이 기술적 역량과 인문학적 사고력을 동시에 갖출 수 있도록 융합 교육 프로그램을 운영하고 있습니다.",
+      "en": "Professor Jongcheon Shin researches and teaches new media art, AI-based creation, and cultural content planning and production at the Department of Cultural Contents, Sangji University. His primary research interest lies in exploring the creative convergence possibilities of AI and art and culture, transcending the boundaries between technology and humanities.\n\nCombining artistic practice with academic research, he is actively engaged in domestic and international academic conferences and exhibitions. He particularly focuses on developing new forms of artistic creation and educational methodologies utilizing AI technology, and operates convergence education programs that enable students to simultaneously develop technical competency and humanistic thinking.",
+      "zh": "申钟天教授在朝鲜大学漫画动画系从事数字媒体艺术、人工智能创作及文化内容策划的研究与教学工作。跨越技术与人文学的界限，探索AI与艺术创造性融合的可能性是其主要研究关注点。\n\n将艺术实践与学术研究相结合，活跃于国内外学术会议和展览。特别致力于开发利用AI技术的新型艺术创作形式与教育方法论，并运营融合教育项目，使学生同时具备技术能力和人文思维。"
     },
     "keywords": {
-      "ko": "인공지능, 디지털 미디어 아트, 문화콘텐츠, AI 창작, 융합 교육, 만화애니메이션",
-      "en": "Artificial Intelligence, Digital Media Art, Cultural Content, AI Creation, Convergence Education, Cartoon & Animation"
+      "ko": "인공지능융합, 뉴미디어아트, 문화콘텐츠, AI 창작",
+      "en": "Artificial Intelligence Convergence, New Media Art, Cultural Content, AI Creation",
+      "zh": "人工智能, 数字媒体艺术, 文化内容, AI创作"
     },
     "email": "shin7942@sangji.ac.kr",
     "phone": "+82-33-738-7618",
     "office": "상지대학교 다산관 407호",
-    "website": "https://prof.shin.ac.kr",
-    "profileImage": "/uploads/1775493600129-ca6f40.jpeg",
+    "website": "https://prof-shin.ac.kr",
+    "profileImage": "/images/profile-placeholder.jpg",
     "socialLinks": {
       "scholar": "https://scholar.google.com/",
       "researchGate": "https://www.researchgate.net/",
@@ -40,279 +46,224 @@
     {
       "id": "res-1",
       "title": {
-        "ko": "영상 편집 심화 실습",
-        "en": "AI-Based Digital Media Art Creation Research"
+        "ko": "AI 기반 디지털 미디어 아트 창작 연구",
+        "en": "AI-Based Digital Media Art Creation Research",
+        "zh": "基于AI的数字媒体艺术创作研究"
       },
       "theme": {
         "ko": "인공지능과 예술",
-        "en": "Artificial Intelligence and Art"
+        "en": "Artificial Intelligence and Art",
+        "zh": "人工智能与艺术"
       },
       "summary": {
         "ko": "생성형 AI 기술을 활용한 새로운 형태의 디지털 미디어 아트 창작 방법론을 연구합니다. 기계 학습 알고리즘과 예술적 감성의 융합을 통해 인간-AI 협업 창작의 가능성을 탐구합니다.",
-        "en": "Researching new methodologies for digital media art creation utilizing generative AI technology. Exploring the possibilities of human-AI collaborative creation through the convergence of machine learning algorithms and artistic sensibility."
+        "en": "Researching new methodologies for digital media art creation utilizing generative AI technology. Exploring the possibilities of human-AI collaborative creation through the convergence of machine learning algorithms and artistic sensibility.",
+        "zh": "研究利用生成式AI技术的新型数字媒体艺术创作方法论。通过机器学习算法与艺术感性的融合，探索人机协作创作的可能性。"
       },
       "description": {
         "ko": "본 연구는 생성형 AI 모델(GAN, Diffusion Models, Transformer 기반 모델 등)을 활용하여 디지털 미디어 아트의 새로운 창작 패러다임을 제시합니다. 전통적인 예술 창작 과정에서 AI가 어떤 역할을 할 수 있는지, 그리고 AI와의 협업이 예술적 표현의 범위를 어떻게 확장할 수 있는지를 탐구합니다.",
-        "en": "This research presents a new creative paradigm for digital media art utilizing generative AI models (GANs, Diffusion Models, Transformer-based models, etc.). It explores what role AI can play in traditional art creation processes and how collaboration with AI can expand the scope of artistic expression."
+        "en": "This research presents a new creative paradigm for digital media art utilizing generative AI models (GANs, Diffusion Models, Transformer-based models, etc.). It explores what role AI can play in traditional art creation processes and how collaboration with AI can expand the scope of artistic expression.",
+        "zh": "本研究利用生成式AI模型（GAN、扩散模型、基于Transformer的模型等），提出数字媒体艺术新创作范式。探索AI在传统艺术创作过程中的作用，以及与AI协作如何拓展艺术表达的范围。"
       },
       "year": 2024,
       "category": "ai-art",
       "keywords": {
         "ko": "생성형 AI, 디지털 미디어 아트, 인간-AI 협업, 창작 방법론",
-        "en": "Generative AI, Digital Media Art, Human-AI Collaboration, Creative Methodology"
+        "en": "Generative AI, Digital Media Art, Human-AI Collaboration, Creative Methodology",
+        "zh": "生成式AI, 数字媒体艺术, 人机协作, 创作方法论"
       },
       "featured": true,
-      "published": false,
+      "published": true,
       "createdAt": "2024-01-15",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2024-06-20"
     },
     {
       "id": "res-2",
       "title": {
-        "ko": "생성형 AI 기반 원스톱 교육프로젝트",
-        "en": "AI And I"
+        "ko": "문화콘텐츠와 AI 내러티브 생성 연구",
+        "en": "Cultural Content and AI Narrative Generation Research",
+        "zh": "文化内容与AI叙事生成研究"
       },
       "theme": {
         "ko": "문화콘텐츠와 기술",
-        "en": "Cultural Content and Technology"
+        "en": "Cultural Content and Technology",
+        "zh": "文化内容与技术"
       },
       "summary": {
         "ko": "AI 기술을 활용한 문화콘텐츠 내러티브 자동 생성 및 스토리텔링 시스템을 연구합니다. 한국 문화 요소를 반영한 AI 기반 스토리 생성의 가능성을 탐구합니다.",
-        "en": "Researching AI-based automatic narrative generation and storytelling systems for cultural content. Exploring the potential of AI-based story generation reflecting Korean cultural elements."
+        "en": "Researching AI-based automatic narrative generation and storytelling systems for cultural content. Exploring the potential of AI-based story generation reflecting Korean cultural elements.",
+        "zh": "研究利用AI技术自动生成文化内容叙事和讲故事系统。探索融入韩国文化元素的AI故事生成潜力。"
       },
       "description": {
         "ko": "대규모 언어 모델과 문화 데이터를 결합하여 한국적 서사 구조와 문화 요소를 반영한 스토리텔링 시스템을 개발합니다. 만화, 애니메이션, 게임 등 다양한 문화콘텐츠 장르에 적용 가능한 AI 내러티브 생성 프레임워크를 제안합니다.",
-        "en": "Developing storytelling systems that reflect Korean narrative structures and cultural elements by combining large language models with cultural data. Proposing an AI narrative generation framework applicable to various cultural content genres such as comics, animation, and games."
+        "en": "Developing storytelling systems that reflect Korean narrative structures and cultural elements by combining large language models with cultural data. Proposing an AI narrative generation framework applicable to various cultural content genres such as comics, animation, and games.",
+        "zh": "将大型语言模型与文化数据相结合，开发反映韩国叙事结构和文化元素的故事讲述系统。提出适用于漫画、动画、游戏等各种文化内容类型的AI叙事生成框架。"
       },
       "year": 2023,
       "category": "cultural-content",
       "keywords": {
         "ko": "AI 내러티브, 문화콘텐츠, 스토리텔링, 대규모 언어 모델",
-        "en": "AI Narrative, Cultural Content, Storytelling, Large Language Models"
+        "en": "AI Narrative, Cultural Content, Storytelling, Large Language Models",
+        "zh": "AI叙事, 文化内容, 讲故事, 大型语言模型"
       },
       "featured": true,
       "published": true,
       "createdAt": "2023-03-10",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2024-02-15"
     },
     {
       "id": "res-3",
       "title": {
         "ko": "융합 예술 교육과 디지털 리터러시",
-        "en": "Convergence Art Education and Digital Literacy"
+        "en": "Convergence Art Education and Digital Literacy",
+        "zh": "融合艺术教育与数字素养"
       },
       "theme": {
         "ko": "교육과 기술 융합",
-        "en": "Education and Technology Convergence"
+        "en": "Education and Technology Convergence",
+        "zh": "教育与技术融合"
       },
       "summary": {
         "ko": "디지털 시대의 예술 교육 방법론과 디지털 리터러시 함양을 위한 교육 프레임워크를 연구합니다. AI 기술을 교육 현장에 효과적으로 통합하는 방안을 모색합니다.",
-        "en": "Researching art education methodologies for the digital age and educational frameworks for cultivating digital literacy. Seeking ways to effectively integrate AI technology into educational settings."
+        "en": "Researching art education methodologies for the digital age and educational frameworks for cultivating digital literacy. Seeking ways to effectively integrate AI technology into educational settings.",
+        "zh": "研究数字时代的艺术教育方法论和培养数字素养的教育框架。探索在教育现场有效整合AI技术的方案。"
       },
       "description": {
         "ko": "기술의 급속한 발전에 따른 예술 교육의 변화 방향을 탐색하고, 학생들이 디지털 도구와 AI 기술을 창의적으로 활용할 수 있는 교육 커리큘럼을 설계합니다. 실습 중심의 프로젝트 기반 학습과 이론적 사고력 배양을 균형 있게 결합한 융합 교육 모델을 제시합니다.",
-        "en": "Exploring the direction of change in art education following the rapid development of technology, and designing educational curricula that enable students to creatively utilize digital tools and AI technology. Presenting a convergence education model that balances practice-centered project-based learning with the cultivation of theoretical thinking."
+        "en": "Exploring the direction of change in art education following the rapid development of technology, and designing educational curricula that enable students to creatively utilize digital tools and AI technology. Presenting a convergence education model that balances practice-centered project-based learning with the cultivation of theoretical thinking.",
+        "zh": "探索技术快速发展背景下艺术教育的变革方向，设计使学生能够创造性运用数字工具和AI技术的教育课程。提出将实践为中心的项目式学习与理论思维培养相均衡结合的融合教育模式。"
       },
       "year": 2024,
       "category": "education",
       "keywords": {
         "ko": "융합 교육, 디지털 리터러시, 프로젝트 기반 학습, AI 교육",
-        "en": "Convergence Education, Digital Literacy, Project-Based Learning, AI Education"
+        "en": "Convergence Education, Digital Literacy, Project-Based Learning, AI Education",
+        "zh": "融合教育, 数字素养, 项目式学习, AI教育"
       },
       "featured": false,
-      "published": false,
+      "published": true,
       "createdAt": "2024-02-01",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2024-05-10"
     },
     {
       "id": "res-4",
       "title": {
         "ko": "인터랙티브 미디어와 관객 참여형 예술",
-        "en": "Interactive Media and Participatory Art"
+        "en": "Interactive Media and Participatory Art",
+        "zh": "互动媒体与观众参与型艺术"
       },
       "theme": {
         "ko": "인터랙티브 미디어",
-        "en": "Interactive Media"
+        "en": "Interactive Media",
+        "zh": "互动媒体"
       },
       "summary": {
         "ko": "관객의 참여와 상호작용을 핵심으로 하는 인터랙티브 미디어 아트의 설계와 구현을 연구합니다. 센서, 데이터, AI를 활용한 몰입형 경험 설계를 탐구합니다.",
-        "en": "Researching the design and implementation of interactive media art centered on audience participation and interaction. Exploring immersive experience design utilizing sensors, data, and AI."
+        "en": "Researching the design and implementation of interactive media art centered on audience participation and interaction. Exploring immersive experience design utilizing sensors, data, and AI.",
+        "zh": "研究以观众参与和互动为核心的互动媒体艺术的设计与实现。探索利用传感器、数据和AI的沉浸式体验设计。"
       },
       "description": {
         "ko": "관객이 수동적 감상자에서 능동적 참여자로 전환되는 인터랙티브 미디어 아트의 설계 원리와 기술적 구현 방법을 연구합니다. 실시간 데이터, 센서 기술, AI 알고리즘을 통합하여 관객의 행동과 반응에 따라 변화하는 동적 예술 작품을 만들어냅니다.",
-        "en": "Researching the design principles and technical implementation methods of interactive media art where the audience transitions from passive spectators to active participants. Creating dynamic artworks that change according to audience behavior and reactions by integrating real-time data, sensor technology, and AI algorithms."
+        "en": "Researching the design principles and technical implementation methods of interactive media art where the audience transitions from passive spectators to active participants. Creating dynamic artworks that change according to audience behavior and reactions by integrating real-time data, sensor technology, and AI algorithms.",
+        "zh": "研究互动媒体艺术的设计原理与技术实现方法，使观众从被动欣赏者转变为主动参与者。通过整合实时数据、传感器技术和AI算法，创作根据观众行为和反应而变化的动态艺术作品。"
       },
       "year": 2023,
       "category": "interactive-media",
       "keywords": {
         "ko": "인터랙티브 미디어, 참여형 예술, 몰입형 경험, 센서 기술",
-        "en": "Interactive Media, Participatory Art, Immersive Experience, Sensor Technology"
+        "en": "Interactive Media, Participatory Art, Immersive Experience, Sensor Technology",
+        "zh": "互动媒体, 参与型艺术, 沉浸式体验, 传感器技术"
       },
       "featured": true,
       "published": true,
       "createdAt": "2023-06-01",
       "updatedAt": "2024-01-20"
-    },
-    {
-      "title": {
-        "ko": "영상콘텐츠 제작 실습",
-        "en": ""
-      },
-      "theme": {
-        "ko": "",
-        "en": ""
-      },
-      "summary": {
-        "ko": "",
-        "en": ""
-      },
-      "description": {
-        "ko": "",
-        "en": ""
-      },
-      "keywords": {
-        "ko": "",
-        "en": ""
-      },
-      "year": 2026,
-      "category": "",
-      "featured": false,
-      "published": false,
-      "id": "res-1775488853405",
-      "createdAt": "2026-04-06",
-      "updatedAt": "2026-04-06"
-    },
-    {
-      "title": {
-        "ko": "질베르 시몽동을 넘어서",
-        "en": ""
-      },
-      "theme": {
-        "ko": "",
-        "en": ""
-      },
-      "summary": {
-        "ko": "",
-        "en": ""
-      },
-      "description": {
-        "ko": "",
-        "en": ""
-      },
-      "keywords": {
-        "ko": "",
-        "en": ""
-      },
-      "year": 2026,
-      "category": "",
-      "featured": false,
-      "published": false,
-      "id": "res-1775489140273",
-      "createdAt": "2026-04-06",
-      "updatedAt": "2026-04-06"
-    },
-    {
-      "title": {
-        "ko": "질베르 시몽동을 넘어서",
-        "en": ""
-      },
-      "theme": {
-        "ko": "",
-        "en": ""
-      },
-      "summary": {
-        "ko": "",
-        "en": ""
-      },
-      "description": {
-        "ko": "",
-        "en": ""
-      },
-      "keywords": {
-        "ko": "",
-        "en": ""
-      },
-      "year": 2026,
-      "category": "",
-      "featured": true,
-      "published": true,
-      "id": "res-1775489166466",
-      "createdAt": "2026-04-06",
-      "updatedAt": "2026-04-13"
     }
   ],
   "publications": [
     {
       "id": "pub-1",
       "title": {
-        "ko": "생성형 AI를 활용한 예술 창작 방법론 연구",
-        "en": "A Study on Digital Media Art Creation Methodology Using Generative AI"
+        "ko": "생성형 AI를 활용한 디지털 미디어 아트 창작 방법론 연구",
+        "en": "A Study on Digital Media Art Creation Methodology Using Generative AI",
+        "zh": "利用生成式AI的数字媒体艺术创作方法论研究"
       },
       "abstract": {
         "ko": "본 연구는 생성형 AI 기술, 특히 GAN과 Diffusion Model을 활용한 디지털 미디어 아트의 새로운 창작 방법론을 제안한다. 예술가와 AI의 협업 과정에서 발생하는 미학적, 기술적 쟁점을 분석하고, 실험적 작품 제작을 통해 인간-AI 공동 창작의 가능성을 탐구한다.",
-        "en": "This study proposes a new creative methodology for digital media art utilizing generative AI technology, particularly GANs and Diffusion Models. It analyzes aesthetic and technical issues arising from the collaboration between artists and AI, and explores the possibilities of human-AI co-creation through experimental artwork production."
+        "en": "This study proposes a new creative methodology for digital media art utilizing generative AI technology, particularly GANs and Diffusion Models. It analyzes aesthetic and technical issues arising from the collaboration between artists and AI, and explores the possibilities of human-AI co-creation through experimental artwork production.",
+        "zh": "本研究提出利用生成式AI技术（特别是GAN和扩散模型）的数字媒体艺术新创作方法论。分析艺术家与AI协作过程中出现的美学和技术问题，通过实验性作品制作探索人机共同创作的可能性。"
       },
       "year": 2024,
       "category": "journal",
       "venue": {
         "ko": "한국디자인학회 논문집",
-        "en": "Journal of Korean Society of Design Science"
+        "en": "Journal of Korean Society of Design Science",
+        "zh": "韩国设计学会论文集"
       },
       "keywords": {
         "ko": "생성형 AI, 디지털 미디어 아트, 인간-AI 협업",
-        "en": "Generative AI, Digital Media Art, Human-AI Collaboration"
+        "en": "Generative AI, Digital Media Art, Human-AI Collaboration",
+        "zh": "生成式AI, 数字媒体艺术, 人机协作"
       },
       "authors": "Jongcheon Shin",
       "featured": true,
       "published": true,
       "createdAt": "2024-03-15",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2024-03-15"
     },
     {
       "id": "pub-2",
       "title": {
         "ko": "AI 기반 문화콘텐츠 내러티브 자동 생성 시스템 설계",
-        "en": "Design of AI-Based Automatic Narrative Generation System for Cultural Content"
+        "en": "Design of AI-Based Automatic Narrative Generation System for Cultural Content",
+        "zh": "基于AI的文化内容自动叙事生成系统设计"
       },
       "abstract": {
         "ko": "대규모 언어 모델을 활용하여 한국 문화 요소를 반영한 내러티브 자동 생성 시스템을 설계하고 구현한다. 만화, 애니메이션, 웹툰 등 다양한 문화콘텐츠 장르에 적용 가능한 스토리텔링 프레임워크를 제안하고, 프로토타입 시스템의 성능을 평가한다.",
-        "en": "Designing and implementing an automatic narrative generation system reflecting Korean cultural elements using large language models. Proposing a storytelling framework applicable to various cultural content genres such as comics, animation, and webtoons, and evaluating the performance of a prototype system."
+        "en": "Designing and implementing an automatic narrative generation system reflecting Korean cultural elements using large language models. Proposing a storytelling framework applicable to various cultural content genres such as comics, animation, and webtoons, and evaluating the performance of a prototype system.",
+        "zh": "利用大型语言模型设计并实现反映韩国文化元素的叙事自动生成系统。提出适用于漫画、动画、网络漫画等各种文化内容类型的故事讲述框架，并评估原型系统的性能。"
       },
       "year": 2024,
       "category": "conference",
       "venue": {
         "ko": "한국콘텐츠학회 추계학술대회",
-        "en": "Korean Society of Content Conference"
+        "en": "Korean Society of Content Conference",
+        "zh": "韩国内容学会秋季学术大会"
       },
       "keywords": {
         "ko": "AI 내러티브, 문화콘텐츠, LLM, 스토리텔링",
-        "en": "AI Narrative, Cultural Content, LLM, Storytelling"
+        "en": "AI Narrative, Cultural Content, LLM, Storytelling",
+        "zh": "AI叙事, 文化内容, LLM, 讲故事"
       },
-      "authors": "Jongcheon Shin",
+      "authors": "Jongcheon Shin, Minjae Kim",
       "featured": true,
       "published": true,
       "createdAt": "2024-05-20",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2024-05-20"
     },
     {
       "id": "pub-3",
       "title": {
         "ko": "디지털 시대의 융합 예술 교육 프레임워크",
-        "en": "A Framework for Convergence Art Education in the Digital Age"
+        "en": "A Framework for Convergence Art Education in the Digital Age",
+        "zh": "数字时代融合艺术教育框架"
       },
       "abstract": {
         "ko": "디지털 기술의 발전에 따른 예술 교육의 변화를 분석하고, AI 기술을 통합한 융합 예술 교육 프레임워크를 제안한다. 프로젝트 기반 학습과 디지털 리터러시 함양을 중심으로 한 교육 모델의 설계와 적용 사례를 논의한다.",
-        "en": "Analyzing changes in art education following the development of digital technology and proposing a convergence art education framework integrating AI technology. Discussing the design and application cases of an educational model centered on project-based learning and digital literacy cultivation."
+        "en": "Analyzing changes in art education following the development of digital technology and proposing a convergence art education framework integrating AI technology. Discussing the design and application cases of an educational model centered on project-based learning and digital literacy cultivation.",
+        "zh": "分析数字技术发展引起的艺术教育变化，提出融入AI技术的融合艺术教育框架。探讨以项目式学习和数字素养培养为中心的教育模式的设计与应用案例。"
       },
       "year": 2023,
       "category": "journal",
       "venue": {
         "ko": "예술교육연구",
-        "en": "Journal of Art Education Research"
+        "en": "Journal of Art Education Research",
+        "zh": "艺术教育研究"
       },
       "keywords": {
         "ko": "융합 교육, 디지털 리터러시, AI 교육, 프로젝트 기반 학습",
-        "en": "Convergence Education, Digital Literacy, AI Education, Project-Based Learning"
+        "en": "Convergence Education, Digital Literacy, AI Education, Project-Based Learning",
+        "zh": "融合教育, 数字素养, AI教育, 项目式学习"
       },
       "authors": "Jongcheon Shin",
       "featured": false,
@@ -324,79 +275,91 @@
       "id": "pub-4",
       "title": {
         "ko": "인터랙티브 미디어 아트에서의 관객 경험 설계 연구",
-        "en": "A Study on Audience Experience Design in Interactive Media Art"
+        "en": "A Study on Audience Experience Design in Interactive Media Art",
+        "zh": "互动媒体艺术中观众体验设计研究"
       },
       "abstract": {
         "ko": "인터랙티브 미디어 아트에서 관객의 참여와 경험을 중심으로 한 설계 방법론을 연구한다. 센서 기술과 AI 알고리즘을 활용한 반응형 작품의 설계 원리와 관객 경험 평가 기준을 제시한다.",
-        "en": "Researching design methodologies centered on audience participation and experience in interactive media art. Presenting design principles for responsive works utilizing sensor technology and AI algorithms, along with audience experience evaluation criteria."
+        "en": "Researching design methodologies centered on audience participation and experience in interactive media art. Presenting design principles for responsive works utilizing sensor technology and AI algorithms, along with audience experience evaluation criteria.",
+        "zh": "研究以互动媒体艺术中观众参与和体验为中心的设计方法论。提出利用传感器技术和AI算法的响应型作品设计原理和观众体验评价标准。"
       },
       "year": 2023,
       "category": "conference",
       "venue": {
         "ko": "한국HCI학회 학술대회",
-        "en": "HCI Korea Conference"
+        "en": "HCI Korea Conference",
+        "zh": "韩国HCI学会学术大会"
       },
       "keywords": {
         "ko": "인터랙티브 미디어, 관객 경험, UX 디자인, 센서 기술",
-        "en": "Interactive Media, Audience Experience, UX Design, Sensor Technology"
+        "en": "Interactive Media, Audience Experience, UX Design, Sensor Technology",
+        "zh": "互动媒体, 观众体验, UX设计, 传感器技术"
       },
-      "authors": "Jongcheon Shin",
+      "authors": "Jongcheon Shin, Suyeon Park",
       "featured": false,
       "published": true,
       "createdAt": "2023-02-15",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2023-02-15"
     },
     {
       "id": "pub-5",
       "title": {
         "ko": "만화·애니메이션 콘텐츠의 AI 활용 제작 파이프라인 연구",
-        "en": "Research on AI-Utilized Production Pipeline for Comics and Animation Content"
+        "en": "Research on AI-Utilized Production Pipeline for Comics and Animation Content",
+        "zh": "漫画·动画内容AI辅助制作流程研究"
       },
       "abstract": {
         "ko": "만화와 애니메이션 콘텐츠 제작 과정에서 AI 기술을 효과적으로 활용하는 제작 파이프라인을 연구한다. 캐릭터 디자인, 배경 생성, 컬러링, 인비트윈 등 핵심 제작 단계에서의 AI 도구 활용 방안과 워크플로우 최적화를 제안한다.",
-        "en": "Researching production pipelines that effectively utilize AI technology in comics and animation content production. Proposing AI tool utilization methods and workflow optimization for key production stages including character design, background generation, coloring, and inbetweening."
+        "en": "Researching production pipelines that effectively utilize AI technology in comics and animation content production. Proposing AI tool utilization methods and workflow optimization for key production stages including character design, background generation, coloring, and inbetweening.",
+        "zh": "研究在漫画和动画内容制作过程中有效利用AI技术的制作流程。提出角色设计、背景生成、着色、补间动画等核心制作阶段的AI工具使用方案和工作流程优化。"
       },
       "year": 2024,
       "category": "journal",
       "venue": {
         "ko": "만화애니메이션연구",
-        "en": "Journal of Cartoon & Animation Studies"
+        "en": "Journal of Cartoon & Animation Studies",
+        "zh": "漫画动画研究"
       },
       "keywords": {
         "ko": "AI 제작 파이프라인, 만화, 애니메이션, 자동화",
-        "en": "AI Production Pipeline, Comics, Animation, Automation"
+        "en": "AI Production Pipeline, Comics, Animation, Automation",
+        "zh": "AI制作流程, 漫画, 动画, 自动化"
       },
-      "authors": "Jongcheon Shin",
+      "authors": "Jongcheon Shin, Hyunwoo Lee",
       "featured": true,
       "published": true,
       "createdAt": "2024-01-20",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2024-01-20"
     },
     {
       "id": "pub-6",
       "title": {
         "ko": "디지털 문화유산의 AI 기반 복원과 재해석",
-        "en": "AI-Based Restoration and Reinterpretation of Digital Cultural Heritage"
+        "en": "AI-Based Restoration and Reinterpretation of Digital Cultural Heritage",
+        "zh": "数字文化遗产的AI复原与再诠释"
       },
       "abstract": {
         "ko": "AI 기술을 활용한 문화유산의 디지털 복원과 현대적 재해석 방법론을 제안한다. 전통 예술 작품의 스타일 분석, 결손 부분 복원, 현대적 변환을 위한 딥러닝 모델의 설계와 적용을 논의한다.",
-        "en": "Proposing methodologies for digital restoration and modern reinterpretation of cultural heritage using AI technology. Discussing the design and application of deep learning models for style analysis, damage restoration, and modern transformation of traditional artworks."
+        "en": "Proposing methodologies for digital restoration and modern reinterpretation of cultural heritage using AI technology. Discussing the design and application of deep learning models for style analysis, damage restoration, and modern transformation of traditional artworks.",
+        "zh": "提出利用AI技术进行文化遗产数字复原和现代再诠释的方法论。探讨用于传统艺术作品风格分析、缺失部分复原和现代转化的深度学习模型的设计与应用。"
       },
       "year": 2022,
       "category": "book",
       "venue": {
         "ko": "디지털 문화와 기술 (공저)",
-        "en": "Digital Culture and Technology (Co-authored)"
+        "en": "Digital Culture and Technology (Co-authored)",
+        "zh": "数字文化与技术（合著）"
       },
       "keywords": {
         "ko": "문화유산, AI 복원, 딥러닝, 디지털 문화",
-        "en": "Cultural Heritage, AI Restoration, Deep Learning, Digital Culture"
+        "en": "Cultural Heritage, AI Restoration, Deep Learning, Digital Culture",
+        "zh": "文化遗产, AI复原, 深度学习, 数字文化"
       },
-      "authors": "Jongcheon Shin",
+      "authors": "Jongcheon Shin, Youngho Cho, Minji Kang",
       "featured": false,
       "published": true,
       "createdAt": "2022-11-01",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2022-11-01"
     }
   ],
   "teaching": [
@@ -404,22 +367,26 @@
       "id": "teach-1",
       "title": {
         "ko": "디지털 미디어 아트 실습",
-        "en": "Digital Media Art Practice"
+        "en": "Digital Media Art Practice",
+        "zh": "数字媒体艺术实践"
       },
       "category": "undergraduate",
       "summary": {
         "ko": "디지털 도구와 AI 기술을 활용한 미디어 아트 창작 실습. 개념 기획부터 최종 작품 제작까지 전 과정을 경험합니다.",
-        "en": "Media art creation practice utilizing digital tools and AI technology. Experience the entire process from concept planning to final artwork production."
+        "en": "Media art creation practice utilizing digital tools and AI technology. Experience the entire process from concept planning to final artwork production.",
+        "zh": "利用数字工具和AI技术进行媒体艺术创作实践。体验从概念规划到最终作品制作的全过程。"
       },
       "description": {
         "ko": "본 과목은 디지털 미디어 아트의 이론적 배경과 실습을 결합한 창작 중심 교과입니다. 학생들은 Processing, TouchDesigner, AI 생성 도구 등을 활용하여 인터랙티브 설치, 데이터 시각화, 생성 예술 등 다양한 형태의 디지털 아트를 제작합니다.\n\n매주 새로운 기술과 개념을 학습하고, 개인 프로젝트와 팀 프로젝트를 통해 실제 작품을 완성합니다. 학기말에는 전시회를 개최하여 작품을 발표합니다.",
-        "en": "This course is a creation-centered curriculum combining theoretical background and practice in digital media art. Students create various forms of digital art including interactive installations, data visualization, and generative art using Processing, TouchDesigner, AI generation tools, and more.\n\nStudents learn new techniques and concepts each week and complete actual works through individual and team projects. An exhibition is held at the end of the semester to present works."
+        "en": "This course is a creation-centered curriculum combining theoretical background and practice in digital media art. Students create various forms of digital art including interactive installations, data visualization, and generative art using Processing, TouchDesigner, AI generation tools, and more.\n\nStudents learn new techniques and concepts each week and complete actual works through individual and team projects. An exhibition is held at the end of the semester to present works.",
+        "zh": "本课程是将数字媒体艺术理论背景与实践相结合的创作中心课程。学生利用Processing、TouchDesigner、AI生成工具等制作交互式装置、数据可视化、生成艺术等各种形式的数字艺术。\n\n每周学习新技术和概念，通过个人项目和团队项目完成实际作品。学期末举办展览，展示作品成果。"
       },
       "semester": "2024 Spring",
       "courseType": "전공필수",
       "keywords": {
         "ko": "디지털 아트, 미디어 아트, 인터랙티브, AI 창작",
-        "en": "Digital Art, Media Art, Interactive, AI Creation"
+        "en": "Digital Art, Media Art, Interactive, AI Creation",
+        "zh": "数字艺术, 媒体艺术, 互动, AI创作"
       },
       "featured": true,
       "published": true,
@@ -429,106 +396,92 @@
     {
       "id": "teach-2",
       "title": {
-        "ko": "AI와 나",
-        "en": "AI and I"
+        "ko": "AI와 창의적 콘텐츠 기획",
+        "en": "AI and Creative Content Planning",
+        "zh": "AI与创意内容策划"
       },
       "category": "graduate",
       "summary": {
         "ko": "AI 기술의 이해를 바탕으로 문화콘텐츠 기획 능력을 배양하는 대학원 과목. 이론과 실무를 병행합니다.",
-        "en": "A graduate course that cultivates cultural content planning abilities based on understanding AI technology. Combines theory and practice."
+        "en": "A graduate course that cultivates cultural content planning abilities based on understanding AI technology. Combines theory and practice.",
+        "zh": "以理解AI技术为基础，培养文化内容策划能力的研究生课程。理论与实务并重。"
       },
       "description": {
         "ko": "대학원 수준의 본 과목은 AI 기술의 기본 원리와 문화콘텐츠 기획 방법론을 결합합니다. 생성형 AI, 추천 시스템, 자연어 처리 등 핵심 AI 기술의 작동 원리를 이해하고, 이를 만화, 애니메이션, 게임, 영상 등 다양한 콘텐츠 기획에 적용하는 방법을 학습합니다.\n\n매 학기 실제 산업 프로젝트 또는 연구 프로젝트를 수행하며, 논문 작성과 발표 능력도 함께 배양합니다.",
-        "en": "This graduate-level course combines the basic principles of AI technology with cultural content planning methodologies. Students understand the operational principles of core AI technologies such as generative AI, recommendation systems, and natural language processing, and learn how to apply them to planning various content including comics, animation, games, and video.\n\nEach semester, students conduct actual industry or research projects and cultivate paper writing and presentation skills."
+        "en": "This graduate-level course combines the basic principles of AI technology with cultural content planning methodologies. Students understand the operational principles of core AI technologies such as generative AI, recommendation systems, and natural language processing, and learn how to apply them to planning various content including comics, animation, games, and video.\n\nEach semester, students conduct actual industry or research projects and cultivate paper writing and presentation skills.",
+        "zh": "本研究生课程将AI技术基本原理与文化内容策划方法论相结合。理解生成式AI、推荐系统、自然语言处理等核心AI技术的工作原理，学习如何将其应用于漫画、动画、游戏、影像等各种内容策划。\n\n每学期开展实际行业项目或研究项目，同时培养论文写作和展示能力。"
       },
       "semester": "2024 Fall",
       "courseType": "전공선택",
       "keywords": {
         "ko": "AI, 콘텐츠 기획, 생성형 AI, 문화산업",
-        "en": "AI, Content Planning, Generative AI, Cultural Industry"
+        "en": "AI, Content Planning, Generative AI, Cultural Industry",
+        "zh": "AI, 内容策划, 生成式AI, 文化产业"
       },
       "featured": true,
       "published": true,
       "createdAt": "2024-01-01",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2024-08-01"
     },
     {
       "id": "teach-3",
       "title": {
         "ko": "만화·웹툰 스토리텔링",
-        "en": "Comics & Webtoon Storytelling"
+        "en": "Comics & Webtoon Storytelling",
+        "zh": "漫画·网络漫画叙事创作"
       },
       "category": "undergraduate",
       "summary": {
         "ko": "만화와 웹툰의 서사 구조와 스토리텔링 기법을 학습하고, AI 도구를 활용한 새로운 내러티브 실험을 합니다.",
-        "en": "Learning narrative structure and storytelling techniques of comics and webtoons, with new narrative experiments using AI tools."
+        "en": "Learning narrative structure and storytelling techniques of comics and webtoons, with new narrative experiments using AI tools.",
+        "zh": "学习漫画和网络漫画的叙事结构与讲故事技巧，利用AI工具进行新型叙事实验。"
       },
       "description": {
         "ko": "만화와 웹툰의 서사 구조, 장르별 스토리텔링 기법, 캐릭터 개발, 세계관 구축 등을 체계적으로 학습합니다. 전통적인 스토리텔링 방법론과 함께 AI 기반 내러티브 생성 도구를 활용한 실험적 창작도 진행합니다.\n\n학생들은 개인 작품을 기획하고 완성하며, 동료 리뷰와 크리틱을 통해 창작 역량을 발전시킵니다.",
-        "en": "Systematically learning narrative structure of comics and webtoons, genre-specific storytelling techniques, character development, and world-building. Along with traditional storytelling methodologies, students also engage in experimental creation using AI-based narrative generation tools.\n\nStudents plan and complete individual works, developing creative capabilities through peer reviews and critiques."
+        "en": "Systematically learning narrative structure of comics and webtoons, genre-specific storytelling techniques, character development, and world-building. Along with traditional storytelling methodologies, students also engage in experimental creation using AI-based narrative generation tools.\n\nStudents plan and complete individual works, developing creative capabilities through peer reviews and critiques.",
+        "zh": "系统学习漫画和网络漫画的叙事结构、各类型讲故事技巧、角色开发、世界观构建等内容。除传统故事讲述方法论外，还开展利用AI叙事生成工具的实验性创作。\n\n学生规划并完成个人作品，通过同伴评审和批评发展创作能力。"
       },
       "semester": "2024 Spring",
       "courseType": "전공필수",
       "keywords": {
         "ko": "만화, 웹툰, 스토리텔링, 내러티브, AI",
-        "en": "Comics, Webtoon, Storytelling, Narrative, AI"
+        "en": "Comics, Webtoon, Storytelling, Narrative, AI",
+        "zh": "漫画, 网络漫画, 讲故事, 叙事, AI"
       },
       "featured": false,
-      "published": false,
+      "published": true,
       "createdAt": "2024-01-01",
-      "updatedAt": "2026-04-06"
+      "updatedAt": "2024-03-01"
     },
     {
       "id": "teach-4",
       "title": {
         "ko": "문화콘텐츠와 기술 융합 세미나",
-        "en": "Cultural Content and Technology Convergence Seminar"
+        "en": "Cultural Content and Technology Convergence Seminar",
+        "zh": "文化内容与技术融合研讨会"
       },
       "category": "seminar",
       "summary": {
         "ko": "문화콘텐츠 산업에서의 최신 기술 동향과 사례를 분석하고 토론하는 대학원 세미나.",
-        "en": "A graduate seminar analyzing and discussing latest technology trends and cases in the cultural content industry."
+        "en": "A graduate seminar analyzing and discussing latest technology trends and cases in the cultural content industry.",
+        "zh": "分析讨论文化内容产业最新技术动态与案例的研究生研讨会。"
       },
       "description": {
         "ko": "매주 문화콘텐츠와 기술 융합 관련 최신 논문, 산업 사례, 기술 동향을 발표하고 토론합니다. AI, XR, 블록체인, 메타버스 등 신기술이 문화콘텐츠 산업에 미치는 영향을 다각도로 분석합니다.\n\n초청 강연과 현장 방문도 포함되며, 학기말에는 개인 연구 주제에 대한 논문 발표를 진행합니다.",
-        "en": "Weekly presentations and discussions on the latest papers, industry cases, and technology trends related to cultural content and technology convergence. Multi-faceted analysis of the impact of new technologies such as AI, XR, blockchain, and metaverse on the cultural content industry.\n\nIncludes invited lectures and field visits, with paper presentations on individual research topics at the end of the semester."
+        "en": "Weekly presentations and discussions on the latest papers, industry cases, and technology trends related to cultural content and technology convergence. Multi-faceted analysis of the impact of new technologies such as AI, XR, blockchain, and metaverse on the cultural content industry.\n\nIncludes invited lectures and field visits, with paper presentations on individual research topics at the end of the semester.",
+        "zh": "每周发表并讨论与文化内容和技术融合相关的最新论文、行业案例、技术动态。多角度分析AI、XR、区块链、元宇宙等新技术对文化内容产业的影响。\n\n包含特邀讲座和现场参观，学期末进行个人研究课题的论文发表。"
       },
       "semester": "2024 Fall",
       "courseType": "전공선택",
       "keywords": {
         "ko": "세미나, 기술 융합, 문화콘텐츠, 연구 방법론",
-        "en": "Seminar, Technology Convergence, Cultural Content, Research Methodology"
+        "en": "Seminar, Technology Convergence, Cultural Content, Research Methodology",
+        "zh": "研讨会, 技术融合, 文化内容, 研究方法论"
       },
-      "featured": true,
-      "published": true,
-      "createdAt": "2024-01-01",
-      "updatedAt": "2026-04-13"
-    },
-    {
-      "title": {
-        "ko": "슬기로운 AI 생활",
-        "en": ""
-      },
-      "summary": {
-        "ko": "",
-        "en": ""
-      },
-      "description": {
-        "ko": "",
-        "en": ""
-      },
-      "keywords": {
-        "ko": "",
-        "en": ""
-      },
-      "category": "undergraduate",
-      "semester": "",
-      "courseType": "",
       "featured": false,
       "published": true,
-      "id": "teach-1775489120527",
-      "createdAt": "2026-04-06",
-      "updatedAt": "2026-04-06"
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-08-01"
     }
   ],
   "activities": [
@@ -536,21 +489,25 @@
       "id": "act-1",
       "title": {
         "ko": "SIGGRAPH Asia 2024 발표",
-        "en": "SIGGRAPH Asia 2024 Presentation"
+        "en": "SIGGRAPH Asia 2024 Presentation",
+        "zh": "SIGGRAPH Asia 2024 发表"
       },
       "type": "conference",
       "date": "2024-12-03",
       "location": {
         "ko": "도쿄, 일본",
-        "en": "Tokyo, Japan"
+        "en": "Tokyo, Japan",
+        "zh": "东京，日本"
       },
       "summary": {
         "ko": "AI 기반 인터랙티브 미디어 아트에 관한 연구 논문을 SIGGRAPH Asia 2024에서 발표했습니다.",
-        "en": "Presented a research paper on AI-based interactive media art at SIGGRAPH Asia 2024."
+        "en": "Presented a research paper on AI-based interactive media art at SIGGRAPH Asia 2024.",
+        "zh": "在SIGGRAPH Asia 2024上发表了关于AI交互媒体艺术的研究论文。"
       },
       "description": {
         "ko": "SIGGRAPH Asia 2024의 Art Papers 세션에서 \"AI와 인터랙티브 미디어 아트: 관객 참여형 생성 예술의 새로운 패러다임\"이라는 제목의 논문을 발표했습니다. 실시간 AI 생성과 관객 인터랙션을 결합한 실험적 작품의 설계와 구현 과정을 공유했습니다.",
-        "en": "Presented a paper titled \"AI and Interactive Media Art: A New Paradigm of Participatory Generative Art\" at the Art Papers session of SIGGRAPH Asia 2024. Shared the design and implementation process of experimental works combining real-time AI generation with audience interaction."
+        "en": "Presented a paper titled \"AI and Interactive Media Art: A New Paradigm of Participatory Generative Art\" at the Art Papers session of SIGGRAPH Asia 2024. Shared the design and implementation process of experimental works combining real-time AI generation with audience interaction.",
+        "zh": "在SIGGRAPH Asia 2024的艺术论文环节发表了题为\"AI与互动媒体艺术：参与型生成艺术新范式\"的论文。分享了将实时AI生成与观众互动相结合的实验性作品的设计与实现过程。"
       },
       "featured": true,
       "published": true,
@@ -561,21 +518,25 @@
       "id": "act-2",
       "title": {
         "ko": "서울 미디어 아트 비엔날레 참여",
-        "en": "Seoul Media Art Biennale Participation"
+        "en": "Seoul Media Art Biennale Participation",
+        "zh": "首尔媒体艺术双年展参展"
       },
       "type": "exhibition",
       "date": "2024-09-15",
       "location": {
         "ko": "서울시립미술관, 서울",
-        "en": "Seoul Museum of Art, Seoul"
+        "en": "Seoul Museum of Art, Seoul",
+        "zh": "首尔市立美术馆，首尔"
       },
       "summary": {
         "ko": "서울 미디어 아트 비엔날레에 AI 생성 인터랙티브 설치 작품을 출품했습니다.",
-        "en": "Exhibited an AI-generated interactive installation at the Seoul Media Art Biennale."
+        "en": "Exhibited an AI-generated interactive installation at the Seoul Media Art Biennale.",
+        "zh": "在首尔媒体艺术双年展上参展了AI生成互动装置作品。"
       },
       "description": {
         "ko": "\"디지털 의식(Digital Consciousness)\"이라는 제목의 인터랙티브 설치 작품을 출품했습니다. 관객의 움직임과 음성을 실시간으로 분석하여 AI가 시각적 반응을 생성하는 몰입형 공간을 구성했습니다. 약 3,000명의 관객이 참여했습니다.",
-        "en": "Exhibited an interactive installation work titled \"Digital Consciousness.\" Created an immersive space where AI generates visual responses by analyzing audience movement and voice in real-time. Approximately 3,000 visitors participated."
+        "en": "Exhibited an interactive installation work titled \"Digital Consciousness.\" Created an immersive space where AI generates visual responses by analyzing audience movement and voice in real-time. Approximately 3,000 visitors participated.",
+        "zh": "参展了题为\"数字意识\"的互动装置作品。构建了一个通过实时分析观众动作和声音，AI生成视觉反馈的沉浸式空间。约3000名观众参与了体验。"
       },
       "featured": true,
       "published": true,
@@ -586,21 +547,25 @@
       "id": "act-3",
       "title": {
         "ko": "AI와 예술의 미래 초청 강연",
-        "en": "Invited Lecture: Future of AI and Art"
+        "en": "Invited Lecture: Future of AI and Art",
+        "zh": "AI与艺术的未来特邀演讲"
       },
       "type": "talk",
       "date": "2024-06-20",
       "location": {
         "ko": "국립현대미술관, 서울",
-        "en": "National Museum of Modern and Contemporary Art, Seoul"
+        "en": "National Museum of Modern and Contemporary Art, Seoul",
+        "zh": "国立现代美术馆，首尔"
       },
       "summary": {
         "ko": "국립현대미술관에서 AI 기술이 예술 창작에 미치는 영향에 대한 초청 강연을 진행했습니다.",
-        "en": "Delivered an invited lecture at MMCA on the impact of AI technology on artistic creation."
+        "en": "Delivered an invited lecture at MMCA on the impact of AI technology on artistic creation.",
+        "zh": "在国立现代美术馆进行了关于AI技术对艺术创作影响的特邀演讲。"
       },
       "description": {
         "ko": "국립현대미술관의 \"기술과 예술\" 시리즈 강연에 초청되어 \"AI 시대의 예술가: 도구에서 파트너로\"라는 주제로 강연했습니다. AI가 예술 창작의 도구를 넘어 협업 파트너로서 어떤 역할을 할 수 있는지를 사례와 함께 논의했습니다.",
-        "en": "Invited to the \"Technology and Art\" lecture series at MMCA, delivered a lecture titled \"Artists in the AI Era: From Tool to Partner.\" Discussed with examples how AI can serve as a collaborative partner beyond being a tool for artistic creation."
+        "en": "Invited to the \"Technology and Art\" lecture series at MMCA, delivered a lecture titled \"Artists in the AI Era: From Tool to Partner.\" Discussed with examples how AI can serve as a collaborative partner beyond being a tool for artistic creation.",
+        "zh": "受邀参加国立现代美术馆\"技术与艺术\"系列讲座，以\"AI时代的艺术家：从工具到伙伴\"为主题进行演讲。结合案例探讨了AI如何超越创作工具的角色，成为艺术创作的协作伙伴。"
       },
       "featured": true,
       "published": true,
@@ -611,21 +576,25 @@
       "id": "act-4",
       "title": {
         "ko": "한일 디지털 아트 교류 워크숍",
-        "en": "Korea-Japan Digital Art Exchange Workshop"
+        "en": "Korea-Japan Digital Art Exchange Workshop",
+        "zh": "韩日数字艺术交流工作坊"
       },
       "type": "workshop",
       "date": "2024-04-10",
       "location": {
         "ko": "오사카 예술대학, 오사카",
-        "en": "Osaka University of Arts, Osaka"
+        "en": "Osaka University of Arts, Osaka",
+        "zh": "大阪艺术大学，大阪"
       },
       "summary": {
         "ko": "한일 대학 간 디지털 아트 교류 워크숍을 공동 기획하고 진행했습니다.",
-        "en": "Co-organized and conducted a digital art exchange workshop between Korean and Japanese universities."
+        "en": "Co-organized and conducted a digital art exchange workshop between Korean and Japanese universities.",
+        "zh": "联合策划并开展了韩日大学间数字艺术交流工作坊。"
       },
       "description": {
         "ko": "조선대학교와 오사카 예술대학 학생들이 참여하는 3일간의 디지털 아트 교류 워크숍을 기획·진행했습니다. 양국 학생들이 팀을 구성하여 AI 도구를 활용한 공동 창작 프로젝트를 수행했으며, 문화적 차이와 공통점을 예술적으로 탐구하는 작품을 완성했습니다.",
-        "en": "Organized and conducted a 3-day digital art exchange workshop with students from Chosun University and Osaka University of Arts. Students from both countries formed teams to collaborate on creative projects using AI tools, completing works that artistically explored cultural differences and commonalities."
+        "en": "Organized and conducted a 3-day digital art exchange workshop with students from Chosun University and Osaka University of Arts. Students from both countries formed teams to collaborate on creative projects using AI tools, completing works that artistically explored cultural differences and commonalities.",
+        "zh": "策划并主持了为期3天的朝鲜大学与大阪艺术大学学生参与的数字艺术交流工作坊。两国学生组队开展利用AI工具的联合创作项目，完成了从艺术角度探索文化差异与共同点的作品。"
       },
       "featured": false,
       "published": true,
@@ -636,83 +605,59 @@
       "id": "act-5",
       "title": {
         "ko": "광주 AI 아트 페스티벌 심사위원",
-        "en": "Gwangju AI Art Festival Jury Member"
+        "en": "Gwangju AI Art Festival Jury Member",
+        "zh": "光州AI艺术节评审委员"
       },
       "type": "collaboration",
       "date": "2024-11-01",
       "location": {
         "ko": "광주 문화예술회관",
-        "en": "Gwangju Culture & Art Center"
+        "en": "Gwangju Culture & Art Center",
+        "zh": "光州文化艺术会馆"
       },
       "summary": {
         "ko": "제3회 광주 AI 아트 페스티벌에서 심사위원으로 참여했습니다.",
-        "en": "Served as a jury member at the 3rd Gwangju AI Art Festival."
+        "en": "Served as a jury member at the 3rd Gwangju AI Art Festival.",
+        "zh": "参与了第3届光州AI艺术节，担任评审委员。"
       },
       "description": {
         "ko": "광주광역시가 주최하는 제3회 AI 아트 페스티벌에 심사위원으로 참여했습니다. 전국에서 출품된 AI 기반 예술 작품을 평가하고, \"AI 예술의 현재와 미래\" 주제의 패널 토론에도 참여했습니다.",
-        "en": "Participated as a jury member at the 3rd AI Art Festival hosted by Gwangju Metropolitan City. Evaluated AI-based artworks submitted from across the country and participated in a panel discussion on \"The Present and Future of AI Art.\""
+        "en": "Participated as a jury member at the 3rd AI Art Festival hosted by Gwangju Metropolitan City. Evaluated AI-based artworks submitted from across the country and participated in a panel discussion on \"The Present and Future of AI Art.\"",
+        "zh": "参与了光州广域市主办的第3届AI艺术节，担任评审委员。对全国各地参赛的AI艺术作品进行评审，并参与了以\"AI艺术的现在与未来\"为主题的小组讨论。"
       },
-      "featured": true,
+      "featured": false,
       "published": true,
       "createdAt": "2024-11-01",
-      "updatedAt": "2026-04-13"
+      "updatedAt": "2024-11-01"
     },
     {
       "id": "act-6",
       "title": {
         "ko": "유럽 디지털 문화 연구 네트워크 참여",
-        "en": "European Digital Culture Research Network Participation"
+        "en": "European Digital Culture Research Network Participation",
+        "zh": "参与欧洲数字文化研究网络"
       },
       "type": "exchange",
       "date": "2024-07-15",
       "location": {
         "ko": "베를린, 독일",
-        "en": "Berlin, Germany"
+        "en": "Berlin, Germany",
+        "zh": "柏林，德国"
       },
       "summary": {
         "ko": "유럽 디지털 문화 연구 네트워크에 아시아 대표 연구자로 참여했습니다.",
-        "en": "Participated as an Asian representative researcher in the European Digital Culture Research Network."
+        "en": "Participated as an Asian representative researcher in the European Digital Culture Research Network.",
+        "zh": "作为亚洲代表研究者参与了欧洲数字文化研究网络。"
       },
       "description": {
         "ko": "유럽연합 지원 디지털 문화 연구 네트워크의 연례 회의에 아시아 지역 대표 연구자로 초청되어 참석했습니다. \"동아시아의 AI와 문화콘텐츠\" 주제의 기조 발표를 진행하고, 국제 공동 연구 프로젝트의 가능성을 논의했습니다.",
-        "en": "Invited as an Asian regional representative researcher to the annual meeting of the EU-funded Digital Culture Research Network. Delivered a keynote presentation on \"AI and Cultural Content in East Asia\" and discussed possibilities for international collaborative research projects."
+        "en": "Invited as an Asian regional representative researcher to the annual meeting of the EU-funded Digital Culture Research Network. Delivered a keynote presentation on \"AI and Cultural Content in East Asia\" and discussed possibilities for international collaborative research projects.",
+        "zh": "受邀以亚洲地区代表研究者身份出席欧盟资助的数字文化研究网络年会。进行了以\"东亚的AI与文化内容\"为主题的主旨发表，并探讨了国际联合研究项目的可能性。"
       },
       "featured": false,
       "published": true,
       "createdAt": "2024-07-15",
       "updatedAt": "2024-07-15"
     }
-  ],
-  "settings": {
-    "siteName": {
-      "ko": "신교수의 연구실",
-      "en": "Prof. Shin's Lab"
-    },
-    "siteDescription": {
-      "ko": "신종천 교수의 연구실에 오신 것을 환영합니다!",
-      "en": "Welcome to the Prof. Shin's Lab!"
-    },
-    "defaultLanguage": "ko",
-    "contactEmail": "jasonshin0904@gmail.com",
-    "researchKeyTopics": [
-      {
-        "title": {
-          "ko": "인문학적 기술 융합",
-          "en": "Fuzzy & Techie"
-        }
-      },
-      {
-        "title": {
-          "ko": "뉴미디어 아트",
-          "en": ""
-        }
-      },
-      {
-        "title": {
-          "ko": "밈 현상",
-          "en": ""
-        }
-      }
-    ]
-  }
+  ]
 }

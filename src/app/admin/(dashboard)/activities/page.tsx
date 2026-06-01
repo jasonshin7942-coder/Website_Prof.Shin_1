@@ -28,7 +28,7 @@ export default function AdminActivitiesPage() {
 
   const loadData = async () => {
     try {
-      const res = await fetch('/api/content?type=activities');
+      const res = await fetch('/api/content?type=activities&admin=1');
       const data = await res.json();
       setItems(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -37,10 +37,10 @@ export default function AdminActivitiesPage() {
   };
 
   const emptyItem: Partial<Activity> = {
-    title: { ko: '', en: '' },
-    summary: { ko: '', en: '' },
-    description: { ko: '', en: '' },
-    location: { ko: '', en: '' },
+    title: { ko: '', en: '', zh: '' },
+    summary: { ko: '', en: '', zh: '' },
+    description: { ko: '', en: '', zh: '' },
+    location: { ko: '', en: '', zh: '' },
     type: 'conference',
     date: '',
     relatedLink: '',
@@ -58,10 +58,11 @@ export default function AdminActivitiesPage() {
 
   const handleChange = (field: string, value: string) => {
     setForm(prev => {
-      if (field.includes('_ko') || field.includes('_en')) {
-        const baseName = field.replace('_ko', '').replace('_en', '');
-        const lang = field.endsWith('_ko') ? 'ko' : 'en';
-        const current = (prev as any)[baseName] as { ko: string; en: string } || { ko: '', en: '' };
+      const langSuffix = ['_ko', '_en', '_zh'].find(s => field.endsWith(s));
+      if (langSuffix) {
+        const baseName = field.slice(0, -langSuffix.length);
+        const lang = langSuffix.slice(1);
+        const current = (prev as any)[baseName] || { ko: '', en: '' };
         return { ...prev, [baseName]: { ...current, [lang]: value } };
       }
       return { ...prev, [field]: value };
@@ -160,17 +161,17 @@ export default function AdminActivitiesPage() {
           </div>
 
           <div className="card space-y-6">
-            <BilingualInput label="제목" nameKo="title_ko" nameEn="title_en"
-              valueKo={(form.title as any)?.ko || ''} valueEn={(form.title as any)?.en || ''}
+            <BilingualInput label="제목" nameKo="title_ko" nameEn="title_en" nameZh="title_zh"
+              valueKo={(form.title as any)?.ko || ''} valueEn={(form.title as any)?.en || ''} valueZh={(form.title as any)?.zh || ''}
               onChange={handleChange} required />
-            <BilingualInput label="장소" nameKo="location_ko" nameEn="location_en"
-              valueKo={(form.location as any)?.ko || ''} valueEn={(form.location as any)?.en || ''}
+            <BilingualInput label="장소" nameKo="location_ko" nameEn="location_en" nameZh="location_zh"
+              valueKo={(form.location as any)?.ko || ''} valueEn={(form.location as any)?.en || ''} valueZh={(form.location as any)?.zh || ''}
               onChange={handleChange} />
-            <BilingualInput label="요약" nameKo="summary_ko" nameEn="summary_en"
-              valueKo={(form.summary as any)?.ko || ''} valueEn={(form.summary as any)?.en || ''}
+            <BilingualInput label="요약" nameKo="summary_ko" nameEn="summary_en" nameZh="summary_zh"
+              valueKo={(form.summary as any)?.ko || ''} valueEn={(form.summary as any)?.en || ''} valueZh={(form.summary as any)?.zh || ''}
               onChange={handleChange} multiline rows={3} />
-            <BilingualInput label="상세 설명" nameKo="description_ko" nameEn="description_en"
-              valueKo={(form.description as any)?.ko || ''} valueEn={(form.description as any)?.en || ''}
+            <BilingualInput label="상세 설명" nameKo="description_ko" nameEn="description_en" nameZh="description_zh"
+              valueKo={(form.description as any)?.ko || ''} valueEn={(form.description as any)?.en || ''} valueZh={(form.description as any)?.zh || ''}
               onChange={handleChange} multiline rows={5} />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

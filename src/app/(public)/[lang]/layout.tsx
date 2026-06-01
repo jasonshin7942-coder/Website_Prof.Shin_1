@@ -5,7 +5,7 @@ import Footer from '@/components/public/Footer';
 import type { Locale } from '@/i18n/config';
 
 export function generateStaticParams() {
-  return [{ lang: 'ko' }, { lang: 'en' }];
+  return [{ lang: 'ko' }, { lang: 'en' }, { lang: 'zh' }];
 }
 
 export default async function PublicLayout({

@@ -61,6 +61,8 @@ export default function PublicationsPage() {
           <p className="body-lg text-muted-foreground max-w-2xl">
             {locale === 'ko'
               ? '학술지 논문, 학회 발표, 저서 등 연구 성과를 확인하실 수 있습니다.'
+              : locale === 'zh'
+              ? '可查阅学术期刊论文、学术会议发表、专著等研究成果。'
               : 'Browse research publications including journal papers, conference presentations, and books.'}
           </p>
         </div>
@@ -95,22 +97,22 @@ export default function PublicationsPage() {
       )}
 
       {/* Search + Filter */}
-      <section className="py-6 border-b border-border sticky top-16 bg-background/95 backdrop-blur-sm z-10">
+      <section className="py-4 border-b border-border sticky top-16 md:top-[84px] bg-background/95 backdrop-blur-sm z-10">
         <div className="container-wide">
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col gap-3">
             <input
               type="text"
               placeholder={dict.publications.search}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="input-field max-w-md"
+              className="input-field w-full sm:max-w-md"
             />
-            <div className="flex flex-wrap gap-2">
+            <div className="flex overflow-x-auto gap-2 pb-1 scrollbar-hide">
               {categories.map(cat => (
                 <button
                   key={cat}
                   onClick={() => setFilter(cat)}
-                  className={`mono-xs px-3 py-1.5 border transition-colors ${
+                  className={`mono-xs px-3 py-2 border shrink-0 transition-colors ${
                     filter === cat
                       ? 'bg-foreground text-background border-foreground'
                       : 'border-border hover:border-foreground text-muted-foreground'

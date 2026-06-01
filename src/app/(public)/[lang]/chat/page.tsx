@@ -23,6 +23,13 @@ export default function ChatPage() {
         '대표 강의는 어떤 것이 있나요?',
         '최근 학술 활동은 어떤 것이 있나요?',
       ]
+    : locale === 'zh'
+    ? [
+        '主要研究领域是什么？',
+        '请介绍AI与艺术融合研究。',
+        '有哪些代表性课程？',
+        '最近有哪些学术活动？',
+      ]
     : [
         'What are the main research areas?',
         'Tell me about the AI and art convergence research.',
@@ -98,10 +105,10 @@ export default function ChatPage() {
       <div className="container-wide py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Chat area */}
-          <div className="lg:col-span-2">
-            <div className="border border-border bg-card min-h-[500px] flex flex-col">
+          <div className="lg:col-span-2 order-2 lg:order-1">
+            <div className="border border-border bg-card min-h-[350px] sm:min-h-[500px] flex flex-col">
               {/* Messages */}
-              <div className="flex-1 p-6 space-y-6 overflow-y-auto max-h-[600px]">
+              <div className="flex-1 p-4 sm:p-6 space-y-4 sm:space-y-6 overflow-y-auto max-h-[calc(100dvh-320px)] sm:max-h-[600px]">
                 {messages.length === 0 && (
                   <div className="text-center py-20">
                     <p className="font-mono text-6xl text-muted-foreground/10 mb-6">AI</p>
@@ -114,7 +121,7 @@ export default function ChatPage() {
                     key={msg.id}
                     className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
                   >
-                    <div className={`max-w-[80%] ${
+                    <div className={`max-w-[85%] sm:max-w-[80%] ${
                       msg.role === 'user'
                         ? 'bg-foreground text-background p-4'
                         : 'bg-muted p-4'
@@ -181,7 +188,7 @@ export default function ChatPage() {
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
+          <div className="space-y-6 order-1 lg:order-2">
             {/* Suggested questions */}
             <div className="border border-border p-6">
               <p className="mono-xs text-muted-foreground mb-4">{dict.chat.suggestedQuestions}</p>
@@ -205,6 +212,8 @@ export default function ChatPage() {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {locale === 'ko'
                   ? 'AI 어시스턴트는 신종천 교수의 연구, 교육, 활동, 저서·논문 정보를 바탕으로 답변합니다. 응답은 참고용이며, 정확한 정보는 직접 확인해 주세요.'
+                  : locale === 'zh'
+                  ? 'AI助手基于申钟天教授的研究、教育、活动及著作·论文信息进行回答。回答仅供参考，请自行核实准确信息。'
                   : 'The AI assistant answers based on Professor Shin\'s research, teaching, activities, and publication information. Responses are for reference; please verify for accuracy.'}
               </p>
             </div>

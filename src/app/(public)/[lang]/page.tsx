@@ -56,7 +56,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <div className="container-wide py-12 md:py-16">
           <div className="max-w-4xl">
             <p className="text-base md:text-lg text-muted-foreground mb-6 animate-fade-in">
-              {getLocalizedText(profile.affiliation, locale)} {getLocalizedText(profile.name, locale)} {locale === 'ko' ? '교수' : 'Professor'}
+              {getLocalizedText(profile.affiliation, locale)} {getLocalizedText(profile.name, locale)} {locale === 'ko' ? '교수' : locale === 'zh' ? '教授' : 'Professor'}
             </p>
             <h1 className="heading-xl mb-8 animate-fade-in-up">
               {dict.home.heroTitle}
@@ -145,43 +145,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </div>
       </section>
 
-      {/* Teaching */}
-      <section className="py-24 border-b border-border bg-muted/30 ascii-border-top">
-        <div className="container-wide">
-          <SectionHeader
-            label="// TEACHING"
-            title={dict.home.teachingSection}
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredTeaching.slice(0, 3).map((item, i) => (
-              <div key={item.id} className={`card card-featured card-ascii animate-fade-in-up animate-delay-${(i + 1) * 100}`}>
-                <div className="flex items-start justify-between mb-3">
-                  <span className="mono-xs text-muted-foreground border border-border px-2 py-0.5">
-                    {item.category}
-                  </span>
-                </div>
-                <h3 className="heading-sm mb-3">{getLocalizedText(item.title, locale)}</h3>
-                <p className="body-sm text-muted-foreground mb-4">
-                  {getLocalizedText(item.description, locale)}
-                </p>
-                {item.semester && (
-                  <p className="mono-xs text-muted-foreground">
-                    {item.semester}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-          <div className="mt-8">
-            <Link href={`/${lang}/teaching`} className="text-sm font-medium hover:underline underline-offset-4">
-              {dict.home.viewAll} →
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Publications */}
-      <section className="py-24 border-b border-border ascii-border-top grid-overlay">
+      <section className="py-24 border-b border-border bg-muted/30 ascii-border-top grid-overlay">
         <div className="container-wide">
           <SectionHeader
             label="// PUBLICATIONS"
@@ -210,6 +175,41 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           </div>
           <div className="mt-8">
             <Link href={`/${lang}/publications`} className="text-sm font-medium hover:underline underline-offset-4">
+              {dict.home.viewAll} →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Teaching */}
+      <section className="py-24 border-b border-border ascii-border-top">
+        <div className="container-wide">
+          <SectionHeader
+            label="// TEACHING"
+            title={dict.home.teachingSection}
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredTeaching.slice(0, 3).map((item, i) => (
+              <div key={item.id} className={`card card-featured card-ascii animate-fade-in-up animate-delay-${(i + 1) * 100}`}>
+                <div className="flex items-start justify-between mb-3">
+                  <span className="mono-xs text-muted-foreground border border-border px-2 py-0.5">
+                    {item.category}
+                  </span>
+                </div>
+                <h3 className="heading-sm mb-3">{getLocalizedText(item.title, locale)}</h3>
+                <p className="body-sm text-muted-foreground mb-4">
+                  {getLocalizedText(item.description, locale)}
+                </p>
+                {item.semester && (
+                  <p className="mono-xs text-muted-foreground">
+                    {item.semester}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="mt-8">
+            <Link href={`/${lang}/teaching`} className="text-sm font-medium hover:underline underline-offset-4">
               {dict.home.viewAll} →
             </Link>
           </div>

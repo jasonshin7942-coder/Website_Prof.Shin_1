@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import AdminPageHeader from '@/components/admin/AdminPageHeader';
 import BilingualInput from '@/components/admin/BilingualInput';
-import { showToast } from '@/components/admin/Toast';
 import type { Profile } from '@/types/content';
 
 export default function AdminProfilePage() {
@@ -32,10 +31,11 @@ export default function AdminProfilePage() {
   const handleChange = (field: string, value: string) => {
     setForm(prev => {
       if (!prev) return prev;
-      if (field.includes('_ko') || field.includes('_en')) {
-        const baseName = field.replace('_ko', '').replace('_en', '');
-        const lang = field.endsWith('_ko') ? 'ko' : 'en';
-        const current = (prev as any)[baseName] as { ko: string; en: string } || { ko: '', en: '' };
+      const langSuffix = ['_ko', '_en', '_zh'].find(s => field.endsWith(s));
+      if (langSuffix) {
+        const baseName = field.slice(0, -langSuffix.length);
+        const lang = langSuffix.slice(1);
+        const current = (prev as any)[baseName] || { ko: '', en: '' };
         return { ...prev, [baseName]: { ...current, [lang]: value } };
       }
       return { ...prev, [field]: value };
@@ -53,14 +53,10 @@ export default function AdminProfilePage() {
       });
       if (res.ok) {
         setSaved(true);
-        showToast('success', '프로필이 저장되었습니다');
         setTimeout(() => setSaved(false), 3000);
-      } else {
-        showToast('error', '저장에 실패했습니다');
       }
     } catch (error) {
       console.error('Failed to save profile:', error);
-      showToast('error', '저장 중 오류가 발생했습니다');
     } finally {
       setSaving(false);
     }
@@ -86,24 +82,27 @@ export default function AdminProfilePage() {
           <div className="space-y-6">
             <BilingualInput
               label="이름"
-              nameKo="name_ko" nameEn="name_en"
+              nameKo="name_ko" nameEn="name_en" nameZh="name_zh"
               valueKo={(form.name as any)?.ko || ''}
               valueEn={(form.name as any)?.en || ''}
+              valueZh={(form.name as any)?.zh || ''}
               onChange={handleChange}
               required
             />
             <BilingualInput
               label="직함"
-              nameKo="title_ko" nameEn="title_en"
+              nameKo="title_ko" nameEn="title_en" nameZh="title_zh"
               valueKo={(form.title as any)?.ko || ''}
               valueEn={(form.title as any)?.en || ''}
+              valueZh={(form.title as any)?.zh || ''}
               onChange={handleChange}
             />
             <BilingualInput
               label="소속"
-              nameKo="affiliation_ko" nameEn="affiliation_en"
+              nameKo="affiliation_ko" nameEn="affiliation_en" nameZh="affiliation_zh"
               valueKo={(form.affiliation as any)?.ko || ''}
               valueEn={(form.affiliation as any)?.en || ''}
+              valueZh={(form.affiliation as any)?.zh || ''}
               onChange={handleChange}
             />
           </div>
@@ -115,27 +114,30 @@ export default function AdminProfilePage() {
           <div className="space-y-6">
             <BilingualInput
               label="짧은 소개"
-              nameKo="shortIntro_ko" nameEn="shortIntro_en"
+              nameKo="shortIntro_ko" nameEn="shortIntro_en" nameZh="shortIntro_zh"
               valueKo={(form.shortIntro as any)?.ko || ''}
               valueEn={(form.shortIntro as any)?.en || ''}
+              valueZh={(form.shortIntro as any)?.zh || ''}
               onChange={handleChange}
               multiline
               rows={3}
             />
             <BilingualInput
               label="상세 약력"
-              nameKo="biography_ko" nameEn="biography_en"
+              nameKo="biography_ko" nameEn="biography_en" nameZh="biography_zh"
               valueKo={(form.biography as any)?.ko || ''}
               valueEn={(form.biography as any)?.en || ''}
+              valueZh={(form.biography as any)?.zh || ''}
               onChange={handleChange}
               multiline
               rows={6}
             />
             <BilingualInput
               label="키워드"
-              nameKo="keywords_ko" nameEn="keywords_en"
+              nameKo="keywords_ko" nameEn="keywords_en" nameZh="keywords_zh"
               valueKo={(form.keywords as any)?.ko || ''}
               valueEn={(form.keywords as any)?.en || ''}
+              valueZh={(form.keywords as any)?.zh || ''}
               onChange={handleChange}
             />
           </div>
@@ -167,46 +169,10 @@ export default function AdminProfilePage() {
         {/* Profile Image */}
         <div className="card">
           <h3 className="font-semibold text-sm mb-4">프로필 이미지</h3>
-          {form.profileImage && !form.profileImage.includes('placeholder') && (
-            <div className="mb-4 flex items-center gap-4">
-              <img src={form.profileImage} alt="프로필" className="w-32 h-auto max-h-40 object-contain border border-border" />
-              <button
-                onClick={() => { setForm(prev => prev ? { ...prev, profileImage: '' } : prev); setSaved(false); }}
-                className="text-sm text-danger hover:underline"
-              >
-                이미지 삭제
-              </button>
-            </div>
-          )}
           <div className="border-2 border-dashed border-border p-8 text-center">
             <p className="text-muted-foreground text-sm mb-2">이미지를 드래그하거나 클릭하여 업로드</p>
-            <p className="mono-xs text-muted-foreground">JPG, PNG, WebP, GIF · 최대 5MB</p>
-            <input
-              type="file"
-              accept="image/jpeg,image/png,image/webp,image/gif"
-              className="hidden"
-              id="profileImage"
-              onChange={async (e) => {
-                const file = e.target.files?.[0];
-                if (!file) return;
-                const formData = new FormData();
-                formData.append('file', file);
-                try {
-                  const res = await fetch('/api/upload', { method: 'POST', body: formData });
-                  if (res.ok) {
-                    const data = await res.json();
-                    setForm(prev => prev ? { ...prev, profileImage: data.url } : prev);
-                    setSaved(false);
-                    showToast('success', '이미지가 업로드되었습니다. 저장 버튼을 눌러주세요.');
-                  } else {
-                    showToast('error', '이미지 업로드에 실패했습니다');
-                  }
-                } catch {
-                  showToast('error', '이미지 업로드 중 오류가 발생했습니다');
-                }
-                e.target.value = '';
-              }}
-            />
+            <p className="mono-xs text-muted-foreground">JPG, PNG · 최대 5MB</p>
+            <input type="file" accept="image/*" className="hidden" id="profileImage" />
             <label htmlFor="profileImage" className="btn-secondary inline-block mt-4 cursor-pointer">
               파일 선택
             </label>
