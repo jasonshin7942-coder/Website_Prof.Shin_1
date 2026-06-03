@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import AdminPageHeader from '@/components/admin/AdminPageHeader';
 import BilingualInput from '@/components/admin/BilingualInput';
 import ContentTable from '@/components/admin/ContentTable';
-import type { Research } from '@/types/content';
+import type { Research, ResearchKeyTopic } from '@/types/content';
 
 export default function AdminResearchPage() {
   const [items, setItems] = useState<Research[]>([]);
@@ -12,8 +12,14 @@ export default function AdminResearchPage() {
   const [showForm, setShowForm] = useState(false);
   const [saving, setSaving] = useState(false);
 
+  // Key topics state
+  const [topics, setTopics] = useState<ResearchKeyTopic[]>([]);
+  const [savingTopics, setSavingTopics] = useState(false);
+  const [topicsSaved, setTopicsSaved] = useState(false);
+
   useEffect(() => {
     loadData();
+    loadTopics();
   }, []);
 
   const loadData = async () => {
@@ -23,6 +29,52 @@ export default function AdminResearchPage() {
       setItems(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error('Failed to load research:', error);
+    }
+  };
+
+  const loadTopics = async () => {
+    try {
+      const res = await fetch('/api/content?type=settings');
+      const data = await res.json();
+      setTopics(data?.researchKeyTopics || []);
+    } catch (error) {
+      console.error('Failed to load settings:', error);
+    }
+  };
+
+  const handleAddTopic = () => {
+    setTopics(prev => [...prev, { title: { ko: '', en: '', zh: '' } }]);
+  };
+
+  const handleTopicChange = (index: number, field: string, value: string) => {
+    const langSuffix = ['_ko', '_en', '_zh'].find(s => field.endsWith(s));
+    if (!langSuffix) return;
+    const lang = langSuffix.slice(1) as 'ko' | 'en' | 'zh';
+    setTopics(prev => prev.map((t, i) =>
+      i === index ? { title: { ...t.title, [lang]: value } } : t
+    ));
+  };
+
+  const handleRemoveTopic = (index: number) => {
+    setTopics(prev => prev.filter((_, i) => i !== index));
+  };
+
+  const handleSaveTopics = async () => {
+    setSavingTopics(true);
+    try {
+      const res = await fetch('/api/content?type=settings', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ researchKeyTopics: topics }),
+      });
+      if (res.ok) {
+        setTopicsSaved(true);
+        setTimeout(() => setTopicsSaved(false), 2000);
+      }
+    } catch (error) {
+      console.error('Failed to save topics:', error);
+    } finally {
+      setSavingTopics(false);
     }
   };
 
@@ -40,19 +92,11 @@ export default function AdminResearchPage() {
 
   const [form, setForm] = useState(emptyItem);
 
-  const handleNew = () => {
-    setForm(emptyItem);
-    setEditing(null);
-    setShowForm(true);
-  };
+  const handleNew = () => { setForm(emptyItem); setEditing(null); setShowForm(true); };
 
   const handleEdit = (id: string) => {
     const item = items.find(i => i.id === id);
-    if (item) {
-      setForm(item);
-      setEditing(item);
-      setShowForm(true);
-    }
+    if (item) { setForm(item); setEditing(item); setShowForm(true); }
   };
 
   const handleChange = (field: string, value: string) => {
@@ -77,21 +121,14 @@ export default function AdminResearchPage() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(form),
         });
-        if (res.ok) {
-          await loadData();
-          setShowForm(false);
-          setEditing(null);
-        }
+        if (res.ok) { await loadData(); setShowForm(false); setEditing(null); }
       } else {
         const res = await fetch('/api/content?type=research', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(form),
         });
-        if (res.ok) {
-          await loadData();
-          setShowForm(false);
-        }
+        if (res.ok) { await loadData(); setShowForm(false); }
       }
     } catch (error) {
       console.error('Failed to save:', error);
@@ -103,12 +140,8 @@ export default function AdminResearchPage() {
   const handleDelete = async (id: string) => {
     if (confirm('삭제하시겠습니까?')) {
       try {
-        const res = await fetch(`/api/content?type=research&id=${id}`, {
-          method: 'DELETE',
-        });
-        if (res.ok) {
-          await loadData();
-        }
+        const res = await fetch(`/api/content?type=research&id=${id}`, { method: 'DELETE' });
+        if (res.ok) await loadData();
       } catch (error) {
         console.error('Failed to delete:', error);
       }
@@ -124,9 +157,7 @@ export default function AdminResearchPage() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ ...item, published: !item.published }),
         });
-        if (res.ok) {
-          await loadData();
-        }
+        if (res.ok) await loadData();
       }
     } catch (error) {
       console.error('Failed to toggle publish:', error);
@@ -158,9 +189,11 @@ export default function AdminResearchPage() {
         title="연구 관리"
         description="연구 항목을 추가, 수정, 삭제합니다"
         action={
-          <button onClick={handleNew} className="btn-primary">
-            + 새 연구 추가
-          </button>
+          !showForm ? (
+            <button onClick={handleNew} className="btn-primary">
+              + 새 연구 추가
+            </button>
+          ) : undefined
         }
       />
 
@@ -263,13 +296,81 @@ export default function AdminResearchPage() {
           </button>
         </div>
       ) : (
-        <ContentTable
-          columns={columns}
-          data={items as any}
-          onEdit={handleEdit}
-          onDelete={handleDelete}
-          onTogglePublish={handleTogglePublish}
-        />
+        <div className="space-y-10">
+          {/* Research list */}
+          <ContentTable
+            columns={columns}
+            data={items as any}
+            onEdit={handleEdit}
+            onDelete={handleDelete}
+            onTogglePublish={handleTogglePublish}
+          />
+
+          {/* Key Topics editor */}
+          <div className="max-w-4xl">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <p className="mono-xs text-muted-foreground mb-1">// KEY THEMES</p>
+                <h2 className="font-semibold">핵심 주제 관리</h2>
+                <p className="text-sm text-muted-foreground mt-1">
+                  웹사이트 연구 페이지의 '핵심 주제' 섹션에 표시됩니다. 비워두면 각 연구 항목의 '주제' 값이 자동으로 사용됩니다.
+                </p>
+              </div>
+            </div>
+
+            <div className="card space-y-4">
+              {topics.length === 0 && (
+                <p className="text-sm text-muted-foreground py-2">
+                  아직 등록된 핵심 주제가 없습니다. 아래 버튼으로 추가하세요.
+                </p>
+              )}
+
+              {topics.map((topic, index) => (
+                <div key={index} className="border border-border p-4 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="mono-xs text-muted-foreground">주제 {index + 1}</span>
+                    <button
+                      onClick={() => handleRemoveTopic(index)}
+                      className="text-xs text-muted-foreground hover:text-foreground border border-border px-2 py-1"
+                    >
+                      삭제
+                    </button>
+                  </div>
+                  <BilingualInput
+                    label=""
+                    nameKo={`topic_${index}_ko`}
+                    nameEn={`topic_${index}_en`}
+                    nameZh={`topic_${index}_zh`}
+                    valueKo={topic.title.ko || ''}
+                    valueEn={topic.title.en || ''}
+                    valueZh={(topic.title as any).zh || ''}
+                    onChange={(field, value) => handleTopicChange(index, field, value)}
+                  />
+                </div>
+              ))}
+
+              <button
+                onClick={handleAddTopic}
+                className="btn-secondary text-sm w-full"
+              >
+                + 주제 추가
+              </button>
+            </div>
+
+            <div className="flex items-center gap-4 mt-4">
+              <button
+                onClick={handleSaveTopics}
+                disabled={savingTopics}
+                className="btn-primary disabled:opacity-50"
+              >
+                {savingTopics ? '저장 중...' : '핵심 주제 저장'}
+              </button>
+              {topicsSaved && (
+                <span className="text-sm text-green-600">✓ 저장됐습니다</span>
+              )}
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );

@@ -162,7 +162,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                   <h3 className="font-semibold text-base mb-1">
                     {getLocalizedText(pub.title, locale)}
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-2">{pub.authors}</p>
+                  <p className="text-sm text-muted-foreground mb-2">{getLocalizedText(pub.authors, locale)}</p>
                   <p className="text-sm text-muted-foreground">
                     {getLocalizedText(pub.venue, locale)}
                   </p>

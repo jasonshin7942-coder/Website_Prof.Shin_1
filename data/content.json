@@ -24,7 +24,7 @@
     "biography": {
       "ko": "신종천 교수는 상지대학교 문화콘텐츠학과에서 뉴미디어아트, AI 기반 창작, 문화콘텐츠 기획 및 제작을 연구하고 가르치고 있습니다. 기술과 인문학의 경계를 넘나들며 AI와 예술과 문화의 창조적 융합 가능성을 탐구하는 것이 주요 연구 관심사입니다.\n\n예술적 실천과 학술적 연구를 병행하며, 국내외 학술대회와 전시에서 활발히 활동하고 있습니다. 특히 AI 기술을 활용한 새로운 형태의 예술 창작과 교육 방법론 개발에 주력하고 있으며, 학생들이 기술적 역량과 인문학적 사고력을 동시에 갖출 수 있도록 융합 교육 프로그램을 운영하고 있습니다.",
       "en": "Professor Jongcheon Shin researches and teaches new media art, AI-based creation, and cultural content planning and production at the Department of Cultural Contents, Sangji University. His primary research interest lies in exploring the creative convergence possibilities of AI and art and culture, transcending the boundaries between technology and humanities.\n\nCombining artistic practice with academic research, he is actively engaged in domestic and international academic conferences and exhibitions. He particularly focuses on developing new forms of artistic creation and educational methodologies utilizing AI technology, and operates convergence education programs that enable students to simultaneously develop technical competency and humanistic thinking.",
-      "zh": "申钟天教授在朝鲜大学漫画动画系从事数字媒体艺术、人工智能创作及文化内容策划的研究与教学工作。跨越技术与人文学的界限，探索AI与艺术创造性融合的可能性是其主要研究关注点。\n\n将艺术实践与学术研究相结合，活跃于国内外学术会议和展览。特别致力于开发利用AI技术的新型艺术创作形式与教育方法论，并运营融合教育项目，使学生同时具备技术能力和人文思维。"
+      "zh": "辛鍾天教授在尙志大学文化信息系从事数字媒体艺术、人工智能创作及文化内容策划的研究与教学工作。跨越技术与人文学的界限，探索AI与艺术创造性融合的可能性是其主要研究关注点。\n\n将艺术实践与学术研究相结合，活跃于国内外学术会议和展览。特别致力于开发利用AI技术的新型艺术创作形式与教育方法论，并运营融合教育项目，使学生同时具备技术能力和人文思维。"
     },
     "keywords": {
       "ko": "인공지능융합, 뉴미디어아트, 문화콘텐츠, AI 창작",
@@ -46,9 +46,9 @@
     {
       "id": "res-1",
       "title": {
-        "ko": "AI 기반 디지털 미디어 아트 창작 연구",
-        "en": "AI-Based Digital Media Art Creation Research",
-        "zh": "基于AI的数字媒体艺术创作研究"
+        "ko": "생성형 인공지능(AI) 기반 예술 속 기술적 대상들의 존재 양식 : 시몽동의 기술철학적 접근을 넘어",
+        "en": "The Mode of Existence of Technical Objects  in Generative Artificial Intelligence-based Art : Beyond Simondon's Philosophical Approach to Technology",
+        "zh": "基于生成式人工智能的艺术中技术对象的存在模式：超越西蒙东的技术哲学方法"
       },
       "theme": {
         "ko": "인공지능과 예술",
@@ -56,432 +56,1254 @@
         "zh": "人工智能与艺术"
       },
       "summary": {
-        "ko": "생성형 AI 기술을 활용한 새로운 형태의 디지털 미디어 아트 창작 방법론을 연구합니다. 기계 학습 알고리즘과 예술적 감성의 융합을 통해 인간-AI 협업 창작의 가능성을 탐구합니다.",
-        "en": "Researching new methodologies for digital media art creation utilizing generative AI technology. Exploring the possibilities of human-AI collaborative creation through the convergence of machine learning algorithms and artistic sensibility.",
-        "zh": "研究利用生成式AI技术的新型数字媒体艺术创作方法论。通过机器学习算法与艺术感性的融合，探索人机协作创作的可能性。"
+        "ko": "본 연구는 생성형 인공지능 기반 예술이 등장한 현재의 시점을 예술의 대변혁기로 진단하고 예술 속 인공지능기술의 존재 양식을 밝힌다. 이는 예술과 철학, 기술과 공학의 학문적 경계를 넘어 융합 연구를 주도하고, 예술 창작과 미적 경험의 의미를 재해석하여 사회적 혼란을 줄이며, 인공지능기술의 예술적 활용을 통한 교육적 효과를 높일 것으로 기대된다. ",
+        "en": "This study diagnoses the current era, marked by the emergence of generative AI-based art, as a period of great transformation in art and clarifies the modes of existence of AI technology within art. This is expected to lead convergence research that transcends the academic boundaries between art and philosophy, and technology and engineering; reduce social disruption by reinterpreting the meaning of artistic creation and aesthetic experience; and enhance educational effectiveness through the artistic application of artificial intelligence technology.",
+        "zh": "本研究将以基于人工智能的生成艺术兴起为标志的当前时代诊断为艺术的重大变革时期，并阐明人工智能技术在艺术中的存在模式。预期这将引领超越艺术与哲学、技术与工程等学术界限的融合研究；通过重新诠释艺术创作和审美体验的意义，减少社会动荡；并通过人工智能技术的艺术应用提升教育成效。"
       },
       "description": {
-        "ko": "본 연구는 생성형 AI 모델(GAN, Diffusion Models, Transformer 기반 모델 등)을 활용하여 디지털 미디어 아트의 새로운 창작 패러다임을 제시합니다. 전통적인 예술 창작 과정에서 AI가 어떤 역할을 할 수 있는지, 그리고 AI와의 협업이 예술적 표현의 범위를 어떻게 확장할 수 있는지를 탐구합니다.",
-        "en": "This research presents a new creative paradigm for digital media art utilizing generative AI models (GANs, Diffusion Models, Transformer-based models, etc.). It explores what role AI can play in traditional art creation processes and how collaboration with AI can expand the scope of artistic expression.",
-        "zh": "本研究利用生成式AI模型（GAN、扩散模型、基于Transformer的模型等），提出数字媒体艺术新创作范式。探索AI在传统艺术创作过程中的作用，以及与AI协作如何拓展艺术表达的范围。"
+        "ko": "본 연구는 각종 인공지능 이미지 생성 도구의 등장에 주목하고, 인공지능기술에 기반을 둔 예술의 의미와 속성을 기술적 대상들의 존재 양식을 분석하여 밝히는 동시에 생성형 인공지능 기반 예술의 미학적 방향성과 교육적 활용성을 찾아보려는 목적에서 시도되었다. 구체적으로 최근 등장한 인공지능 이미지/비디오 생성 도구들 속 기계학습 알고리즘들을 질베르 시몽동(Gilbert Simondon)의 개체화(individuation) 및 구체화(concretization)의 개념(Simondon 2005; 2012; 2017)을 통해 분석한 후, 생성형 인공지능 기반 예술 속 기술적 대상들의 존재 양식을 밝히고 그 미학적 잠재 가치와 교육적 활용방안을 탐색하고자 하는 것이다.",
+        "en": "This research is conducted with the aim of focusing on the emergence of various artificial intelligence image generation tools, clarifying the meaning and attributes of art based on AI technology by analyzing the modes of existence of technical objects, and exploring the aesthetic direction and educational utility of generative AI-based art. Specifically, the study aims to analyze the machine learning algorithms within recently emerged AI image/video generation tools through Gilbert Simondon’s concepts of individuation and concretization (Simondon 2005; 2012; 2017), and then to clarify the modes of existence of technical objects within generative AI-based art and explore their aesthetic potential value and educational applications.",
+        "zh": "本研究旨在聚焦于各种人工智能图像生成工具的出现，通过分析技术对象的存在模式来阐明基于人工智能技术的艺术的意义和属性，并探索基于生成式人工智能的艺术的美学方向和教育价值。具体而言，本研究旨在通过吉尔伯特·西蒙东的个体化和具体化概念（Simondon 2005; 2012; 2017），分析最近出现的AI图像生成工具 中的机器学习算法，然后阐明基于生成式AI的艺术中技术对象的存在模式，并探索其审美潜在价值和教育应用。"
       },
-      "year": 2024,
-      "category": "ai-art",
+      "year": 2026,
+      "category": "한국연구재단 신진연구자지원사업 (23.06.~26.05.)",
       "keywords": {
-        "ko": "생성형 AI, 디지털 미디어 아트, 인간-AI 협업, 창작 방법론",
-        "en": "Generative AI, Digital Media Art, Human-AI Collaboration, Creative Methodology",
-        "zh": "生成式AI, 数字媒体艺术, 人机协作, 创作方法论"
+        "ko": "생성형 인공지능 기반 예술, 인공지능 이미지 생성 도구, 기술적 대상들의 구체화, 질베르 시몽동의 기술철학, 막스 벤제의 생성미학, 테쿰세 피치의 생명미학, 기계학습 알고리즘, ‘예술가-엔지니어-철학자’ 교육 커리큘럼",
+        "en": "Generative Artificial Intelligence-based Art, Artificial Intelligence Image Generator, Concretization of Technical Objects, Gilbert Simondon's Philosophy of Technology, Max Bense's Generative Aesthetics, Tecumseh Fitch's Bioaesthetics, Machine Learning Algorithm, ‘Artist-Engineer-Philosopher’ Education Curriculum",
+        "zh": "基于生成式人工智能的艺术、人工智能图像生成器、技术对象的具体化、吉尔伯特·西蒙东的技术哲学、马克斯·本斯的生成美学、特库姆塞·菲奇的生物美学、机器学习算法、“艺术家-工程师-哲学家”教育课程"
       },
       "featured": true,
       "published": true,
       "createdAt": "2024-01-15",
-      "updatedAt": "2024-06-20"
+      "updatedAt": "2026-06-03"
     },
     {
       "id": "res-2",
       "title": {
-        "ko": "문화콘텐츠와 AI 내러티브 생성 연구",
-        "en": "Cultural Content and AI Narrative Generation Research",
-        "zh": "文化内容与AI叙事生成研究"
+        "ko": "문화콘텐츠산업의 지속가능 성장을 위한 인문학의 역할 연구",
+        "en": "A Study on the Role of Humanities in the Sustainable Growth of the Cultural Content Industry",
+        "zh": "人文学科在文化内容产业可持续发展中的作用研究"
       },
       "theme": {
-        "ko": "문화콘텐츠와 기술",
-        "en": "Cultural Content and Technology",
-        "zh": "文化内容与技术"
+        "ko": "문화콘텐츠와 인문학",
+        "en": "Cultural Content and Humanities",
+        "zh": "文化内容与人文学科"
       },
       "summary": {
-        "ko": "AI 기술을 활용한 문화콘텐츠 내러티브 자동 생성 및 스토리텔링 시스템을 연구합니다. 한국 문화 요소를 반영한 AI 기반 스토리 생성의 가능성을 탐구합니다.",
-        "en": "Researching AI-based automatic narrative generation and storytelling systems for cultural content. Exploring the potential of AI-based story generation reflecting Korean cultural elements.",
-        "zh": "研究利用AI技术自动生成文化内容叙事和讲故事系统。探索融入韩国文化元素的AI故事生成潜力。"
+        "ko": "문화콘텐츠 산업은 ‘문화화’라는 시대적 변화를 잘 보여주는 생생한 증거이기도 하다. ‘산업화’와 ‘민주화’라는 의제를 거쳐 이제 ‘문화화’라는 새로운 전지구적 의제에 올바로 대응하기 위해서는 문화콘텐츠 산업의 성장을 적극 추구해야 한다. 하지만 이제 우리는 단순한 양적 성장이 아닌 질적 성숙을 통한 성장을 모색해야 한다. 요컨대 유엔의 ‘지속가능한 발전’에 연원을 둔 ‘지속가능한 성장’을 추구해야 하는 것이다. 이것은 생태적 전환을 기초로 경제적 형평과 사회적 정의를 이루는 것을 의미한다. 인문학은 이 과제에 적극 대응해서 현실성을 확대하고 효용성을 강화한다.",
+        "en": "The cultural content industry serves as vivid evidence of the epochal shift known as \"culturification.\" Having passed through the agendas of \"industrialization\" and \"democratization,\" we must actively pursue the growth of the cultural content industry to properly respond to the new global agenda of \"culturification.\" However, we have now reached a stage where we must seek growth through qualitative maturity rather than mere quantitative expansion. In short, we must pursue \"sustainable growth,\" rooted in the UN's concept of \"sustainable development.\" This implies achieving economic equity and social justice based on an ecological transition. The humanities must actively respond to this challenge to expand their practical relevance and enhance their utility.",
+        "zh": "文化内容产业生动地展现了被称为“文化化”的划时代转变。在经历了“工业化”和“民主化”的进程之后，我们必须积极推动文化内容产业的发展，以更好地应对“文化化”这一新的全球议程。然而，我们现在所处的阶段，需要追求的是质的提升而非单纯的量的增长。简而言之，我们必须追求植根于联合国“可持续发展”理念的“可持续增长”。这意味着在生态转型的基础上，实现经济公平和社会正义。人文学科必须积极应对这一挑战，拓展其应用价值，提升其效用。"
       },
       "description": {
-        "ko": "대규모 언어 모델과 문화 데이터를 결합하여 한국적 서사 구조와 문화 요소를 반영한 스토리텔링 시스템을 개발합니다. 만화, 애니메이션, 게임 등 다양한 문화콘텐츠 장르에 적용 가능한 AI 내러티브 생성 프레임워크를 제안합니다.",
-        "en": "Developing storytelling systems that reflect Korean narrative structures and cultural elements by combining large language models with cultural data. Proposing an AI narrative generation framework applicable to various cultural content genres such as comics, animation, and games.",
-        "zh": "将大型语言模型与文化数据相结合，开发反映韩国叙事结构和文化元素的故事讲述系统。提出适用于漫画、动画、游戏等各种文化内容类型的AI叙事生成框架。"
+        "ko": "오늘날 문화콘텐츠 산업은 문화적인 차원을 넘어서 경제적인 차원에서도 중요한 의미를 갖는다. 60만 명이 넘는 사람들이 문화콘텐츠 산업에 종사하고 있으며, 문화콘텐츠 산업의 매출 규모는 150조원을 넘는 수준에 이르렀다. 굳이 ‘소프트파워’를 언급하지 않더라도, 문화콘텐츠 산업은 이미 대한민국의 발전이란 의제에서 중대한 위치를 차지하고 있다. 문화콘텐츠 산업은 인문학을 기초로 형성되고 성장했다. 인문학은 인간과 문화에 대한 연구를 기본으로 하며, 그 성과는 직접적으로 문화콘텐츠의 기반, 자원, 관점 등으로 이어진다. 다시 말해서, 문화콘텐츠 산업은 인문학의 산물이라고 할 수 있다. 인문학의 충실한 유지와 발전이 문화콘텐츠 산업의 성장을 위한 가장 기초적인 요건이라는 말이다. 인문학이 약화되고 흔들리면 문화콘텐츠 산업의 기반도 침식되고 무너지게 된다. ",
+        "en": "Today, the cultural content industry holds significant meaning not only in the cultural dimension but also in the economic dimension. Over 600,000 people are employed in the cultural content industry, and its revenue has reached a level exceeding 150 trillion won. Even without mentioning \"soft power,\" the cultural content industry already occupies a significant position in the agenda of South Korea's development. The cultural content industry was formed and grew based on the humanities. The humanities are fundamentally based on the study of humans and culture, and their achievements directly lead to the foundations, resources, and perspectives of cultural content. In other words, the cultural content industry can be considered a product of the humanities. This means that the faithful maintenance and development of the humanities are the most basic prerequisites for the growth of the cultural content industry. If the humanities weaken and waver, the foundation of the cultural content industry will also erode and collapse.",
+        "zh": "如今，文化内容产业不仅在文化层面，也在经济层面具有重要意义。韩国文化内容产业从业人员超过60万人，产业规模已超过150万亿韩元。即使不谈“软实力”，文化内容产业在韩国的发展议程中也占据着举足轻重的地位。文化内容产业的形成和发展都离不开人文学科。人文学科以研究人类和文化为基础，其研究成果直接构成了文化内容的基础、资源和视角。换言之，文化内容产业可以被视为人文学科的产物。这意味着，忠实地维护和发展人文学科是文化内容产业发展的最基本前提。如果人文学科衰落或动摇，文化内容产业的根基也将随之动摇甚至崩溃。"
       },
       "year": 2023,
-      "category": "cultural-content",
+      "category": "경제인문사회연구회 인문정책연구지원 (23.04.~23.12.)",
       "keywords": {
-        "ko": "AI 내러티브, 문화콘텐츠, 스토리텔링, 대규모 언어 모델",
-        "en": "AI Narrative, Cultural Content, Storytelling, Large Language Models",
-        "zh": "AI叙事, 文化内容, 讲故事, 大型语言模型"
+        "ko": "문화콘텐츠산업, 지속가능발전, 동사로서의 인문학",
+        "en": "Cultural Content Industry, Sustainable Development, Humanities as a Verb",
+        "zh": "文化内容产业、可持续发展、人文学科的运用"
       },
       "featured": true,
       "published": true,
       "createdAt": "2023-03-10",
-      "updatedAt": "2024-02-15"
+      "updatedAt": "2026-06-03"
     },
     {
       "id": "res-3",
       "title": {
-        "ko": "융합 예술 교육과 디지털 리터러시",
-        "en": "Convergence Art Education and Digital Literacy",
-        "zh": "融合艺术教育与数字素养"
+        "ko": "생성형 인공지능(AI) 기반 원스톱 교육 프로젝트 <뉴노멀 횡성회다지소리>",
+        "en": "Generative AI-based One-Stop Education Project <New Normal Hoengseong Hoedajisori>",
+        "zh": "基于生成式人工智能的一站式教育项目  <新常态横城回飒地之声>"
       },
       "theme": {
-        "ko": "교육과 기술 융합",
-        "en": "Education and Technology Convergence",
-        "zh": "教育与技术融合"
+        "ko": "인터랙티브 미디어 콘텐츠",
+        "en": "Interactive Media Contents",
+        "zh": "互动媒体内容"
       },
       "summary": {
-        "ko": "디지털 시대의 예술 교육 방법론과 디지털 리터러시 함양을 위한 교육 프레임워크를 연구합니다. AI 기술을 교육 현장에 효과적으로 통합하는 방안을 모색합니다.",
-        "en": "Researching art education methodologies for the digital age and educational frameworks for cultivating digital literacy. Seeking ways to effectively integrate AI technology into educational settings.",
-        "zh": "研究数字时代的艺术教育方法论和培养数字素养的教育框架。探索在教育现场有效整合AI技术的方案。"
+        "ko": "상지대학교 문화콘텐츠학과는 학생들 스스로 생성형 인공지능(AI) 저작도구를 활용하여 아이디어 구상 및 기획부터 이미지와 사운드 생성, 영상편집 등 전 과정을 아우르는 원스콥 교육체계를 구축하고자 한다. 또한 강원지역의 대표적인 무형유산인 ‘횡성회다지소리’를 원천소스로 삼아 생성형 인공지능(AI) 기술로 제작한 개별 영상작품 및 미디어아트 결합형 융복합 공연프로젝트를 최종결과물로 선보인다.",
+        "en": "The Department of Cultural Contents at Sangji University is establishing a one-scope education system that encompasses the entire process—from idea conception and planning to image and sound generation and video editing—by utilizing generative AI authoring tools. Furthermore, as the final outcome, the department presents a convergence performance project combining media art and generative AI technology, produced using ‘Hoengseong Hoedaji Sori,’ a representative intangible cultural heritage of the Gangwon region, as the source material.",
+        "zh": "尚志大学文化内容系正利用生成式人工智能创作工具，构建一个涵盖从构思、规划到图像、声音生成和视频剪辑等全流程的一站式教育体系。此外，该系最终呈现的是一个融合媒体艺术和生成式人工智能技术的融合表演项目，该项目以江原道地区代表性非物质文化遗产“横城回薙音”为素材。"
       },
       "description": {
-        "ko": "기술의 급속한 발전에 따른 예술 교육의 변화 방향을 탐색하고, 학생들이 디지털 도구와 AI 기술을 창의적으로 활용할 수 있는 교육 커리큘럼을 설계합니다. 실습 중심의 프로젝트 기반 학습과 이론적 사고력 배양을 균형 있게 결합한 융합 교육 모델을 제시합니다.",
-        "en": "Exploring the direction of change in art education following the rapid development of technology, and designing educational curricula that enable students to creatively utilize digital tools and AI technology. Presenting a convergence education model that balances practice-centered project-based learning with the cultivation of theoretical thinking.",
-        "zh": "探索技术快速发展背景下艺术教育的变革方向，设计使学生能够创造性运用数字工具和AI技术的教育课程。提出将实践为中心的项目式学习与理论思维培养相均衡结合的融合教育模式。"
+        "ko": "• 생성형 AI를 활용한 프로젝션 맵핑 공연 제작: 대표적 강원문화자원인 횡성회다지소리를 원천소스로 하여 콘텐츠의 기획부터 영상 제작, 그리고 무대 공연까지 생성형 인공지능을 활용하여 제작   • 생성형 AI 활용 능력 향상을 위한 원스톱 교육체계 구축: 아이디어 구상과 기획부터 이미지와 사운드 생성, 그리고 영상 편집까지 생성형 AI를 활용하여 한 번에 콘텐츠를 제작할 수 있는 커리큘럼 구축   • 강원 콘텐츠 거버넌스 구축: 생성형 AI를 활용한 강원도 지자체의 콘텐츠 제작 지원 및 협의체 구축 운영",
+        "en": "• Production of a Projection Mapping Performance Using Generative AI: Utilizing Hoengseong Hoedajisori, a representative Gangwon cultural resource, as the source material, the entire process—from content planning and video production to stage performance—was produced using Generative AI.   • Establishment of a One-Stop Education System to Enhance Generative AI Capabilities: A curriculum designed to enable content production in a single step using Generative AI, covering everything from idea conception and planning to image and sound generation and video editing.   • Establishment of Gangwon Content Governance: Support for content production by Gangwon-do local governments utilizing Generative AI, and the establishment and operation of a consultative body.",
+        "zh": "• 利用生成式人工智能制作投影映射表演： 以江原道代表性文化资源“横城回飒地之声”为素材，从内容策划、视频制作到舞台表演，全程运用生成式人工智能技术完成。   • 构建提升生成式人工智能能力的一站式教育体系： 设计一套课程，旨在使学生能够利用生成式人工智能一步完成内容制作，涵盖从创意构思、策划到图像和声音生成以及视频剪辑的各个环节。    • 建立江原道内容治理体系： 支持江原道地方政府利用生成式人工智能进行内容制作，并建立和运营咨询机构。"
       },
       "year": 2024,
-      "category": "education",
+      "category": "한국콘텐츠진흥원 콘텐츠원캠퍼스 구축운영사업 (24.04.~25.01.)",
       "keywords": {
-        "ko": "융합 교육, 디지털 리터러시, 프로젝트 기반 학습, AI 교육",
-        "en": "Convergence Education, Digital Literacy, Project-Based Learning, AI Education",
-        "zh": "融合教育, 数字素养, 项目式学习, AI教育"
+        "ko": "생성형 AI, 원스톱 교육프로그램, 횡성회다지소리, 융합형 미디어아트 공연",
+        "en": "Generative AI, One-Stop Education Program, Hoengseong Hoedajisori, Convergent Media Art Performance",
+        "zh": "生成式人工智能、一站式教育项目、横城回飒地之声、融合媒体艺术表演"
       },
-      "featured": false,
+      "featured": true,
       "published": true,
       "createdAt": "2024-02-01",
-      "updatedAt": "2024-05-10"
+      "updatedAt": "2026-06-03"
     },
     {
       "id": "res-4",
       "title": {
-        "ko": "인터랙티브 미디어와 관객 참여형 예술",
-        "en": "Interactive Media and Participatory Art",
-        "zh": "互动媒体与观众参与型艺术"
+        "ko": "거부할 수 없는 AI 빅뱅 :  AI 활용 전략 가이드",
+        "en": "The Irresistible AI Big Bang: AI Utilization Strategy Guide",
+        "zh": "势不可挡的人工智能大爆炸：人工智能应用战略指南"
       },
       "theme": {
-        "ko": "인터랙티브 미디어",
-        "en": "Interactive Media",
-        "zh": "互动媒体"
+        "ko": "교육과 기술",
+        "en": "Education and Technology",
+        "zh": "教育与科技"
       },
       "summary": {
-        "ko": "관객의 참여와 상호작용을 핵심으로 하는 인터랙티브 미디어 아트의 설계와 구현을 연구합니다. 센서, 데이터, AI를 활용한 몰입형 경험 설계를 탐구합니다.",
-        "en": "Researching the design and implementation of interactive media art centered on audience participation and interaction. Exploring immersive experience design utilizing sensors, data, and AI.",
-        "zh": "研究以观众参与和互动为核心的互动媒体艺术的设计与实现。探索利用传感器、数据和AI的沉浸式体验设计。"
+        "ko": "이제 상지대학교는 AI를 ‘거부할 수 없는 변화’로 받아들이고, 학생들이 미래 사회의 주역으로 성장할 수 있도록 교육의 패러다임을 과감히 전환해야 할 시점에 서있다. 본 연구가 상지대학교의 교육 혁신의 실질적 이정표가 되기를 기대한다.",
+        "en": "Sangji University now stands at a critical juncture where it must embrace AI as an \"irresistible change\" and boldly shift its educational paradigm to enable students to grow into leading figures of future society. We hope this study will serve as a practical milestone for educational innovation at Sangji University.",
+        "zh": "尚志大学正处于一个关键的转折点，必须将人工智能视为“势不可挡的变革”，并大胆转变教育模式，以培养学生成为未来社会的领军人物。我们希望这项研究能够成为尚志大学教育创新的一项实践里程碑。"
       },
       "description": {
-        "ko": "관객이 수동적 감상자에서 능동적 참여자로 전환되는 인터랙티브 미디어 아트의 설계 원리와 기술적 구현 방법을 연구합니다. 실시간 데이터, 센서 기술, AI 알고리즘을 통합하여 관객의 행동과 반응에 따라 변화하는 동적 예술 작품을 만들어냅니다.",
-        "en": "Researching the design principles and technical implementation methods of interactive media art where the audience transitions from passive spectators to active participants. Creating dynamic artworks that change according to audience behavior and reactions by integrating real-time data, sensor technology, and AI algorithms.",
-        "zh": "研究互动媒体艺术的设计原理与技术实现方法，使观众从被动欣赏者转变为主动参与者。通过整合实时数据、传感器技术和AI算法，创作根据观众行为和反应而变化的动态艺术作品。"
+        "ko": "본 연구는 대학 교양 및 전공 교과과정에 AI 활용 교육과정을 도입하고자 하는 모든 교육자, 정책결정자, 실무자를 위한 실용적이고 구체적인 전략을 제시한다. AI 교육 도입의 필요성과 글로벌 동향, 국내외 우수 사례, 전공별 커리큘럼 설계 방안, 실습과 평가, 윤리적 이슈와 가이드라인, 그리고 AI 시대의 대학 교육이 나아가야 할 방향을 체계적으로 담았다.",
+        "en": "This study presents practical and concrete strategies for all educators, policymakers, and practitioners who wish to introduce AI-based curricula into university liberal arts and major courses. It systematically covers the necessity of introducing AI education, global trends, best practices from Korea and abroad, curriculum design methods for each major, practical training and evaluation, ethical issues and guidelines, and the direction university education should take in the AI ​​era.",
+        "zh": "本研究为所有希望将人工智能课程引入大学文科和专业课程的教育工作者、政策制定者和实践者提供了切实可行的策略。研究系统地涵盖了引入人工智能教育的必要性、全球趋势、韩国及海外的最佳实践、各专业的课程设计方法、实践培训与评估、伦理问题与指导原则，以及大学教育在人工智能时代应有的发展方向。"
       },
-      "year": 2023,
-      "category": "interactive-media",
+      "year": 2025,
+      "category": "상지대학교 교무연구처 AI활용연구지원 (24.12.~25.06.)",
       "keywords": {
-        "ko": "인터랙티브 미디어, 참여형 예술, 몰입형 경험, 센서 기술",
-        "en": "Interactive Media, Participatory Art, Immersive Experience, Sensor Technology",
-        "zh": "互动媒体, 参与型艺术, 沉浸式体验, 传感器技术"
+        "ko": "AI 기술 동향,  AI 기반 미래 교육 전망, 교양 교과과정을 위한 AI 활용, 전공 교과과정을 위한 AI 활용",
+        "en": "AI Technology Trends, Prospects for AI-Based Future Education, AI Utilization in Liberal Arts Curricula, AI Utilization in Major Curricula",
+        "zh": "人工智能技术趋势、基于人工智能的未来教育前景、人工智能在博雅教育课程中的应用、人工智能在专业课程中的应用"
       },
-      "featured": true,
+      "featured": false,
       "published": true,
       "createdAt": "2023-06-01",
-      "updatedAt": "2024-01-20"
+      "updatedAt": "2026-06-03"
     }
   ],
   "publications": [
     {
-      "id": "pub-1",
-      "title": {
-        "ko": "생성형 AI를 활용한 디지털 미디어 아트 창작 방법론 연구",
-        "en": "A Study on Digital Media Art Creation Methodology Using Generative AI",
-        "zh": "利用生成式AI的数字媒体艺术创作方法论研究"
-      },
-      "abstract": {
-        "ko": "본 연구는 생성형 AI 기술, 특히 GAN과 Diffusion Model을 활용한 디지털 미디어 아트의 새로운 창작 방법론을 제안한다. 예술가와 AI의 협업 과정에서 발생하는 미학적, 기술적 쟁점을 분석하고, 실험적 작품 제작을 통해 인간-AI 공동 창작의 가능성을 탐구한다.",
-        "en": "This study proposes a new creative methodology for digital media art utilizing generative AI technology, particularly GANs and Diffusion Models. It analyzes aesthetic and technical issues arising from the collaboration between artists and AI, and explores the possibilities of human-AI co-creation through experimental artwork production.",
-        "zh": "本研究提出利用生成式AI技术（特别是GAN和扩散模型）的数字媒体艺术新创作方法论。分析艺术家与AI协作过程中出现的美学和技术问题，通过实验性作品制作探索人机共同创作的可能性。"
-      },
-      "year": 2024,
-      "category": "journal",
-      "venue": {
-        "ko": "한국디자인학회 논문집",
-        "en": "Journal of Korean Society of Design Science",
-        "zh": "韩国设计学会论文集"
-      },
-      "keywords": {
-        "ko": "생성형 AI, 디지털 미디어 아트, 인간-AI 협업",
-        "en": "Generative AI, Digital Media Art, Human-AI Collaboration",
-        "zh": "生成式AI, 数字媒体艺术, 人机协作"
-      },
-      "authors": "Jongcheon Shin",
-      "featured": true,
-      "published": true,
-      "createdAt": "2024-03-15",
-      "updatedAt": "2024-03-15"
-    },
-    {
-      "id": "pub-2",
-      "title": {
-        "ko": "AI 기반 문화콘텐츠 내러티브 자동 생성 시스템 설계",
-        "en": "Design of AI-Based Automatic Narrative Generation System for Cultural Content",
-        "zh": "基于AI的文化内容自动叙事生成系统设计"
-      },
-      "abstract": {
-        "ko": "대규모 언어 모델을 활용하여 한국 문화 요소를 반영한 내러티브 자동 생성 시스템을 설계하고 구현한다. 만화, 애니메이션, 웹툰 등 다양한 문화콘텐츠 장르에 적용 가능한 스토리텔링 프레임워크를 제안하고, 프로토타입 시스템의 성능을 평가한다.",
-        "en": "Designing and implementing an automatic narrative generation system reflecting Korean cultural elements using large language models. Proposing a storytelling framework applicable to various cultural content genres such as comics, animation, and webtoons, and evaluating the performance of a prototype system.",
-        "zh": "利用大型语言模型设计并实现反映韩国文化元素的叙事自动生成系统。提出适用于漫画、动画、网络漫画等各种文化内容类型的故事讲述框架，并评估原型系统的性能。"
-      },
-      "year": 2024,
-      "category": "conference",
-      "venue": {
-        "ko": "한국콘텐츠학회 추계학술대회",
-        "en": "Korean Society of Content Conference",
-        "zh": "韩国内容学会秋季学术大会"
-      },
-      "keywords": {
-        "ko": "AI 내러티브, 문화콘텐츠, LLM, 스토리텔링",
-        "en": "AI Narrative, Cultural Content, LLM, Storytelling",
-        "zh": "AI叙事, 文化内容, LLM, 讲故事"
-      },
-      "authors": "Jongcheon Shin, Minjae Kim",
-      "featured": true,
-      "published": true,
-      "createdAt": "2024-05-20",
-      "updatedAt": "2024-05-20"
-    },
-    {
       "id": "pub-3",
       "title": {
-        "ko": "디지털 시대의 융합 예술 교육 프레임워크",
-        "en": "A Framework for Convergence Art Education in the Digital Age",
-        "zh": "数字时代融合艺术教育框架"
+        "ko": "생성예술 계보 속 생성형 인공지능 기반 예술에 관한 연구： 생성예술의 시스템적 관점으로 본 디퓨전 모델",
+        "en": "A Study on Generative Artificial Intelligence-based Art in the Genealogy of Generative Art - Diffusion Model from a Systematic Perspective of Generative Art",
+        "zh": "基于生成艺术谱系的人工智能生成艺术研究—从生成艺术系统视角出发的扩散模型"
       },
       "abstract": {
-        "ko": "디지털 기술의 발전에 따른 예술 교육의 변화를 분석하고, AI 기술을 통합한 융합 예술 교육 프레임워크를 제안한다. 프로젝트 기반 학습과 디지털 리터러시 함양을 중심으로 한 교육 모델의 설계와 적용 사례를 논의한다.",
-        "en": "Analyzing changes in art education following the development of digital technology and proposing a convergence art education framework integrating AI technology. Discussing the design and application cases of an educational model centered on project-based learning and digital literacy cultivation.",
-        "zh": "分析数字技术发展引起的艺术教育变化，提出融入AI技术的融合艺术教育框架。探讨以项目式学习和数字素养培养为中心的教育模式的设计与应用案例。"
+        "ko": "본 연구는 최근 주목받고 있는 생성형 인공지능 기반 예술의 정체성을 밝히기 위해 생성예술의 핵심요소인 시스템을 분석하고 인공지능 이미지 생성 모델을 생성예술의 계보와 이론 속에서 논의한다. 생성예술가이자 이론가인 필립 갈란터 (Philip Galanter)는 생성예술을 예술가가 일련의 자연스러운 언어 규칙, 컴퓨터 프로그램 또는 다른 절차적 고안물과 같은 어느 정도의 자율적인 움직임을 가지 는 시스템을 사용하는 예술 실천으로 정의한다. 이러한 생성예술의 핵심은 시스 템의 사용이고, 컴퓨터와 프로그램을 활용하는 생성예술의 미적 지향점은 복잡시 스템이다. 유전시스템이나 인공생명과 같은 복잡시스템을 활용하는 생성예술이 드러내고자 하는 미적 가치는 질서도를 높이는 요소와 무질서도를 높이는 요소 를 동시에 사용하면서 예측하지 못한 자기고유성을 드러내는 것에 있다. 그것은 그 시스템이 돌연변이나 노이즈를 얼마나 확장적으로 수용할 수 있느냐와 연관 된 것으로 다양성과 복잡성을 확보할 수 있는 관건이 된다. 흥미롭게도, 인공지 능을 이용한 이미지 생성기술들 중 최근에 등장한 디퓨전 모델(Diffusion Model, DM)의 경우 생성예술이 지향하는 복잡시스템의 미적 활용에 가깝다. 열역학에 서 아이디어를 가져온 디퓨전 모델은 노이즈를 의도적으로 주입하는 정방향 확 산과 학습을 통해 노이즈를 제거하는 역방향 복원 과정을 통해 예상하지 못한 다양한 이미지를 생성시킬 수 있다. 결과적으로, 예술가의 직관을 뛰어넘으면서도 예술가가 바라던 결과물에 근접하도록 만드는 디퓨전 모델은 생성예술의 매력적 인 도구가 될 수 있다.",
+        "en": "This study analyzes the system, which is a key element of generative art, and discusses the AI image generative model in the genealogy and theory of generative art, in order to reveal the identity of generative AI-based art. Philip Galanter, a generative artist and theorist, defines generative art as any art practice where the artist uses a system, which is set into motion with some degree of autonomy, such as a computer program or procedural invention. The core of generative art is the use of systems, and the aesthetic goal of generative art that uses computers and programs is to create a “complex” system such as a genetic system or artificial life. The aesthetic value that generative art seeks to reveal lies in creating unexpected uniqueness while simultaneously using elements that increase from the highly ordered to the highly disordered. It is related to how extensively the system can accommodate mutations and noise, and secure diversity and complexity. Interestingly, the Diffusion Model(DM), which has recently appeared among generative artificial intelligence, is a case of the aesthetic use of complex systems, which generative art aims for. The diffusion model, which takes ideas from thermodynamics, can create a variety of unexpected images through forward diffusion, which intentionally injects noise, and a reverse restoration process, which removes noise through learning. As a result, the diffusion model, which exceeds the artist’s intuition while also bringing it closer to the artist’s desired result, can be an attractive tool for generative art.",
+        "zh": "本研究分析了生成艺术的关键要素——系统，并探讨了人工智能图像生成模型在生成艺术谱系和理论中的作用，旨在揭示基于人工智能的生成艺术的本质。生成艺术家和理论家菲利普·加兰特将生成艺术定义为艺术家运用某种具有一定自主性的系统（例如计算机程序或程序性发明）进行创作的任何艺术实践。生成艺术的核心在于系统的运用，其美学目标是创造一个“复杂”的系统，例如遗传系统或人工生命。生成艺术所追求的美学价值在于，在创造出人意料的独特性的同时，运用从高度有序到高度无序的元素。这与系统能够多大程度地容纳突变和噪声，并确保多样性和复杂性密切相关。有趣的是，最近出现在生成式人工智能领域的扩散模型（DM）正是复杂系统美学应用的一个例证，而这正是生成艺术所追求的目标。扩散模型借鉴了热力学的思想，它可以通过前向扩散（有意地注入噪声）和反向恢复过程（通过学习去除噪声）来创造各种意想不到的图像。因此，扩散模型既超越了艺术家的直觉，又使其更接近艺术家所期望的结果，可以成为生成艺术中一个极具吸引力的工具。"
       },
       "year": 2023,
       "category": "journal",
       "venue": {
-        "ko": "예술교육연구",
-        "en": "Journal of Art Education Research",
-        "zh": "艺术教育研究"
+        "ko": "인공지능인문학연구",
+        "en": "Journal of AI Humanities",
+        "zh": "人工智能人文期刊"
       },
       "keywords": {
-        "ko": "융합 교육, 디지털 리터러시, AI 교육, 프로젝트 기반 학습",
-        "en": "Convergence Education, Digital Literacy, AI Education, Project-Based Learning",
-        "zh": "融合教育, 数字素养, AI教育, 项目式学习"
+        "ko": "인공지능 생성 이미지, 생성예술, 복잡시스템, 디퓨전 모델, 돌연변이, 노이즈",
+        "en": "A.I.-generated image, Generative art, Complex system, Diffusion Model, Mutation, Noise",
+        "zh": "人工智能生成图像、生成艺术、复杂系统、扩散模型、变异、噪声"
       },
-      "authors": "Jongcheon Shin",
-      "featured": false,
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "featured": true,
       "published": true,
       "createdAt": "2023-09-10",
-      "updatedAt": "2023-09-10"
+      "updatedAt": "2026-06-03",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003044754",
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/cpViewer?nodeId=NODE11787895"
     },
     {
       "id": "pub-4",
       "title": {
-        "ko": "인터랙티브 미디어 아트에서의 관객 경험 설계 연구",
-        "en": "A Study on Audience Experience Design in Interactive Media Art",
-        "zh": "互动媒体艺术中观众体验设计研究"
+        "ko": "밈의 뉴미디어 환경 적응에 관한 연구： MZ세대의 밈 현상을 중심으로",
+        "en": "A Study on the Adaptation of Memes to the New Media Environment - Centering on the Meme Phenomenon of the MZ Generation -",
+        "zh": "关于模因在新媒体环境中的适应性研究 —以MZ世代的模因现象为中心—"
       },
       "abstract": {
-        "ko": "인터랙티브 미디어 아트에서 관객의 참여와 경험을 중심으로 한 설계 방법론을 연구한다. 센서 기술과 AI 알고리즘을 활용한 반응형 작품의 설계 원리와 관객 경험 평가 기준을 제시한다.",
-        "en": "Researching design methodologies centered on audience participation and experience in interactive media art. Presenting design principles for responsive works utilizing sensor technology and AI algorithms, along with audience experience evaluation criteria.",
-        "zh": "研究以互动媒体艺术中观众参与和体验为中心的设计方法论。提出利用传感器技术和AI算法的响应型作品设计原理和观众体验评价标准。"
+        "ko": "본 연구는 최근 부각되고 있는 밈 현상을 밈의 생존 방식과 MZ세대의 뇌 형성 및 뉴미디어의 발달과의 관계를 통해 살펴보고, 밈 현상의 전개 방식을 문화 전달 형태를 통해 고찰한다. 그것은 MZ세대를바라보는 관점을 밈의 입장으로 바꾸어 설명하는 것이다. 밈 현상은 MZ세대가 이전 세대와 본성적으로달라서 나타나는 것이 아니다. 그것은 이기적 밈이 적응해야 하는 인간환경이 뉴미디어를 중심으로 재편되었고, 밈 전달에 적합한 뇌가 MZ세대의 뇌이며, 그 뉴미디어 환경에 MZ세대가 가장 최적화되어있기 때문에 나타난 모습이다. 본 연구에서 밈의 존재는 진화생물학을 토대로 전제되었고, 밈의 생존방식은 신경미학을 토대로 설명되었으며, 밈의 정체는 인간 뇌 발달 단계를 분석하여 MZ세대의 변연계와 뉴미디어를 적극 활용하는 감정기억의 이용자로서 해석되었다. 그리고 그와 같은 밈들이 인간의 감정기억을 이용하는 방식은 전통적 문화 전달 방식으로서의 놀이, 공감, 스토리텔링으로 연결된다. 따라서 밈 현상은 이기적 밈이 MZ세대와 뉴미디어를 만나는 과정에서 놀이, 공감, 스토리텔링의 문화 전달방식으로 드러난 것이라고 볼 수 있다.",
+        "en": "This study examines the meme phenomenon through the relationship between the survival method of meme, the brain of the MZ generation and the development of new media, and considers the development method of the meme phenomenon through the culture transmission form. The meme phenomenon does not appear because the MZ generation is inherently different from the previous generation. This is because the human environment to which selfish meme must adapt has been reorganized centering on new media, the brain suitable for meme delivery is the brain of the MZ generation, and the MZ generation is most optimized in the new media environment. In conclusion, this study interprets the meme phenomenon as a cultural transmission formed by combining methods such as play, empathy, and storytelling in the meeting of selfish meme, the MZ generation, and new media.",
+        "zh": "本研究通过模因的生存方式、MZ世代的大脑特征以及新媒体的发展，考察了模因现象的形成，并从文化传播的角度分析了模因现象的发展模式。模因现象的出现并非源于MZ世代与前几代人的本质差异，而是因为自私的模因所适应的人类环境已围绕新媒体进行了重组，而MZ世代的大脑特征更适合模因的传播，并且MZ世代在新媒体环境下也得到了最大程度的优化。综上所述，本研究将模因现象解读为一种文化传播形式，它是自私的模因、MZ世代和新媒体三者相遇，并融合了游戏、共情和叙事等多种方式而形成的。"
       },
-      "year": 2023,
-      "category": "conference",
+      "year": 2022,
+      "category": "journal",
       "venue": {
-        "ko": "한국HCI학회 학술대회",
-        "en": "HCI Korea Conference",
-        "zh": "韩国HCI学会学术大会"
+        "ko": "문화와 융합",
+        "en": "Culture & Convergence",
+        "zh": "文化与融合"
       },
       "keywords": {
-        "ko": "인터랙티브 미디어, 관객 경험, UX 디자인, 센서 기술",
-        "en": "Interactive Media, Audience Experience, UX Design, Sensor Technology",
-        "zh": "互动媒体, 观众体验, UX设计, 传感器技术"
+        "ko": "이기적 밈, 밈 현상, MZ세대, 뉴미디어, 숏폼콘텐츠, 밈 놀이/공감/스토리텔링",
+        "en": "Selfish meme, Meme phenomenon, MZ generation, New media, Short-form contents, Meme play/empathy/storytelling",
+        "zh": "自私模因、模因现象、MZ世代、新媒体、短视频内容、模因玩转/共情/叙事"
       },
-      "authors": "Jongcheon Shin, Suyeon Park",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
       "featured": false,
       "published": true,
       "createdAt": "2023-02-15",
-      "updatedAt": "2023-02-15"
-    },
-    {
-      "id": "pub-5",
-      "title": {
-        "ko": "만화·애니메이션 콘텐츠의 AI 활용 제작 파이프라인 연구",
-        "en": "Research on AI-Utilized Production Pipeline for Comics and Animation Content",
-        "zh": "漫画·动画内容AI辅助制作流程研究"
-      },
-      "abstract": {
-        "ko": "만화와 애니메이션 콘텐츠 제작 과정에서 AI 기술을 효과적으로 활용하는 제작 파이프라인을 연구한다. 캐릭터 디자인, 배경 생성, 컬러링, 인비트윈 등 핵심 제작 단계에서의 AI 도구 활용 방안과 워크플로우 최적화를 제안한다.",
-        "en": "Researching production pipelines that effectively utilize AI technology in comics and animation content production. Proposing AI tool utilization methods and workflow optimization for key production stages including character design, background generation, coloring, and inbetweening.",
-        "zh": "研究在漫画和动画内容制作过程中有效利用AI技术的制作流程。提出角色设计、背景生成、着色、补间动画等核心制作阶段的AI工具使用方案和工作流程优化。"
-      },
-      "year": 2024,
-      "category": "journal",
-      "venue": {
-        "ko": "만화애니메이션연구",
-        "en": "Journal of Cartoon & Animation Studies",
-        "zh": "漫画动画研究"
-      },
-      "keywords": {
-        "ko": "AI 제작 파이프라인, 만화, 애니메이션, 자동화",
-        "en": "AI Production Pipeline, Comics, Animation, Automation",
-        "zh": "AI制作流程, 漫画, 动画, 自动化"
-      },
-      "authors": "Jongcheon Shin, Hyunwoo Lee",
-      "featured": true,
-      "published": true,
-      "createdAt": "2024-01-20",
-      "updatedAt": "2024-01-20"
+      "updatedAt": "2026-06-03",
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11888808&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002882159"
     },
     {
       "id": "pub-6",
       "title": {
-        "ko": "디지털 문화유산의 AI 기반 복원과 재해석",
-        "en": "AI-Based Restoration and Reinterpretation of Digital Cultural Heritage",
-        "zh": "数字文化遗产的AI复原与再诠释"
+        "ko": "포스트휴먼 시대， 통섭 교양 과목은 왜 필요한가： 지적 통섭과 실천 통섭을 중심으로",
+        "en": "Why a Consilience Liberal Arts Course is Necessary in the Posthuman Era －Centering on Intellectual Consilience and Practical Consilience",
+        "zh": "后人类时代为何需要融合式博雅教育课程 —以智识融合与实践融合为核心"
       },
       "abstract": {
-        "ko": "AI 기술을 활용한 문화유산의 디지털 복원과 현대적 재해석 방법론을 제안한다. 전통 예술 작품의 스타일 분석, 결손 부분 복원, 현대적 변환을 위한 딥러닝 모델의 설계와 적용을 논의한다.",
-        "en": "Proposing methodologies for digital restoration and modern reinterpretation of cultural heritage using AI technology. Discussing the design and application of deep learning models for style analysis, damage restoration, and modern transformation of traditional artworks.",
-        "zh": "提出利用AI技术进行文化遗产数字复原和现代再诠释的方法论。探讨用于传统艺术作品风格分析、缺失部分复原和现代转化的深度学习模型的设计与应用。"
+        "ko": "본 연구는 통섭적 사고를 적용하는 교양 과목이 포스트휴먼의 시대적 흐름 속에서 왜 필요한지를고찰하기 위해, 교양 교육의 의미를 통섭의 개념을 중심으로 살펴보고 그와 관련된 통섭 교양 과목을크게 지적 통섭과 실천 통섭으로 나누어 구체화한다. 통섭은 결과로서의 융합으로 가는 과정에서 일어나는 학문간 교류와 화합을 의미하는 동시에 학문간 융합을 이루기 위한 일종의 방법론으로서 삶과학문을 연계시키는 도구이기도 하다. 결과로서의 융합과 과정으로서의 통섭은 인재의 유형에 있어서도차이를 만든다. 융합형 인재가 자신이 갖고 있는 전문성을 중심으로 융합 가능한 범위를 미리 상정하고그 결과를 예측하는 결과지향적 인간을 말한다면, 통섭형 인재는 자신이 공감하는 문제에 따라 융합가능한 범위를 변화시키면서 솔루션을 도출하는 문제지향적 인간이라고 볼 수 있다. 여기서 통섭형인재는 어떤 현상을 보면서 질문을 생성하고 그 질문에 답하기 위해 서로 연관이 없어 보이는 것들을나만의 방식으로 조합하고 재배열하며 새로운 틀을 구상해내게 되는데, 본 연구는 이와 같은 사고의흐름을 통섭적 사고라고 정의한다. 따라서 통섭 교양 교육은 통섭적 사고의 체득에 초점을 맞추어학생들로 하여금 타 계열 또는 타 학문에 대한 편견과 두려움을 줄여주고 나아가 타 계열 또는 타학문으로의 진입장벽까지 낮춰 전공에서의 융합적 사고를 깊고 넓게 만들어주는 것을 목표로 한다.",
+        "en": "his study examines the meaning of liberal arts education focused on the concept of consilience and concretizes consilience liberal arts into intellectual consilience and practical consilience, in order to consider why the sort of liberal arts that applies consilience thinking is necessary in the post-human era. Consilience refers to a harmony between disciplines that occurs in the process of convergence, a method that achieves convergence between disciplines, and a tool that connects life and disciplines. Convergence as a result and consilience as a process also make a difference in the types of talent a person possesses. Convergence-type talent refers to a resultant human who can precisely design linkages with other fields based on expertise in one field, whereas consilience-type talent refers to a generative human who finds issues around them, focuses on those issues, and derives solutions by combining studies and data in various ways. Here, consilience-type talents create questions by observing certain phenomena, combine seemingly unrelated things in their own way, and develop a new framework to answer the questions. Their thinking flow is defined as ‘consilience thinking’. Therefore, consilience liberal arts education focuses on the acquisition of consilience thinking and allows students to reduce their prejudices and fears about other departments or other disciplines, lower the barriers to entry into other departments or other disciplines, and further deepen and broaden convergence thinking in their majors.",
+        "zh": "本研究以融合的概念为中心，探讨博雅教育的意义，并将融合式博雅教育具体化为智识融合与实践融合，从而思考为何在后人类时代，运用融合式思维的博雅教育至关重要。融合指的是在融合过程中各学科之间达成的和谐，它既是实现学科融合的方法，也是连接生活与学科的工具。融合的结果和融合的过程，都会影响一个人所拥有的才能类型。融合型人才指的是能够基于自身在某一领域的专业知识，精准地与其他领域建立联系的成果型人才；而融贯型人才指的是能够发现周围问题、聚焦这些问题，并通过多种方式整合研究和数据来寻求解决方案的生成型人才。在此，融贯型人才通过观察特定现象提出问题，以独特的方式将看似无关的事物结合起来，并构建新的框架来解答这些问题。他们的思维方式被定义为“融贯思维”。因此，融贯型博雅教育注重培养学生的融贯思维，帮助学生减少对其他院系或学科的偏见和恐惧，降低进入其他院系或学科的门槛，并进一步深化和拓展他们在专业领域的融合思维。"
       },
-      "year": 2022,
-      "category": "book",
+      "year": 2021,
+      "category": "journal",
       "venue": {
-        "ko": "디지털 문화와 기술 (공저)",
-        "en": "Digital Culture and Technology (Co-authored)",
-        "zh": "数字文化与技术（合著）"
+        "ko": "교양교육연구",
+        "en": "Korean Journal of General Education",
+        "zh": "韩国通识教育期刊"
       },
       "keywords": {
-        "ko": "문화유산, AI 복원, 딥러닝, 디지털 문화",
-        "en": "Cultural Heritage, AI Restoration, Deep Learning, Digital Culture",
-        "zh": "文化遗产, AI复原, 深度学习, 数字文化"
+        "ko": "통섭 교양 과목, 통섭적 사고, 통섭형 인재, 지적 통섭, 실천 통섭",
+        "en": "Consilience liberal arts course, Consilience thinking, Consilience-type talent, Intellectual consilience, Practical consilience",
+        "zh": "融合式博雅教育、融合思维、融合型人才、智力融合、实践融合"
       },
-      "authors": "Jongcheon Shin, Youngho Cho, Minji Kang",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
       "featured": false,
       "published": true,
       "createdAt": "2022-11-01",
-      "updatedAt": "2022-11-01"
+      "updatedAt": "2026-06-03",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002775170",
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/cpViewer?nodeId=NODE12381546"
+    },
+    {
+      "title": {
+        "ko": "시몽동의 구체화 이론을 통해 본 인공지능 생성예술： 구체화의 적용 가능성과 한계 탐색",
+        "en": "AI Generative Art through Simondon's Concretization Theory: Exploring the Applicability and Limitations of Concretization",
+        "zh": "基于西蒙东具体化理论的AI生成艺术：探索具体化的适用性和局限性"
+      },
+      "abstract": {
+        "ko": "본 연구는 질베르 시몽동의 기술철학적 틀을 통해 인공지능 기술의 발전과 인공지능 생성예술 작품의 창작 과정을 분석하는 것에서 시작되었다. 본 연구의 목적은 시몽동의 구체화 이론을 인공지능 기술의 발전과 인공지능 생성예술에 적용하여, 그 적용 가능성과 한계를 비판적으로 탐색하는 것이다. 따라서 본 논문은 시몽동이 말한 기술적 대상이 ‘추상적 양태’에서 ‘구체적 양태’로 진화하는 구체화 과정이 인공지능 기술과 인공지능 생성예술에 얼마나 부합하는가를 살펴보는 과정으로 이행하였다. ",
+        "en": "This study began by analyzing the development of AI technology and the creative process of AI-generated art through the framework of Gilbert Simondon's philosophy of technology. The purpose of this study was to critically explore the possibilities and limitations of applying Simondon's theory of concretization to the development of AI technology and AI generative art. Therefore, this paper shifted to examining how the process of concretization, in which a technological object evolves from an \"abstract mode\" to a \"concrete mode,\" as Simondon described it, fits with AI technology and AI-generated art.",
+        "zh": "本研究首先运用吉尔伯特·西蒙东的技术哲学框架，分析了人工智能技术的发展及其在人工智能生成艺术创作中的应用。其目的是批判性地探讨将西蒙东的具象化理论应用于人工智能技术和人工智能生成艺术发展的可能性和局限性。因此，本文着重考察了西蒙东所描述的具象化过程——即技术对象从“抽象模式”演化为“具象模式”的过程——如何契合人工智能技术和人工智能生成艺术。"
+      },
+      "venue": {
+        "ko": "한국과학예술융합학회",
+        "en": "THE KOREAN SOCIETY OF SCIENCE & ART",
+        "zh": "韩国科学与艺术学会"
+      },
+      "keywords": {
+        "ko": "질베르 시몽동, 구체화, 연합환경, 인공지능 생성예술, 인간-인공지능 협업 시스템",
+        "en": "Gilbert Simondon, Concretization, Associated Millieu, AI Generative Art, Human-AI Collaboration System",
+        "zh": "吉爾伯特·西蒙東, 具体化, 人工智能生成艺术, 人机协作系统"
+      },
+      "year": 2026,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12570420&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003300504",
+      "featured": true,
+      "published": true,
+      "id": "pub-1780469912290",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "아르스 일렉트로니카를 통해 본 인공지능 예술에 대한 담론 분석： 프리 아르스 일렉트로니카를 중심으로",
+        "en": "An Analysis of the Discourse on AI Art through Ars Electronica: Centering on Prix Ars Electronica",
+        "zh": "通过奥地利电子艺术节分析人工智能艺术论述：以奥地利电子艺术奖为中心"
+      },
+      "abstract": {
+        "ko": "본 연구는 AI 예술에 대한 담론의 특성과 발전 양상을 체계적으로 고찰하기 위해 세계 최고의 미디어아트 축제인 아르스 일렉트로니카(Ars Electronica)의 AI 관련 작품 수상작들을 분석하고 AI 예술의 핵심적 특성을 규명한다. 아르스 일렉트로니카는 프리 아르스 일렉트로니카(Prix Ars Electronica)를 중심으로 매년 전 세계 미디어 아티스트들의 혁신적 작품을 발굴하고 시상하고 있다. 특히, 프리 아르스 일렉트로니카는 2019년 ‘Artificial Intelligence & Life Art’ 부문을 신설하고, 2024년에는 ‘AI in Art Award’를 추가로 도입하여 AI 예술에 대한 인식 변화를 상징적으로 보여주었다. 따라서 본 연구는 ‘Artificial Intelligence & Life Art’와 ‘AI in Art Award’ 부문의 수상작들을 각 작품의 기술적 구현 특성, 형식적 특성, 내용적 특성, 창작과정 특성을 중심으로 분석하였다.",
+        "en": "This study systematically examines the characteristics and developmental trends of discourse surrounding AI art by analyzing award-winning AI-related works from Ars Electronica, the world's leading media art festival, and identifying the core characteristics of AI art.\nArs Electronica, centered around the Prix Ars Electronica, annually discovers and awards innovative works by media artists worldwide.\nNotably, the Prix Ars Electronica symbolically demonstrated a shift in perception toward AI art by establishing the ‘Artificial Intelligence & Life Art’ category in 2019 and introducing the ‘AI in Art Award’ in 2024. Therefore, this study analyzed the award-winning works from the ‘Artificial Intelligence & Life Art’ and ‘AI in Art Award’ categories, focusing on each work's technical implementation characteristics, formal characteristics, content characteristics, and creative process characteristics. ",
+        "zh": "本研究通过分析世界领先的媒体艺术节——奥地利电子艺术节（Ars Electronica）的获奖人工智能相关作品，系统地考察了人工智能艺术话语的特征和发展趋势，并识别了人工智能艺术的核心特征。\n奥地利电子艺术节以奥地利电子艺术奖（Prix Ars Electronica）为核心，每年发掘并奖励来自世界各地媒体艺术家的创新作品。\n值得注意的是，奥地利电子艺术奖（Prix Ars Electronica）于2019年设立了“人工智能与生活艺术”（Artificial Intelligence & Life Art）类别，并于2024年推出了“人工智能艺术奖”（AI in Art Award），这象征性地展现了人们对人工智能艺术认知的转变。因此，本研究分析了“人工智能与生活艺术”和“人工智能艺术奖”类别的获奖作品，重点关注每件作品的技术实现特征、形式特征、内容特征和创作过程特征。"
+      },
+      "venue": {
+        "ko": "한국과학예술융합학회",
+        "en": "THE KOREAN SOCIETY OF SCIENCE & ART",
+        "zh": "韩国科学与艺术学会"
+      },
+      "keywords": {
+        "ko": "인공지능 융합예술, 프리 아르스 일렉트로니카, 인간-AI 협업, 생성형 AI 융합, 포스트휴먼",
+        "en": "Artificial Intelligence Art, Prix Ars Electronica, Human-AI Collaboration, Generative AI Convergence, Post-human",
+        "zh": "人工智能艺术、奥地利电子艺术奖、人机协作、生成式人工智能融合、后人类"
+      },
+      "year": 2025,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12411736&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003247554",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780472843712",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "AI－Generated Art as a Trading Zone ： A Creolization between the MZ Generation and Traditional Culture",
+        "en": "AI－Generated Art as a Trading Zone ： A Creolization between the MZ Generation and Traditional Culture",
+        "zh": "AI－Generated Art as a Trading Zone ： A Creolization between the MZ Generation and Traditional Culture"
+      },
+      "abstract": {
+        "ko": "This paper examines how the concept of creolization is actually applied at the current time when generative artificial intelligence(AI) is being used in the field of art. It is addressed in the following three aspects: Firstly, we discuss a notion of 'trading zone' from the perspective of 'creolization'. Secondly, we explore how the trading zone can be formulated through the generative AI-based art project <New Normal Hoengseong Hoedajisori>. Thirdly, we examine how the MZ generation, which is treated as a special generation in the Korean society, experiences the 'creolization' through the generative AI-based art project <New Normal Hoengseong Hoedajisori>.",
+        "en": "This paper examines how the concept of creolization is actually applied at the current time when generative artificial intelligence(AI) is being used in the field of art. It is addressed in the following three aspects: Firstly, we discuss a notion of 'trading zone' from the perspective of 'creolization'. Secondly, we explore how the trading zone can be formulated through the generative AI-based art project <New Normal Hoengseong Hoedajisori>. Thirdly, we examine how the MZ generation, which is treated as a special generation in the Korean society, experiences the 'creolization' through the generative AI-based art project <New Normal Hoengseong Hoedajisori>.",
+        "zh": "This paper examines how the concept of creolization is actually applied at the current time when generative artificial intelligence(AI) is being used in the field of art. It is addressed in the following three aspects: Firstly, we discuss a notion of 'trading zone' from the perspective of 'creolization'. Secondly, we explore how the trading zone can be formulated through the generative AI-based art project <New Normal Hoengseong Hoedajisori>. Thirdly, we examine how the MZ generation, which is treated as a special generation in the Korean society, experiences the 'creolization' through the generative AI-based art project <New Normal Hoengseong Hoedajisori>."
+      },
+      "venue": {
+        "ko": "Siggraph Asia 2024（Tokyo）",
+        "en": "Siggraph Asia 2024（Tokyo）",
+        "zh": "Siggraph Asia 2024（Tokyo）"
+      },
+      "keywords": {
+        "ko": "Creolization, Trading zone, Generative AI-based art project, Hoengseong Hoedajisori",
+        "en": "Creolization, Trading zone, Generative AI-based art project, Hoengseong Hoedajisori",
+        "zh": "Creolization, Trading zone, Generative AI-based art project, Hoengseong Hoedajisori"
+      },
+      "year": 2024,
+      "category": "conference",
+      "authors": {
+        "ko": "Jongcheon Shin",
+        "en": "Jongcheon Shin",
+        "zh": "Jongcheon Shin"
+      },
+      "pdfUrl": "https://dl.acm.org/doi/epdf/10.1145/3680530.3695455",
+      "externalUrl": "https://dl.acm.org/doi/10.1145/3680530.3695455",
+      "featured": true,
+      "published": true,
+      "id": "pub-1780473184762",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "양자컴퓨팅 기술을 활용한 예술 창작 연구： 양자 현상에 대한 다학제적 접근",
+        "en": "A Study on Artistic Creation Using Quantum Computing Technology: An Interdisciplinary Approach to Quantum Phenomena",
+        "zh": "利用量子计算技术进行艺术创作的研究：量子现象的跨学科方法"
+      },
+      "abstract": {
+        "ko": "본 연구는 양자 이론과 양자컴퓨팅의 원리를 이해하고 양자컴퓨팅 기술을 활용한 융복합 예술작품들의 특성을 분석함으로써 양자컴퓨팅 기술을 활용한 예술작품 속 양자 현상의 예술적 의미를 고찰한다. 20세기 초양자역학의 태동은 물리학을 결정론적 시스템에서 확률론적 시스템에 대한 탐구로 나아가게 했다. 그리고 양자역학의 불확실성은 예술에서 확실성의 파괴 및 변화의 수용, 그리고 추상적 시도로 나타났다. 이는 현대미술에서 형이상학적이면서도 심리학적인 내면 세계의 반영으로 표현되었고, 미니멀리즘, 행위예술, 미디어아트 등 포스트모더니즘 예술로도 이어지게 되었다. 흥미롭게도, 양자역학의 핵심 내용인 양자중첩과 양자얽힘은 이제 양자컴퓨팅의 원리로 작동하며 미디어아트의영역으로까지 들어와 예술가들의 호기심을 자극했고 예술 실천으로 이어졌다.",
+        "en": "This study examines the artistic meaning of quantum phenomena in artworks that utilize quantum computing technology by understanding the principles of quantum theory and quantum computing and analyzing the characteristics of interdisciplinary artworks that utilize quantum computing technology. The dawn of quantum mechanics in the early 20th century pushed physics from deterministic systems to the exploration of probabilistic systems, and the uncertainty of quantum mechanics manifested itself in art as the destruction of certainty, the acceptance of change, and attempts at abstraction. This was expressed in modern art as a reflection of the inner world, both metaphysical and psychological, and led to postmodern art, including minimalism, performance art, and media art. Interestingly, quantum superposition and quantum entanglement, the core content of quantum mechanics, now operates as the principle of quantum computing, and has entered the realm of media art, which has stimulated artists' curiosity and led to artistic practice.",
+        "zh": "本研究通过理解量子理论和量子计算的原理，并分析运用量子计算技术的跨学科艺术作品的特征，探讨了运用量子计算技术的艺术作品中量子现象的艺术意义。 20世纪初量子力学的出现，推动物理学从确定性系统转向概率系统的探索。量子力学的不确定性在艺术中体现为对确定性的打破、对变化的接纳以及对抽象的尝试。这在现代艺术中被表达为对形而上学和心理学层面内在世界的反映，并催生了后现代艺术，包括极简主义、行为艺术和媒体艺术。有趣的是，量子力学的核心内容——量子叠加和量子纠缠，如今已成为量子计算的原理，并已进入媒体艺术领域，激发了艺术家的好奇心，并引领了艺术实践。"
+      },
+      "venue": {
+        "ko": "한국과학예술융합학회",
+        "en": "THE KOREAN SOCIETY OF SCIENCE & ART",
+        "zh": "韩国科学与艺术学会"
+      },
+      "keywords": {
+        "ko": "다학제적 예술 실천, 융복합 양자컴퓨팅예술, 양자 현상, 레픽 아나돌의 융복합 예술, 러셀 허프만의 융복합 예술",
+        "en": "Interdisciplinary Art Practice, Convergent Quantum Computing Art, Quantum Phenomena, Refik Anadol‘s Convergent Art, Russell Huffman’s Convergent Art",
+        "zh": "跨学科艺术实践、融合量子计算艺术、量子现象、雷菲克·阿纳多尔的融合艺术、拉塞尔·霍夫曼的融合艺术"
+      },
+      "year": 2024,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11937450&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003121312",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780473606132",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "생성형 인공지능 기반 예술 속 크레올화에 관한 연구： 프로젝트 ＜뉴노멀 횡성회다지소리＞를 중심으로",
+        "en": "A Study on Creolization in Generative Artificial Intelligence-based Art: Centering on the Project <New Normal Hoengseong Hoedajisori>",
+        "zh": "基于生成式人工智能的艺术中的克里奥尔化研究：以《新常态弘城回旋镖》项目为例"
+      },
+      "abstract": {
+        "ko": "본 연구는 생성형 인공지능이 예술의 영역에서 활용되는 현재의 시점에서 MZ세대들에게 실제로 어떻게 적용되고 있는지를 검토하기 위해 인공지능 생성예술 프로젝트 <뉴노멀 횡성회다지소리>를 크레올화(creolization) 개념 안에서 논의한다. 크레올화된 사회들은 이전에는 별개이던 두 개 이상의 문화들을 새로운 환경 속에서 결합시켜 새로운 정체성을 만들어낸다. 그것은 단순히 더 큰 사회 질서로의 동화나 주류 사회로의 문화접변이 아닌 더욱 복잡하고 적응적이며 창조적인 과정이다.",
+        "en": "This study discusses the AI-generated art project <New Normal Hoengseong Hoedajisori> within the concept of creolization in order to examine how generative AI is being applied to MZ generation at the present time. Creolized societies combine two or more previously separate cultures in a new environment to create a new identity. It is a more complex, adaptive, and creative process than simply assimilation into a larger social order or acculturation into mainstream society. The project <New Normal Hoengseong Hoedajisori> illustrates the process of creolization.",
+        "zh": "本研究以“克里奥尔化”为概念，探讨人工智能生成的艺术项目《新常态横城回转针》，旨在考察生成式人工智能在当今多代人（MZ）群体中的应用。克里奥尔化社会是指在新的环境中融合两种或多种原本独立的文化，从而创造新的身份认同。与简单地融入主流社会或文化适应相比，克里奥尔化是一个更为复杂、更具适应性和创造性的过程。《新常态横城回转针》项目正是克里奥尔化过程的生动体现。"
+      },
+      "venue": {
+        "ko": "인공지능인문학연구",
+        "en": "Journal of AI Humanities",
+        "zh": "人工智能人文期刊"
+      },
+      "keywords": {
+        "ko": "생성형 인공지능, 인공지능 생성예술, 횡성 회다지소리, 크레올화, 교역지대, 전통문화, MZ세대",
+        "en": "Generative arificial intelligence(AI), AI-generated art project, Hoengseong Hoedajisori, Creolization, Trading zone, Traditional culture, MZ generation",
+        "zh": "生成式人工智能（AI）、AI生成艺术项目、横城回转针、克里奥尔化、贸易区、传统文化、MZ世代"
+      },
+      "year": 2024,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/cpViewer?nodeId=NODE12074983",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003113878",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780474146855",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "A Study on the Interaction between Human Consciousness and Artificial Intelligence in Refik Anadol＇s Quantum Memories",
+        "en": "A Study on the Interaction between Human Consciousness and Artificial Intelligence in Refik Anadol＇s Quantum Memories",
+        "zh": "A Study on the Interaction between Human Consciousness and Artificial Intelligence in Refik Anadol＇s Quantum Memories"
+      },
+      "abstract": {
+        "ko": "This study aims to understand the quantum superposition and observer effect in the Copenhagen interpretation and to explore the interaction between human consciousness and artificial intelligence (AI) involved in the creation of quantum memories by applying the many worlds interpretation of quantum physics to Refik Anadol’s Quantum Memories. According to the Copenhagen interpretation, the act of observation itself determines the state of an object. Furthermore, from the perspective of the many worlds interpretation of quantum physics, when we observe and interact with something, we create a new being or universe.",
+        "en": "This study aims to understand the quantum superposition and observer effect in the Copenhagen interpretation and to explore the interaction between human consciousness and artificial intelligence (AI) involved in the creation of quantum memories by applying the many worlds interpretation of quantum physics to Refik Anadol’s Quantum Memories. According to the Copenhagen interpretation, the act of observation itself determines the state of an object. Furthermore, from the perspective of the many worlds interpretation of quantum physics, when we observe and interact with something, we create a new being or universe.",
+        "zh": "This study aims to understand the quantum superposition and observer effect in the Copenhagen interpretation and to explore the interaction between human consciousness and artificial intelligence (AI) involved in the creation of quantum memories by applying the many worlds interpretation of quantum physics to Refik Anadol’s Quantum Memories. According to the Copenhagen interpretation, the act of observation itself determines the state of an object. Furthermore, from the perspective of the many worlds interpretation of quantum physics, when we observe and interact with something, we create a new being or universe."
+      },
+      "venue": {
+        "ko": "International Journal of Creative Multimedia",
+        "en": "International Journal of Creative Multimedia",
+        "zh": "International Journal of Creative Multimedia"
+      },
+      "keywords": {
+        "ko": "Copenhagen  Interpretation,  Quantum  Superposition,  Observer  Effect,  Human Consciousness,  Artificial  Intelligence(AI),  Many  Worlds  Interpretation,  Refik  Anadol, Quantum Memories",
+        "en": "Copenhagen  Interpretation,  Quantum  Superposition,  Observer  Effect,  Human Consciousness,  Artificial  Intelligence(AI),  Many  Worlds  Interpretation,  Refik  Anadol, Quantum Memories",
+        "zh": "Copenhagen  Interpretation,  Quantum  Superposition,  Observer  Effect,  Human Consciousness,  Artificial  Intelligence(AI),  Many  Worlds  Interpretation,  Refik  Anadol, Quantum Memories"
+      },
+      "year": 2024,
+      "category": "journal",
+      "authors": {
+        "ko": "Jongcheon Shin",
+        "en": "Jongcheon Shin",
+        "zh": "Jongcheon Shin"
+      },
+      "pdfUrl": "https://journals.mmupress.com/index.php/ijcm/article/view/1099/576",
+      "externalUrl": "https://journals.mmupress.com/index.php/ijcm/article/view/1099",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780474375802",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "밈의 미학적 선택에 관한 연구： 신경미학적 밈 전달을 중심으로",
+        "en": "A Study on the Aesthetic Selection of Meme : Centering on the Neuroaesthetic Transmission of Meme",
+        "zh": "模因审美选择研究：以模因的神经审美传播为中心"
+      },
+      "abstract": {
+        "ko": "본 연구는 최근 주목받고 있는 밈(meme)을 신경미학적으로 해석하기 위해, 인간 뇌의 진화를 예술의 진화와연관시켜 설명하고 밈 전달을 인간 뇌의 미학적 판단과 연관지어 고찰한다. 그것은 지금까지 신경미학이 밝혀온 미적 경험과 관련된 뇌 부위들이 밈 전달에 결정적인 역할을 하고 있음을 보여주면서, 감각 뇌의 피질 지도상 신경망패턴으로 구성되는 밈들이 단순히 복제되어 전달되는 것이 아니라 정서나 느낌과 관련된 뇌의 영역에 의해 선별되어 전달된다는 것을 밝히는 과정이 될 것이다. 특히, 본 연구는 밈의 특성을 지난 연구 <밈 현상의 정보적 특성에관한 연구: 밈의 진화 알고리즘을 중심으로>와 이어지는 맥락 속에서 다룬다.",
+        "en": "This study explains the evolution of the human brain in relation to the evolution of art and considers the transmission of memes in relation to the aesthetic judgment of the human brain, in order to interpret meme through neuroaesthetics. It shows that the brain regions related to aesthetic experience play a decisive role in the transmission of memes, while memes composed of neural network patterns on the cortical map of the sensory brain are not simply replicated but are transmitted by regions of the brain related to emotion or feeling. In particular, this study deals with the characteristics of memes in the context of the previous study <A Study on the Informational Characteristics of the Meme Phenomenon: Centering on the Evolution Algorithm of Meme>.",
+        "zh": "本研究从艺术演化的角度阐释了人脑的演化，并探讨了模因的传播与人脑审美判断之间的关系，旨在通过神经美学视角解读模因。研究表明，与审美体验相关的大脑区域在模因传播中起着决定性作用；由感觉大脑皮层图谱上的神经网络模式构成的模因并非简单地复制，而是由与情感或感觉相关的大脑区域进行传播。具体而言，本研究在前期研究《模因现象信息特征研究：以模因演化算法为中心》的背景下，进一步探讨了模因的特征。"
+      },
+      "venue": {
+        "ko": "문화와 융합",
+        "en": "Culture & Convergence",
+        "zh": "文化与融合"
+      },
+      "keywords": {
+        "ko": "미학적 밈 전달, 미적 경험, 신경미학, 정서를 촉발하는 뇌, 느낌을 형성하는 뇌",
+        "en": "Aesthetic meme transmission, Aesthetic experience, Neuroaesthetics, Brain that triggers emotions, Brain that forms feelings",
+        "zh": "模因美学传播、审美体验、神经美学、情绪触发脑、情感形成脑"
+      },
+      "year": 2021,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11888129&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002758483",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780475904310",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "Biomorphic Protein Art: The Ensemble of Aesthetic Intuition and Scientific Intelligence in Protein Structures",
+        "en": "Biomorphic Protein Art: The Ensemble of Aesthetic Intuition and Scientific Intelligence in Protein Structures",
+        "zh": "Biomorphic Protein Art: The Ensemble of Aesthetic Intuition and Scientific Intelligence in Protein Structures"
+      },
+      "abstract": {
+        "ko": "This article explores the process by which biomorphic art influenced by Henri Bergson's philosophy encounters protein structures and becomes biomorphic protein art. The biomorphic presentation of proteins is a kind of art practice that applies biomorphs to protein structures by practically utilizing Bergson's “aesthetic intuition.” It not only has aesthetic peculiarity in itself but also is used to reveal the structure-function relationship and structure-identity relationship of proteins. As a result, biomorphic protein art, which presents information about the structure, function and identity of proteins through aesthetic intuition, helps us to analyze proteins in a novel way and restores our potential creativity.",
+        "en": "This article explores the process by which biomorphic art influenced by Henri Bergson's philosophy encounters protein structures and becomes biomorphic protein art. The biomorphic presentation of proteins is a kind of art practice that applies biomorphs to protein structures by practically utilizing Bergson's “aesthetic intuition.” It not only has aesthetic peculiarity in itself but also is used to reveal the structure-function relationship and structure-identity relationship of proteins. As a result, biomorphic protein art, which presents information about the structure, function and identity of proteins through aesthetic intuition, helps us to analyze proteins in a novel way and restores our potential creativity.",
+        "zh": "This article explores the process by which biomorphic art influenced by Henri Bergson's philosophy encounters protein structures and becomes biomorphic protein art. The biomorphic presentation of proteins is a kind of art practice that applies biomorphs to protein structures by practically utilizing Bergson's “aesthetic intuition.” It not only has aesthetic peculiarity in itself but also is used to reveal the structure-function relationship and structure-identity relationship of proteins. As a result, biomorphic protein art, which presents information about the structure, function and identity of proteins through aesthetic intuition, helps us to analyze proteins in a novel way and restores our potential creativity."
+      },
+      "venue": {
+        "ko": "Leonardo (MIT Press Journal)",
+        "en": "Leonardo (MIT Press Journal)",
+        "zh": "Leonardo (MIT Press Journal)"
+      },
+      "keywords": {
+        "ko": "Aesthetic intuition, Biomorphic presentation, Biomorphic protein art",
+        "en": "Aesthetic intuition, Biomorphic presentation, Biomorphic protein art",
+        "zh": "Aesthetic intuition, Biomorphic presentation, Biomorphic protein art"
+      },
+      "year": 2021,
+      "category": "journal",
+      "authors": {
+        "ko": "Jongcheon Shin, Joonsung Yoon",
+        "en": "Jongcheon Shin, Joonsung Yoon",
+        "zh": "Jongcheon Shin, Joonsung Yoon"
+      },
+      "pdfUrl": "https://muse.jhu.edu/pub/6/article/790408/pdf",
+      "externalUrl": "https://direct.mit.edu/leon/article-abstract/54/2/196/97245/Biomorphic-Protein-Art-The-Ensemble-of-Aesthetic?redirectedFrom=fulltext",
+      "featured": true,
+      "published": true,
+      "id": "pub-1780476842040",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "포스트휴머니즘으로서의 바이오아트 : <대전비엔날레 2018: 바이오>의 작품 분석을 중심으로",
+        "en": "Bio-art as Post-humanism: Centering on the Analysis of Artworks in <DAEJEON Biennale 2018: BIO> ",
+        "zh": "生物艺术作为后人类主义：以<2018大田双年展：BIO> 展览中的作品分析为例"
+      },
+      "abstract": {
+        "ko": "본 연구는 <대전비엔날레 2018: 바이오>를 중심으로 바이오아트가 다루고 있는 담론들을 살펴보고, 현 시대의 인간과 생명에 대한 관점들을 작품 분석을 통해 추론하고자 한다. <대전비엔날레 2018: 바이오>는 인간과 생명의 범주에 대한 질문을 단지 생물학적인 영역에 국한시키지 않고 철학적이고 예술적인 영역으로 확장시켜 다루고 있다. ‘바이오(Bio)’라는 주제는 4개의 소주제-바이오 미디어(Bio Media), 불로장생의 꿈(Dream of Eternal Youth), 디지털 생물학(Digital Biology), 인류세의 인간들(Men of Anthropocene)-로 나누어졌고, 다양한 예술가, 과학자, 공학자들의 작품들이 전시되었다. 그것은 예술, 과학, 기술의 융복합을 시도하는 것일 뿐만 아니라 새롭게 등장하게 될 인간과 생명의 외형적이며 내재적인 모습들을 소개하고 탐구한다는 점에서, 포스트휴먼의 담론으로 연결될 수 있다.",
+        "en": "This study examined the characteristics of bio-artworks in <Daejeon Biennale 2018: Bio> in order to consider the discourses on humans and life in the present era. <Daejeon Biennale 2018: Bio> deals with questions about the categories of a human and life by extending them to the philosophical and artistic domain, not just the biological domain. The theme “Bio” was divided into four subthemes: Bio Media, Dream of Eternal Youth, Digital Biology, and Men of Anthropocene. It can be connected to the post-human discourse in that it not only attempts to converge art, science, and technology but also explored the external and intrinsic aspects of a new human and life.",
+        "zh": "本研究考察了<2018大田双年展：BIO>中的生物艺术作品的特征，旨在探讨当代关于人类和生命的论述。<2018大田双年展：BIO>将人类和生命的范畴拓展至哲学和艺术领域，而不仅仅局限于生物学领域。“Bio”这一主题细分为四个子主题：生物媒体、永葆青春之梦、数字生物学和人类世之人。它与后人类主义论述相契合，不仅试图融合艺术、科学和技术，还探索了新人类和生命的外部和内在层面。"
+      },
+      "venue": {
+        "ko": "문화와 융합",
+        "en": "Culture & Convergence",
+        "zh": "文化与融合"
+      },
+      "keywords": {
+        "ko": "대전비엔날레 2018, 바이오아트, 바이오미디어, 바이오이슈, 포스트휴머니즘",
+        "en": "Daejeon Biennale 2018, Bio-art, Bio-media, Bio-issue, Post-humanism",
+        "zh": "2018大田双年展，生物艺术，生物媒体，生物议题，后人类主义"
+      },
+      "year": 2021,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11887594&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002639927",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780477228002",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "밈 현상의 정보적 특성에 관한 연구- 밈의 진화 알고리즘을 중심으로",
+        "en": "A Study on the Informational Characteristics of the Meme Phenomenon: Centering on the Evolution Algorithm of Meme",
+        "zh": "模因现象信息特征研究：以模因演化算法为中心"
+      },
+      "abstract": {
+        "ko": "본 연구는 밈 현상의 정보적 특성을 고찰하기 위해, 밈의 속성을 유전자와 비교하여 분석하고 정보이론을 통하여 탐구한다. 최근 주목받고 있는 ‘밈(meme)’은 재밌는 말과 행동을 온라인상에서 모방하거나 재가공한 콘텐츠들을 통칭하여 부르는 용어이다. 하지만 밈의 실제 의미는 진화생물학자 리처드 도킨스(Richard Dawkins)로부터 시작되었다. 그는 밈을 일종의 모방이라고 할 수 있는 과정을 거쳐 인간의 뇌를 타고 이동하는 문화적 유전자로서 언급한다. 도킨스는 밈의 속성을 생물학적 유전자와 동일하게 자기복제의 차원에서 강조하지만, 본 연구는 밈의 속성을 보편적 다위니즘 안에 존재하되 생물학적 유전자와는 다른 차원에서 다룰 필요성이 있다는 것을 보여준다. 그것은 인간의 뇌를 거치는 밈의 전달 과정을 진화 알고리즘 상의 유전에 초점 맞추기보다 변이에 초점을 맞추어 설명하는 것과 관련된다. 이 과정에서 밈은 문화 전달의 정보 단위로서 재정의되고, 밈의 전달 과정은 정보이론과 접목되어 정보 흐름의 차원에서 분석될 것이다.",
+        "en": "This study compared the properties of memes and genes and analyzed them based on information theory, to determine the informational characteristics of the meme phenomenon. The term \"meme,\" which has garnered interest in recent years, refers to funny content that is imitated or reprocessed by users through the Internet. However, Richard Dawkins, an evolutionary biologist, has coined the term \"meme\" and provided its original meaning. He has refered to \"meme\" as a cultural gene that moves from one human brain to another through the imitation on the Internet. Dawkins highlighted the similarity in the aspect of self-replication between the properties of memes and that of biological genes. However, this study shows that although the properties of memes are related to Universal Darwinism, these aspects must be analyzed using a different dimension, instead of biological genes. The transmission of memes through human brains is focused on the aspect of variation, rather than the heredity of the evolutionary algorithms. In this regard, the term \"meme\" is redefined as an information unit of cultural transmission, and the transmission of memes is analyzed in terms of information flow in conjunction with information theory. ",
+        "zh": "本研究对比了模因和基因的特性，并基于信息论进行分析，以确定模因现象的信息特征。近年来，“模因”（meme）一词备受关注，指的是用户通过互联网模仿或再加工的趣味内容。然而，“模因”一词是由进化生物学家理查德·道金斯创造并赋予其最初含义的。他将“模因”定义为一种文化基因，通过互联网上的模仿在人脑之间传播。道金斯强调了模因和生物基因在自我复制方面的相似性。然而，本研究表明，尽管模因的特性与普遍达尔文主义相关，但这些方面必须从不同的维度进行分析，而非生物基因。模因在人脑中的传播侧重于变异，而非进化算法的遗传。在这方面，“模因”一词被重新定义为文化传播的信息单位，并结合信息论，从信息流的角度分析模因的传播。"
+      },
+      "venue": {
+        "ko": "문화와 융합",
+        "en": "Culture & Convergence",
+        "zh": "文化与融合"
+      },
+      "keywords": {
+        "ko": "밈 현상, 신경망, 진화 알고리즘, 노이즈 수용, 변이 수용",
+        "en": "Meme phenomenon, Evolution algorithm, Neural network, Noise acceptance, Variation acceptance",
+        "zh": "模因现象，进化算法，神经网络，噪声接受度，变异接受度"
+      },
+      "year": 2020,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11887507&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002611023",
+      "featured": true,
+      "published": true,
+      "id": "pub-1780477488989",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "Concretization, Associated Milieus and Aestheticization of Objects in Bio-Art",
+        "en": "Concretization, Associated Milieus and Aestheticization of Objects in Bio-Art",
+        "zh": "Concretization, Associated Milieus and Aestheticization of Objects in Bio-Art"
+      },
+      "abstract": {
+        "ko": "This article explores an ensemble of technical objects and biological objects in bio-art and proposes aesthetic values that the ensemble reveals. French philosopher Gilbert Simondon considered technical objects carefully in the 1950s. In his study, he was alert to an assimilation of technical objects to biological objects. In our time, the development of molecular biology and genetic engineering offers evidence that technical objects are closely linked to biological objects. The process of concretizing technical objects and biological objects is latent in works of bio-art, which therefore can realize aesthetic potentials that technical objects and biological objects imply.",
+        "en": "This article explores an ensemble of technical objects and biological objects in bio-art and proposes aesthetic values that the ensemble reveals. French philosopher Gilbert Simondon considered technical objects carefully in the 1950s. In his study, he was alert to an assimilation of technical objects to biological objects. In our time, the development of molecular biology and genetic engineering offers evidence that technical objects are closely linked to biological objects. The process of concretizing technical objects and biological objects is latent in works of bio-art, which therefore can realize aesthetic potentials that technical objects and biological objects imply.",
+        "zh": "This article explores an ensemble of technical objects and biological objects in bio-art and proposes aesthetic values that the ensemble reveals. French philosopher Gilbert Simondon considered technical objects carefully in the 1950s. In his study, he was alert to an assimilation of technical objects to biological objects. In our time, the development of molecular biology and genetic engineering offers evidence that technical objects are closely linked to biological objects. The process of concretizing technical objects and biological objects is latent in works of bio-art, which therefore can realize aesthetic potentials that technical objects and biological objects imply."
+      },
+      "venue": {
+        "ko": "Leonardo (MIT Press Journal)",
+        "en": "Leonardo (MIT Press Journal)",
+        "zh": "Leonardo (MIT Press Journal)"
+      },
+      "keywords": {
+        "ko": "Bio-art, Concretization, Associated milieus, Technical object, Biological object",
+        "en": "Bio-art, Concretization, Associated milieus, Technical object, Biological object",
+        "zh": "Bio-art, Concretization, Associated milieus, Technical object, Biological object"
+      },
+      "year": 2020,
+      "category": "journal",
+      "authors": {
+        "ko": "Jongcheon Shin, Joonsung Yoon",
+        "en": "Jongcheon Shin, Joonsung Yoon",
+        "zh": "Jongcheon Shin, Joonsung Yoon"
+      },
+      "pdfUrl": "https://muse.jhu.edu/pub/6/article/753608/pdf",
+      "externalUrl": "https://direct.mit.edu/leon/article-abstract/53/2/189/46748/Concretization-Associated-Milieus-and?redirectedFrom=fulltext",
+      "featured": true,
+      "published": true,
+      "id": "pub-1780477841498",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "인터랙션 디자인과 사용자 정보 처리: 인터랙션 디자인 속 정보량 엔트로피와 인간 정보 처리 모형 에 관한 연구",
+        "en": "Interaction Design and Information Processor of Users: A Study on Information Entropy and the Human Processor Model in Interaction Design",
+        "zh": "交互设计与用户信息处理：基于信息熵和人机交互模型的研究"
+      },
+      "abstract": {
+        "ko": "본 연구는 인터랙션 디자인 속 정보량과 사용자 경험 사이의 관계를 규명하기 위해, 인터랙션 디자인 안에서 도널드 노먼(Donald Norman)의 디자인 원칙이 어떤 방식으로 활용되고 인간 정보 처리 모형이 어떻게 변형되어적용될 수 있는지를 살펴보는 것이다. 이 과정에서 스튜어트 캐드(Stuart Card)가 제시하는 인간 정보 처리 모형과 노먼이 제시하는 디자인의 원칙은 정보량 엔트로피와 사용자의 수용력, 그리고 사용자 경험 사이의 관계를설명하기 위한 중요한 도구들이다. 캐드의 인간 정보 처리 모형은 사람이 자극을 인지하고 반응하는 데까지의과정을 분할하여 작업 소요 시간을 계산하는 것으로서, 예측가능성이 크고 정보량 엔트로피가 작을수록 정보 처리 시간은 짧아진다. 한편, 노먼의 디자인 원칙은 가시성(visibility), 피드백(feedback), 제한성(constraint), 대응(mapping), 일관성(consistency), 행동유도성(affordance)으로 구성되는데, 이것들이 잘 지켜질수록 예측가능성은 커지고 정보량 엔트로피는 작아진다. 여기서 우리는 노먼의 디자인 원칙을 캐드의 인간 정보 처리 모형과 결합시켜 더 나은 인터페이스에 대한 근거를 제시할 수 있다. ",
+        "en": "This study examines how Donald Norman's design principles are used in interaction design and how human processor models can be modified and applied in order to identify the relationship between the amount of information and user experience in interaction design. In the process, the human processor model by Stuart Card and the design principles by Donald Norman are important tools for explaining the relationship between information entropy, user capacity, and user experience. Card's human processor model divides the process of human cognition and response and calculates the time required for each process. In the model, the information processing time is shorter as the predictability is larger and the information entropy is smaller. On the other hand, Norman's design principles consist of visibility, feedback, constraint, mapping, consistency, and affordance. The more well-preserved these principles are, the greater the predictability and the smaller the amount of information entropy. Here we can combine Norman's design principles with Card's human processor model and present the result as a basis for a better interface.",
+        "zh": "本研究探讨了唐纳德·诺曼的设计原则在交互设计中的应用，以及如何修改和应用人机处理模型，以识别交互设计中信息量与用户体验之间的关系。在此过程中，斯图尔特·卡德的人机处理模型和唐纳德·诺曼的设计原则是解释信息熵、用户容量和用户体验之间关系的重要工具。卡德的人机处理模型将人类认知和反应过程进行划分，并计算每个过程所需的时间。在该模型中，可预测性越高，信息熵越低，信息处理时间就越短。另一方面，诺曼的设计原则包括可见性、反馈、约束、映射、一致性和可供性。这些原则执行得越好，可预测性就越高，信息熵就越低。在这里，我们可以将诺曼的设计原则与卡德的人类处理器模型结合起来，并将结果作为更好的界面的基础。"
+      },
+      "venue": {
+        "ko": "기초조형학연구",
+        "en": "Journal of Basic Design & Art",
+        "zh": "基础设计与艺术杂志"
+      },
+      "keywords": {
+        "ko": "인터랙션 디자인, 인간 정보 처리 모형, DN 디자인 원칙, 정보량 엔트로피, 예측가능성, 사용자 수용력",
+        "en": "Interaction design, Model Human Processor, DN design principles, Information entropy, Predictability, User capacity",
+        "zh": "交互设计模型 人机处理 DN设计原则 信息熵 可预测性 用户容量"
+      },
+      "year": 2019,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11833820&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002503179",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780478459097",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "통섭 공간으로서의 바이오 아트에 관한 연구 - 예술과 생물학의 크레올화를 중심으로",
+        "en": "A Study on Bio-Art as a Consilience Zone: Centering on a Creolization of Art and Biology",
+        "zh": "生物艺术作为融合区的研究：以艺术与生物学的融合为中心"
+      },
+      "abstract": {
+        "ko": "본 연구는 바이오 아트를 예술과 생물학의 통섭 공간으로서 고찰하기 위해, 바이오 아트의 정체성과 바이오 아트 작품들의 제작 과정을 크레올화의 개념을 통해 살펴본다. 과학사학자 피터 갤리슨(Peter Galison)은 ‘교역 지대(trading zone)’라는 용어를 이질적인 하위문화들을 함께 묶고 있는 경계라고 지칭하고, ‘크레올화(creolization)’를 상이한 두 분야 간의 연결이 새롭게 융합된 학제간 분야를 만들어내는 과정으로 고려한다. 갤리슨의 개념들은 예술과 생물학이 상호작용하는 바이오 아트에도 적용될 수 있다. 바이오 아트는 상이한 분야인 예술과 생물학 사이의 교역 행위를 이끄는 교역 공간이다. 이 교역 지대 안에서, 예술가와 생명과학자는 공유된 맥락을 전제로 그들도 모르는 사이에 서로 다른 목표를 교환하고 역동적으로 상호작용한다.",
+        "en": "This study explores the identity of bio-art and the creation process of bio-artworks through the concept of creolization in order to consider bio-art as the consilience zone of art and biology. The scientific historian Peter Galison refers to the term “trading zone” as the boundary binding together the heterogeneous subcultures and considers “creolization” as the process by which the interaction among different disciplines builds a new interdisciplinary field. Galison’s concepts can be applied to bio art where art and biology interact. Bio-art is a trading zone that leads the trading activities between art and biology. In this trading zone, artists and biological scientists trade their own goals and have a dynamical interaction on the premise of a shared context.",
+        "zh": "本研究通过融合的概念，探索生物艺术的身份及其创作过程，旨在将生物艺术视为艺术与生物学的融合区。科学史学家彼得·加里森（Peter Galison）将“交易区”定义为连接不同亚文化的边界，并将“融合”视为不同学科互动构建新的跨学科领域的过程。加里森的概念同样适用于艺术与生物学互动的生物艺术领域。生物艺术是一个引领艺术与生物学交流的“交易区”。在这个“交易区”中，艺术家和生物学家在共同的语境下交换各自的目标，并进行动态互动。"
+      },
+      "venue": {
+        "ko": "문화와 융합",
+        "en": "Culture & Convergence",
+        "zh": "文化与融合"
+      },
+      "keywords": {
+        "ko": "바이오 아트, 교역 지대, 합의적 크레올화, 충돌적 크레올화, 통섭 공간",
+        "en": "Bio-art, Trading zone, Consensual creolization, Collisional creolization, Consilience zone",
+        "zh": "生物艺术、交流区、共识性融合、碰撞性融合、融合区"
+      },
+      "year": 2019,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE08748671&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002476772",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780478747910",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "인공생명예술의 생성미학적 해석: 대전 비엔날레 2018 [바이오]의 인공생명 예술작품 분석을 중심으로",
+        "en": "A Generative Aesthetic Interpretation on Artificial Life Art : Centered on Analysis of Artificial Life Artworks in DAEJEON BIENNALE 2018 [BIO] -",
+        "zh": "对人工生命艺术的生成美学诠释 : 以2018年大田双年展的人工生命艺术作品分析为中心[BIO]"
+      },
+      "abstract": {
+        "ko": "본 연구는 대전 비엔날레 2018 [바이오]에 출품된 작품들 중 제 2전시장을 중심으로 소개된 인공생명 예술작품들을 막스 벤제(Max Bense)의 ‘생성미학(generative aesthetics)’을 바탕으로 해석한다. 대전 비엔날레2018에 전시된 작품들은 '바이오: 예술로 들어온 생명과학'이라는 주제로 5개의 전시장에 4개의 부문-바이오미디어(Bio Media), 디지털 생물학(Digital Biology), 불로장생의 꿈(Dream of Eternal Youth), 인류세의 인간들(Men of Anthropocene)-로 나뉘어져 전시되었다. 그 중에서도, 디지털 생물학 부문에 소개된 예술 작품들-지하루와 그라함 웨이크필드(Graham Wakefield)의 <중첩 속으로(Insuperposition)>, 필립 비즐리(Philip Beesley)와 LAS(Living Architeccture Systems Group)의 <빛나는 토양(Radiant Soil)>, 최우람의 <쿠스토스 카붐(Custos Cavum)>-은 생물학의 연구 성과를 디지털 환경에 적용시킴으로써 생명의 범위를 확장시킬 수있다는 것을 보여준다.",
+        "en": "This study analyzes \"generative aesthetics\" of Max Bense and interprets the artificial life artworks on display at the 2nd exhibition hall in Daejeon Biennale 2018 [Bio]. The works in Daejeon Biennale 2018 were divided into 4 categories-Bio Media, Digital Biology, Dream of Eternal Youth, Men of Anthropocene-, and were displayed in five exhibition halls under the theme of \"Bio: Life science that comes into art\". Among them, the works in Digital Biology such as <Insuperposition> by Haru Ji and Graham Wakefield, <Radiant Soil> by Philip Beesley and LAS(Living Architecture Systems Group), and <Custos Cavum> by Uram Choe show that the biological researches can be applied to the digital environment and that the applied researches can extend the taxonomic domain of life.",
+        "zh": "本研究分析了马克斯·本斯的“生成美学”，并解读了2018年大田双年展[BIO]第二展厅展出的人工生命艺术作品。2018年大田双年展的作品分为四个类别——生物媒体、数字生物学、永葆青春之梦、人类世之人——并在五个展厅中展出，主题为“生物：生命科学融入艺术”。其中，Haru Ji 和 Graham Wakefield 的《Insuperposition》、Philip Beesley 和 LAS（Living Architecture Systems Group）的《Radiant Soil》以及 Uram Choe 的《Custos Cavum》等数字生物学作品表明，生物学研究可以应用于数字环境，而应用研究可以扩展生命的分类领域。"
+      },
+      "venue": {
+        "ko": "기초조형학연",
+        "en": "Journal of Basic Design & Art",
+        "zh": "基础设计与艺术杂志"
+      },
+      "keywords": {
+        "ko": "인공생명예술, 인공생명, 창발, 생성미학, 대전 비엔날레 2018 [바이오]",
+        "en": "artificial life art, artificial life, emergence, generative aesthetics, Daejeon Biennale 2018 [BIO]",
+        "zh": "人工生命艺术，人工生命，涌现，生成美学，2018大田双年展[BIO]"
+      },
+      "year": 2018,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11833678&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002431253",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780479070735",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "정보 생성 예술로서의 바이오아트 : 엔트로피와 노이즈, 그리고 생물학적 변이의 예술적 활용에 관한 연구",
+        "en": "Bio-art as Information Generative Art : A Study on the Artistic Application of Entropy, Noise, and Biological Variation",
+        "zh": "生物艺术作为信息生成艺术：熵、噪声和生物变异的艺术应用研究"
+      },
+      "abstract": {
+        "ko": "본 연구는 엔트로피를 중심으로 예술 작품의 특성을 탐구하는 미학적 논의들을 살펴보고, 현대 예술이 궁극적으로 도달하고자 하는 형태를 생물학적 변이를 활용하는 바이오아트를 통해 제안하고자 한다. 그 과정에서 바이오아트는 고정된 정보를 전달하는 것이 아니라 정보를 생성시켜 미학적 목표를 충족시킬 수 있는 예술의 한 형태로 제시되고 분석되어진다. 움베르코 에코(Umberto Eco)는 현대 예술이 추구하고 있는 작품의 ‘개방성’을 좀 더 명확하게 규정하고자 엔트로피 개념을 활용해 예술 작품의 형태적 특성들을 분석했다. 그는 그의 저서 <The Open Work>에서 무질서와 정보가 직접적으로 연관되는 현상은 일상생활에서 뿐만 아니라 예술에서도 통상적으로 찾아볼 수 있기 때문에, 클로드 섀넌(Claude Shannon)처럼 정보를 통계학적 측면의 가능성을 의미하는 엔트로피의 개념으로 사용하는 것이 타당하다고 보았다. 하지만 에코가 말하는 예술 작품의 개방성은 선택 상황에서 경험하는 불확실성뿐만 아니라 정보 전달 과정에서 개입되는 불확실성까지도 포함하는 문제라는 점에서, ‘노이즈의 정보화’ 또는 ‘정보 생성’의 개념을 필요로 한다. 그리고 그와 같은 정보 생성은 생명 현상의 생물학적 변이를 통해서도 경험될 수 있다. 일반적으로 생물학에서의 돌연변이는 유전 정보에 노이즈가 개입되어 유전자의 모습이나 성질이 변하는 것을 의미하기 때문이다. 그런 점에서, 생명 현상과 예술의 형태적 특성이 결합된 바이오아트는 생명 자체의 엔트로피와 예술 자체의 엔트로피가 어떤 방식으로 혼합되어 정보를 생성시킬 수 있는가를 보여주는 유용한 도구이다.",
+        "en": "This study looks into the aesthetic discussions that explore the characteristics of artworks focusing on entropy, and presents the ultimate form of contemporary art as bio-art that utilizes biological variations. In the explanation, bio-art is analyzed as the art form that does not transmit fixed information but generate information in order to meet aesthetic goals. To clearly define 'openness' to which contemporary art aspires, Umberto Eco analyzed the characteristics of artworks using the concept of entropy. In his book <The Open Work>, since the direct link between disorder and information can be found in art as well as everyday life, he used information, like Claude Shannon, as the concept of entropy which means the possibility of statistical aspects. However, the openness of artworks requires the concept of 'informatization of noise' or 'information generation', in that it involves not only the uncertainty experienced in the selection process but also the uncertainty interfered in the process of information transmission. In addition, the information generation can also be observed in biological variations of life phenomena, because a biological mutation is related to a biological variation changed by the involvement of noise in the existing genetic information. In this regard, bio-art, which combines the life phenomena with the form of art, is a useful tool to show how entropy of life and entropy of art can be mixed to generate information.",
+        "zh": "本研究探讨了以熵为核心的艺术作品特征美学讨论，并将当代艺术的终极形式——利用生物变异的生物艺术——呈现为一种艺术形式。在阐释中，生物艺术被分析为一种不传递固定信息，而是生成信息以达到美学目标的艺术形式。为了清晰地定义当代艺术所追求的“开放性”，翁贝托·埃科运用熵的概念分析了艺术作品的特征。在他的著作《开放的作品》中，由于艺术和日常生活中都存在无序与信息之间的直接联系，他像克劳德·香农一样，将信息作为熵的概念，即统计方面的可能性。然而，艺术作品的开放性需要“噪声信息化”或“信息生成”的概念，因为它不仅涉及选择过程中的不确定性，也涉及信息传递过程中的不确定性。此外，信息生成也可在生命现象的生物变异中观察到，因为生物突变与受噪声干扰的现有遗传信息所导致的生物变异有关。在这方面，将生命现象与艺术形式相结合的生物艺术，是展示生命熵和艺术熵如何混合以生成信息的有效工具。"
+      },
+      "venue": {
+        "ko": "기초조형학연구",
+        "en": "Journal of Basic Design & Art",
+        "zh": "基础设计与艺术期刊"
+      },
+      "keywords": {
+        "ko": "바이오아트, 엔트로피, 노이즈, 생물학적 변이, 정보 생성",
+        "en": "bio-art, entropy, noise, biological variation, information, generation",
+        "zh": "生物艺术、熵、噪声、生物变异、信息、生成"
+      },
+      "year": 2018,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11833450&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002322952",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780479311012",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "밈 에스테티쿠스 : 밈 전달에 관한 생명미학적 해석",
+        "en": "Meme Aestheticus : A bioaesthetic interpretation on the transmission of Memes",
+        "zh": "模因美学：模因传播的生物美学解读"
+      },
+      "abstract": {
+        "ko": "본 연구는 인간의 뇌를 거치는 밈(meme)의 전달 과정을 미적 경험의 범주 안에서 다루면서 예술과 디자인, 그리고 과학과  기술의 발전을 밈 전달과 연결시켜 설명한다. 여기서 밈은 보편적 다위니즘(Universal Darwinism) 안에 존재하되 생물학적 유전자와는 다른 차원에서 다루어진다. 그것은 인간의 뇌를 거치는 밈의 전달 과정을 유전에 초점 맞추기보다 변이와 선택에 초점을 맞추어 설명하는 것으로써 밈의 전달 과정이 미적 경험의 범주 안에 있다는 것과 연결된다. 따라서 본 연구는 인간의 뇌를 운반체로 활용하는 문화적 유전자인 밈의 존재를 전제하고, 밈의 전달 방식이 미학적 특성을 갖고 있다는 가설을 제시한다. 특히, 신경미학(neuroaesthetics)과 기술철학자 질베르 시몽동(Gilbert Simondon)의 구체화(concretization) 개념을 밈 전달 방식에 접목시켜 분석하고 그 작동 결과를 살펴봄으로써 그 가설을 논증한다.",
+        "en": "This study examines the transmission process of memes through the human brain within the category of aesthetic experience, explaining the development of art, design, science, and technology in connection with meme transmission. Here, memes exist within Universal Darwinism but are treated on a different level from biological genes. This approach explains the transmission process of memes through the human brain by focusing on mutation and selection rather than heredity, thereby linking it to the idea that the transmission process lies within the category of aesthetic experience. Therefore, this study presupposes the existence of memes—cultural genes that utilize the human brain as a carrier—and proposes the hypothesis that the mode of meme transmission possesses aesthetic characteristics. In particular, it demonstrates this hypothesis by analyzing meme transmission methods through the application of neuroaesthetics and the concept of \"concretization\" by the philosopher of technology Gilbert Simondon, and by examining the results of their operation.",
+        "zh": "本研究从审美体验的角度出发，探讨了模因在人脑中的传播过程，并阐释了艺术、设计、科学和技术的发展与模因传播之间的关联。在此，模因存在于普遍达尔文主义框架下，但其研究对象与生物基因有所不同。本研究着重于突变和选择而非遗传，以此解释模因在人脑中的传播过程，并将其与审美体验的范畴联系起来。因此，本研究预设了模因的存在——模因是一种以人脑为载体的文化基因——并提出模因传播模式具有审美特征的假设。具体而言，它通过运用神经美学和技术哲学家吉尔伯特·西蒙东的“具体化”概念来分析模因传播方法，并检验其运行结果，从而证明了这一假设。"
+      },
+      "venue": {
+        "ko": "숭실대학교 대학원",
+        "en": "Soongsil University Graduate School",
+        "zh": "崇实大学研究生院"
+      },
+      "keywords": {
+        "ko": "밈, 시몽동 구체화, 신경미학, 생명미학, 연합환경, 연합미",
+        "en": "Meme, Simondon’s concretization, Neuroaesthetics, Bioaesthetics, Associated milieu, Associated beauty",
+        "zh": "模因、神经美学、西蒙东具体化理论、生物美学、关联环境、关联美"
+      },
+      "year": 2018,
+      "category": "thesis",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://oasis.dcollection.net/public_resource/pdf/200000002960_20260603184644.pdf",
+      "externalUrl": "https://www.dbpia.co.kr/pdf/cpViewer?nodeId=T14730433",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780480014916",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "바이오 아트 : 생명 미학적 밈 복합체들의 앙상블",
+        "en": "Bio Art : An Ensemble of Bio Aesthetic Memeplexes",
+        "zh": "生物艺术：生物美学模因复合体的集合"
+      },
+      "abstract": {
+        "ko": "본 연구는 예술과 밈(meme)의 관계를 살펴보고, 바이오 아트의 미학적 가치를 밈의 진화적 프로세스를 이용해 고찰한다. 밈의 관점에서 보면, 예술은 밈 복합체들이 보다 넓은 인간의 뇌 공간을 차지하기 위하여 경쟁을 벌이는 영역이다. 특히, 최근 주목받고 있는 바이오 아트는 자연의 생명력을 통해 인간의 감성적 변화를 이끌어내는 생명 미학적 밈이 진화의 과정을 거쳐 새롭게 도달한 영역이다. 이 새로운 영역은 예술과 과학, 그리고 기술의 모호한 경계에 서 있지만 생명을 다루고 살아있는 예술의 구현을 갈망한다는 점에서 생명 미학적 밈을 분명하게 포함하고 있다. 흥미롭게도, 밈들이 보통 기본적인 내용의 맥락을 갖춘 상태에서 선택과 조합을 통해 밈 복합체로 결합되듯이, 바이오 아트 속에서 밈 복합체가 형성되는 과정 또한 기본적인 생명 미학적 밈을 토대로 다양한 형태의 밈을 선택하고 결합한다. ",
+        "en": "This study explores the relationship between art and meme, and considers the aesthetic value of bio art by using the evolutionary process of meme. From the viewpoint of meme, art is an area where the meme complexes compete with each other to occupy the wider human brain space. In particular, bio art, which has recently been attracting attention, is a new area where bio aesthetic memes, which lead to human emotional changes through the vitality of nature, have arrived through the process of evolution. Although this new area is at the vague boundary between art, science and technology, it clearly involves bio aesthetic memes in that it deals with life and aspires to the realization of living art. Interestingly, just as memes usually result in meme complexes through selection and combination on the basis of the fundamental contents, the process of forming the meme complexes in bio art includes selection and combination of various memes on the basis of bio aesthetic meme.",
+        "zh": "本研究探讨了艺术与模因之间的关系，并运用模因的演化过程来考察生物艺术的美学价值。从模因的角度来看，艺术是模因复合体相互竞争以占据更广阔的人类大脑空间的领域。尤其值得一提的是，近年来备受关注的生物艺术，是一个新兴领域，其中生物美学模因通过演化过程，以自然活力引发人类情感变化。尽管这一新兴领域处于艺术、科学和技术的模糊边界，但它显然包含生物美学模因，因为它关注生命，并致力于实现鲜活的艺术。有趣的是，正如模因通常基于其基本内容通过选择和组合形成模因复合体一样，生物艺术中模因复合体的形成过程也包含基于生物美学模因对各种模因进行选择和组合的过程。"
+      },
+      "venue": {
+        "ko": "기초조형학연",
+        "en": "Journal of Basic Design & Art",
+        "zh": "基础设计与艺术期刊"
+      },
+      "keywords": {
+        "ko": "바이오 아트, 밈, 밈 복합체, 생명 미학, 문화적 진화",
+        "en": "Bio art, Meme, Meme complex(or memeplex), Bio aesthetics, Cultural evolution",
+        "zh": "生物艺术、模因、模因复合体（或模因群）、生物美学、文化演化"
+      },
+      "year": 2017,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11833261&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002240806",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780480980543",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "Seeing Life： The Impalpable Entanglement of an Artist and Microbes in Bio－Art",
+        "en": "Seeing Life： The Impalpable Entanglement of an Artist and Microbes in Bio－Art",
+        "zh": "Seeing Life： The Impalpable Entanglement of an Artist and Microbes in Bio－Art"
+      },
+      "abstract": {
+        "ko": "﻿This paper introduces Korean bio-artist’s works producing fungi-based patterns and analyzes them as aesthetic results which apply Erwin Schrödinger's hypothesis of life and Maurice Merleau-Ponty's painting theory, in order to consider the impalpable entanglement between an artist and microbes in the creation process of bio-art. Schrödinger regarded life as an open system, and implied that a living system imports negative entropy and stores it. Interestingly, it can be linked to ‘the genesis of things’ of Merleau-Ponty. In his painting theory, he focuses on the inseparable interactions between an artist and visible things. It could draw the aesthetic discussion of life that recognizes things as living beings and connects the aesthetic process with the interaction between an artist and things. Furthermore, it is related to the aesthetic characteristics of bio-art in which art intertwines with life.",
+        "en": "﻿This paper introduces Korean bio-artist’s works producing fungi-based patterns and analyzes them as aesthetic results which apply Erwin Schrödinger's hypothesis of life and Maurice Merleau-Ponty's painting theory, in order to consider the impalpable entanglement between an artist and microbes in the creation process of bio-art. Schrödinger regarded life as an open system, and implied that a living system imports negative entropy and stores it. Interestingly, it can be linked to ‘the genesis of things’ of Merleau-Ponty. In his painting theory, he focuses on the inseparable interactions between an artist and visible things. It could draw the aesthetic discussion of life that recognizes things as living beings and connects the aesthetic process with the interaction between an artist and things. Furthermore, it is related to the aesthetic characteristics of bio-art in which art intertwines with life.",
+        "zh": "﻿This paper introduces Korean bio-artist’s works producing fungi-based patterns and analyzes them as aesthetic results which apply Erwin Schrödinger's hypothesis of life and Maurice Merleau-Ponty's painting theory, in order to consider the impalpable entanglement between an artist and microbes in the creation process of bio-art. Schrödinger regarded life as an open system, and implied that a living system imports negative entropy and stores it. Interestingly, it can be linked to ‘the genesis of things’ of Merleau-Ponty. In his painting theory, he focuses on the inseparable interactions between an artist and visible things. It could draw the aesthetic discussion of life that recognizes things as living beings and connects the aesthetic process with the interaction between an artist and things. Furthermore, it is related to the aesthetic characteristics of bio-art in which art intertwines with life."
+      },
+      "venue": {
+        "ko": "ISEA2019: 25th International Symposium on Electronic Art",
+        "en": "ISEA2019: 25th International Symposium on Electronic Art",
+        "zh": "ISEA2019: 25th International Symposium on Electronic Art"
+      },
+      "keywords": {
+        "ko": "Bio-art, Schrödinger's hypothesis of life, Merleau-Ponty's painting theory, Genesis of things, Communion, Painting system, Bioart system",
+        "en": "Bio-art, Schrödinger's hypothesis of life, Merleau-Ponty's painting theory, Genesis of things, Communion, Painting system, Bioart system",
+        "zh": "Bio-art, Schrödinger's hypothesis of life, Merleau-Ponty's painting theory, Genesis of things, Communion, Painting system, Bioart system"
+      },
+      "year": 2019,
+      "category": "conference",
+      "authors": {
+        "ko": "Jongcheon Shin, et al.",
+        "en": "Jongcheon Shin, et al.",
+        "zh": "Jongcheon Shin, et al."
+      },
+      "pdfUrl": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.isea-symposium-archives.org/wp-content/uploads/2019/08/ISEA2019_Proceedings.pdf",
+      "externalUrl": "https://www.isea-symposium-archives.org/symposium/isea2019-25th-international-symposium-on-electronic-art/",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780481539068",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "Bio Art as a Trading Zone: A Creolized Art Form of Biology and Art ",
+        "en": "Bio Art as a Trading Zone: A Creolized Art Form of Biology and Art ",
+        "zh": "Bio Art as a Trading Zone: A Creolized Art Form of Biology and Art "
+      },
+      "abstract": {
+        "ko": "﻿This paper explores the identity of bio art in terms of trading between an artist and a bio lab and looks into the creation process of bio art through the concept of creolization, in order to consider bio art as a creolized art form of biology and art. The American physicist Peter Galison refers to the term ‘trading zone’ as the boundary binding together the heterogeneous subcultures and considers ‘creolization’ as the process by which the interaction among different disciplines builds a new interdisciplinary field. Galison’s concepts can be applied to bio art where art and biology interact. Bio art is a trading zone that leads trading activities between an artist and a bio lab. Within the trading zone, artists and scientists trade their own goals on the premise of a shared context. As a result, the creation process of bio art shows creolization occurring within the trading zone. ",
+        "en": "﻿This paper explores the identity of bio art in terms of trading between an artist and a bio lab and looks into the creation process of bio art through the concept of creolization, in order to consider bio art as a creolized art form of biology and art. The American physicist Peter Galison refers to the term ‘trading zone’ as the boundary binding together the heterogeneous subcultures and considers ‘creolization’ as the process by which the interaction among different disciplines builds a new interdisciplinary field. Galison’s concepts can be applied to bio art where art and biology interact. Bio art is a trading zone that leads trading activities between an artist and a bio lab. Within the trading zone, artists and scientists trade their own goals on the premise of a shared context. As a result, the creation process of bio art shows creolization occurring within the trading zone. ",
+        "zh": "﻿This paper explores the identity of bio art in terms of trading between an artist and a bio lab and looks into the creation process of bio art through the concept of creolization, in order to consider bio art as a creolized art form of biology and art. The American physicist Peter Galison refers to the term ‘trading zone’ as the boundary binding together the heterogeneous subcultures and considers ‘creolization’ as the process by which the interaction among different disciplines builds a new interdisciplinary field. Galison’s concepts can be applied to bio art where art and biology interact. Bio art is a trading zone that leads trading activities between an artist and a bio lab. Within the trading zone, artists and scientists trade their own goals on the premise of a shared context. As a result, the creation process of bio art shows creolization occurring within the trading zone. "
+      },
+      "venue": {
+        "ko": "ISEA2018: 24th International Symposium on Electronic Art",
+        "en": "ISEA2018: 24th International Symposium on Electronic Art",
+        "zh": "ISEA2018: 24th International Symposium on Electronic Art"
+      },
+      "keywords": {
+        "ko": "﻿Bio art, Trading zone, Creolization, Shared context, Microbial art project ",
+        "en": "﻿Bio art, Trading zone, Creolization, Shared context, Microbial art project ",
+        "zh": "﻿Bio art, Trading zone, Creolization, Shared context, Microbial art project "
+      },
+      "year": 2018,
+      "category": "conference",
+      "authors": {
+        "ko": "Jongcheon Shin, et al.",
+        "en": "Jongcheon Shin, et al.",
+        "zh": "Jongcheon Shin, et al."
+      },
+      "pdfUrl": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.isea-symposium-archives.org/wp-content/uploads/2019/02/ISEA2018_Proceedings.pdf",
+      "externalUrl": "https://www.isea-symposium-archives.org/symposium/isea2018-24th-international-symposium-on-electronic-art/",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780481774997",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "Artistic Brain: A Complex Nonlinear System as Advanced Neuroesthetic Research",
+        "en": "Artistic Brain: A Complex Nonlinear System as Advanced Neuroesthetic Research",
+        "zh": "Artistic Brain: A Complex Nonlinear System as Advanced Neuroesthetic Research"
+      },
+      "abstract": {
+        "ko": "﻿This paper explores brain systems that neuroesthetics and brainwave art have experimented, in order to consider a complex nonlinear system of a brain in terms of art, science and technology. Semir Zeki created a field of neuroesthetics by trying to study the relationship between art, aesthetics and brain through fMRI technology. Since then, neuroesthetics has attracted the attentions of cognitive neuroscientists and elicited the vigorous discussions of aestheticians and artists. Nevertheless, recently neuroesthetics confronts lots of criticisms and skepticisms. It is involved in a problem that regards a brain of the most complex structure as a functionally specialized linear system. In contrast, artworks that use brainwaves view a brain as a nonlinear system rather than a linear system. In particular, brainwave sonification experiments a brain as a complex nonlinear system, focusing on sound generated from neural impulses caused by the complex interactions of neurons in a brain. Interestingly, EEG and auditory feedback are appropriate elements for exploring a complex nonlinear system of a brain.",
+        "en": "﻿This paper explores brain systems that neuroesthetics and brainwave art have experimented, in order to consider a complex nonlinear system of a brain in terms of art, science and technology. Semir Zeki created a field of neuroesthetics by trying to study the relationship between art, aesthetics and brain through fMRI technology. Since then, neuroesthetics has attracted the attentions of cognitive neuroscientists and elicited the vigorous discussions of aestheticians and artists. Nevertheless, recently neuroesthetics confronts lots of criticisms and skepticisms. It is involved in a problem that regards a brain of the most complex structure as a functionally specialized linear system. In contrast, artworks that use brainwaves view a brain as a nonlinear system rather than a linear system. In particular, brainwave sonification experiments a brain as a complex nonlinear system, focusing on sound generated from neural impulses caused by the complex interactions of neurons in a brain. Interestingly, EEG and auditory feedback are appropriate elements for exploring a complex nonlinear system of a brain.",
+        "zh": "﻿This paper explores brain systems that neuroesthetics and brainwave art have experimented, in order to consider a complex nonlinear system of a brain in terms of art, science and technology. Semir Zeki created a field of neuroesthetics by trying to study the relationship between art, aesthetics and brain through fMRI technology. Since then, neuroesthetics has attracted the attentions of cognitive neuroscientists and elicited the vigorous discussions of aestheticians and artists. Nevertheless, recently neuroesthetics confronts lots of criticisms and skepticisms. It is involved in a problem that regards a brain of the most complex structure as a functionally specialized linear system. In contrast, artworks that use brainwaves view a brain as a nonlinear system rather than a linear system. In particular, brainwave sonification experiments a brain as a complex nonlinear system, focusing on sound generated from neural impulses caused by the complex interactions of neurons in a brain. Interestingly, EEG and auditory feedback are appropriate elements for exploring a complex nonlinear system of a brain."
+      },
+      "venue": {
+        "ko": "ISEA2017: 23rd International Symposium on Electronic Art",
+        "en": "ISEA2017: 23rd International Symposium on Electronic Art",
+        "zh": "ISEA2017: 23rd International Symposium on Electronic Art"
+      },
+      "keywords": {
+        "ko": "﻿Nueroesthetics, Specialized Linear System, functional Magnetic Resonance Imaging (fMRI), Brainwave Art, Brainwave Sonification, Complex Nonlinear System, Encephalography(EEG)",
+        "en": "﻿Nueroesthetics, Specialized Linear System, functional Magnetic Resonance Imaging (fMRI), Brainwave Art, Brainwave Sonification, Complex Nonlinear System, Encephalography(EEG)",
+        "zh": "﻿Nueroesthetics, Specialized Linear System, functional Magnetic Resonance Imaging (fMRI), Brainwave Art, Brainwave Sonification, Complex Nonlinear System, Encephalography(EEG)"
+      },
+      "year": 2017,
+      "category": "conference",
+      "authors": {
+        "ko": "Jongcheon Shin, Joonsung Yoon",
+        "en": "Jongcheon Shin, Joonsung Yoon",
+        "zh": "Jongcheon Shin, Joonsung Yoon"
+      },
+      "pdfUrl": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.isea-symposium-archives.org/wp-content/uploads/2019/02/ISEA2017_Proceedings.pdf",
+      "externalUrl": "https://www.isea-symposium-archives.org/symposium/isea2017-23rd-international-symposium-on-electronic-art/",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780482027074",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "게이미피게이션은 어떻게 학생들을 움직이는가: 학습시간관리서비스 분석을 통한 심리적 반엔트로피와 밈에 관한 연구",
+        "en": "How Gamification Moves Students: A Study on Psychic Anti-entropy and Meme through Analysis of Study Time Management Services",
+        "zh": "游戏化如何影响学生：基于学习时间管理服务的心理反熵和模因研究"
+      },
+      "abstract": {
+        "ko": "본 연구는 국내 교육 환경에서 특별하게 등장하고 있는 학습시간 관리서비스의 개념과 그 안에서 활용되고 있는 게이미피케이션 요소들의 특성을 파악한 후, 학습시간 관리서비스가 지향하는 심리적 반엔트로피의 의미와 새로운 게이미피케이션 요소로서 밈(meme)의 역할을 제시한다. 교육용 게이미피케이션의 목표는 게임과 학습의 유사한 부분을 찾아 학습 환경에 접목시킴으로써 학습 동기를 강화하고 몰입으로 이끄는 것이다. 학습시간 관리서비스 또한 그러한 목표를 지향한다. 하지만 그것은 앱 차단과 같은 외적 반엔트로피 환경을 게임적 기술이나 게임적 사고로 연결해 외적 동기를 부여한다는 점에서 차이가 있다. 뿐만 아니라 내적 동기를 유발하기 위해 새로운 게이미피케이션 요소로서 밈을 활용한다는 점에서도 차별화된다. 특히, 학습 패턴과 관련된 밈은 학습 활동 수행에 관한 일종의 지침과 같은 것으로서, 우수한 학습 패턴을 모방하려는 내적 동기를 유발하고 심리적 반엔트로피 상태를 지속시킬 수 있는 동력이 된다. 따라서 학습시간 관리서비스 안의 게이미피케이션은 게임 기반의 기술이나 게임적 사고를 활용함으로써 외적 반엔트로피 환경을 강화하고, 학습 패턴의 밈을 활용함으로써 심리적 반엔트로피 상태를 지속시키는 것이다.",
+        "en": "This study explores the concept of Study Time Management Service(STMS) and the characteristics of gamification elements in STMS, in order to propose the meaning of psychic anti-entropy and the role of a meme as a new gamification element. The goal of gamification in education is to enhance study motivation and lead to flow by integrating similarities between game and study into the study environment. STMS also aims at such a goal. However, it differs in that the external anti-entropy environment, such as blocking apps, is connected with game mechanics or game thinking to give extrinsic motivation. It is also unique in that it uses a meme as a new gamification element to induce intrinsic motivation. In particular, a meme as a kind of guideline for performing study activities induces intrinsic motivation to imitate good study patterns and offers the driving force to sustain psychic anti-entropy state. Therefore, gamification in STMS is to strengthen the external anti-entropy environment by utilizing game mechanics or game thinking, and to maintain the psychic anti-entropy state by utilizing a meme of study patterns.",
+        "zh": "本研究探讨了学习时间管理服务（STMS）的概念及其游戏化元素的特征，旨在阐明心理反熵的含义以及模因作为一种新型游戏化元素的作用。教育中的游戏化目标是通过将游戏与学习的相似性融入学习环境，从而增强学习动机并引导学生进入心流状态。STMS也旨在实现这一目标。然而，它与传统游戏化的不同之处在于，它将外部反熵环境（例如屏蔽应用程序）与游戏机制或游戏思维相结合，从而提供外在动机。此外，STMS还以模因作为一种新型游戏化元素来激发内在动机。具体而言，模因作为一种学习活动的指导原则，能够激发学生模仿良好学习模式的内在动机，并为维持心理反熵状态提供驱动力。因此，STMS 中的游戏化是通过利用游戏机制或游戏思维来加强外部反熵环境，并通过利用学习模式的模因来维持心理反熵状态。"
+      },
+      "venue": {
+        "ko": "한국게임학회 논문지",
+        "en": "Journal of Korea Game Society",
+        "zh": "韩国游戏学会期刊"
+      },
+      "keywords": {
+        "ko": "교육용 게이미피케이션, STMS, 학습시간 관리서비스, 심리적 반엔트로피, 외적 몰입 환경, 내적 몰입 상태, 밈",
+        "en": "Gamification in Education, Study Time Management Service, Psychic Anti-entropy, External Flow Environment, Internal Flow State, Meme",
+        "zh": "教育游戏化、学习时间管理服务、心理反熵、外部心流环境、内部心流状态、迷因"
+      },
+      "year": 2017,
+      "category": "journal",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE07425719&width=1888",
+      "externalUrl": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002197581",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780482325376",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "Biocybernetic Serendipity: The Acceptance of Noise and Mutation in Biocybernetic Art",
+        "en": "Biocybernetic Serendipity: The Acceptance of Noise and Mutation in Biocybernetic Art",
+        "zh": "Biocybernetic Serendipity: The Acceptance of Noise and Mutation in Biocybernetic Art"
+      },
+      "abstract": {
+        "ko": "﻿This paper explores the relationship between biocybernetics, art, and information-based biological system, looking into several biocybernetic artworks, in order to propose the aesthetic potential of noise and mutation in biocybernetic art. In 1982, Namjune Paik’s Robot K-456 was killed in a car accident on the Madison Avenue, New York. The death of Robot K-456 paradoxically showed that a cybernetic device may become a living organism. It was a beginning of biocybernetic art that intends to combine ‘bio’ related to an area of living organism and ‘cybernetics’ associated with control systems. Then, biocybernetic artworks such as Garnet Hertz’s Cockroach Controlled Mobile Robot, Arthur Elsenaar’s Electric Eigen-Portraits, and Eduardo Kac’s Genesis have suggested their own new communication systems based on the flow of information from biological factors to cybernetic artifacts, or vice versa. They basically imply not only a negative feedback loop of cybernetics and a signal processing of biology, but also the unpredictable such as noise and mutation. Above all, the unpredictability of mutation increases the volume of information and shows the possibility to convert noise into meaningful new information. Ultimately, it leads to biocybernetic serendipity at which biocybernetic art essentially aims.",
+        "en": "﻿This paper explores the relationship between biocybernetics, art, and information-based biological system, looking into several biocybernetic artworks, in order to propose the aesthetic potential of noise and mutation in biocybernetic art. In 1982, Namjune Paik’s Robot K-456 was killed in a car accident on the Madison Avenue, New York. The death of Robot K-456 paradoxically showed that a cybernetic device may become a living organism. It was a beginning of biocybernetic art that intends to combine ‘bio’ related to an area of living organism and ‘cybernetics’ associated with control systems. Then, biocybernetic artworks such as Garnet Hertz’s Cockroach Controlled Mobile Robot, Arthur Elsenaar’s Electric Eigen-Portraits, and Eduardo Kac’s Genesis have suggested their own new communication systems based on the flow of information from biological factors to cybernetic artifacts, or vice versa. They basically imply not only a negative feedback loop of cybernetics and a signal processing of biology, but also the unpredictable such as noise and mutation. Above all, the unpredictability of mutation increases the volume of information and shows the possibility to convert noise into meaningful new information. Ultimately, it leads to biocybernetic serendipity at which biocybernetic art essentially aims.",
+        "zh": "﻿This paper explores the relationship between biocybernetics, art, and information-based biological system, looking into several biocybernetic artworks, in order to propose the aesthetic potential of noise and mutation in biocybernetic art. In 1982, Namjune Paik’s Robot K-456 was killed in a car accident on the Madison Avenue, New York. The death of Robot K-456 paradoxically showed that a cybernetic device may become a living organism. It was a beginning of biocybernetic art that intends to combine ‘bio’ related to an area of living organism and ‘cybernetics’ associated with control systems. Then, biocybernetic artworks such as Garnet Hertz’s Cockroach Controlled Mobile Robot, Arthur Elsenaar’s Electric Eigen-Portraits, and Eduardo Kac’s Genesis have suggested their own new communication systems based on the flow of information from biological factors to cybernetic artifacts, or vice versa. They basically imply not only a negative feedback loop of cybernetics and a signal processing of biology, but also the unpredictable such as noise and mutation. Above all, the unpredictability of mutation increases the volume of information and shows the possibility to convert noise into meaningful new information. Ultimately, it leads to biocybernetic serendipity at which biocybernetic art essentially aims."
+      },
+      "venue": {
+        "ko": "ISEA2016: 22nd International Symposium on Electronic Art",
+        "en": "ISEA2016: 22nd International Symposium on Electronic Art",
+        "zh": "ISEA2016: 22nd International Symposium on Electronic Art"
+      },
+      "keywords": {
+        "ko": "﻿Biocybernetic art, Information-based biological systems, Namjune Paik’s Robot K-456, Garnet Hertz’s Cockroach Controlled Mobile Robot, Arthur Elsenaar’s Electric Eigen-Portraits, Eduardo Kac’s Genesis, Noise, Mutation, Biocybernetic serendipity",
+        "en": "﻿Biocybernetic art, Information-based biological systems, Namjune Paik’s Robot K-456, Garnet Hertz’s Cockroach Controlled Mobile Robot, Arthur Elsenaar’s Electric Eigen-Portraits, Eduardo Kac’s Genesis, Noise, Mutation, Biocybernetic serendipity",
+        "zh": "﻿Biocybernetic art, Information-based biological systems, Namjune Paik’s Robot K-456, Garnet Hertz’s Cockroach Controlled Mobile Robot, Arthur Elsenaar’s Electric Eigen-Portraits, Eduardo Kac’s Genesis, Noise, Mutation, Biocybernetic serendipity"
+      },
+      "year": 2016,
+      "category": "conference",
+      "authors": {
+        "ko": "Jongcheon Shin, Joonsung Yoon",
+        "en": "Jongcheon Shin, Joonsung Yoon",
+        "zh": "Jongcheon Shin, Joonsung Yoon"
+      },
+      "pdfUrl": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.isea-symposium-archives.org/wp-content/uploads/2019/03/ISEA2016_Proceedings.pdf",
+      "externalUrl": "https://www.isea-symposium-archives.org/symposium/isea2016-22nd-international-symposium-on-electronic-art/",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780482463113",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "Toward genetic aesthetics: mutation of bio information and generative art system",
+        "en": "Toward genetic aesthetics: mutation of bio information and generative art system",
+        "zh": "Toward genetic aesthetics: mutation of bio information and generative art system"
+      },
+      "abstract": {
+        "ko": "We propose the meaning and potential of “genetic aesthetics,” because bio information can inspire the aesthetic purpose of generative art. By examining the definition of generative art and the term generative, the conditions of generative art can be compressed as rule, autonomy, and system. Among them, system is considered as a key element in generative art, because an artist transfers subsequent control to system. In particular, genetic system is regarded as the highest position on the Gary Flake’s graph of complexity. The graph shows that truly complex things occur at a transition point between orderly things and random things. It is a nexus of bio information and generative aesthetics, because it confirms that unity and diversity are not mutually exclusive concepts. Here, noise of information theory and a mutation of biology have an important role to explain the aesthetic value within generative art. Thus, we analyze noise by using the Shannon’s binary entropy function, and then apply a mutation to that function. The analysis shows that the uncertainty due to mutations can create the biological complexity in keeping with the certainty due to redundancy.",
+        "en": "We propose the meaning and potential of “genetic aesthetics,” because bio information can inspire the aesthetic purpose of generative art. By examining the definition of generative art and the term generative, the conditions of generative art can be compressed as rule, autonomy, and system. Among them, system is considered as a key element in generative art, because an artist transfers subsequent control to system. In particular, genetic system is regarded as the highest position on the Gary Flake’s graph of complexity. The graph shows that truly complex things occur at a transition point between orderly things and random things. It is a nexus of bio information and generative aesthetics, because it confirms that unity and diversity are not mutually exclusive concepts. Here, noise of information theory and a mutation of biology have an important role to explain the aesthetic value within generative art. Thus, we analyze noise by using the Shannon’s binary entropy function, and then apply a mutation to that function. The analysis shows that the uncertainty due to mutations can create the biological complexity in keeping with the certainty due to redundancy.",
+        "zh": "We propose the meaning and potential of “genetic aesthetics,” because bio information can inspire the aesthetic purpose of generative art. By examining the definition of generative art and the term generative, the conditions of generative art can be compressed as rule, autonomy, and system. Among them, system is considered as a key element in generative art, because an artist transfers subsequent control to system. In particular, genetic system is regarded as the highest position on the Gary Flake’s graph of complexity. The graph shows that truly complex things occur at a transition point between orderly things and random things. It is a nexus of bio information and generative aesthetics, because it confirms that unity and diversity are not mutually exclusive concepts. Here, noise of information theory and a mutation of biology have an important role to explain the aesthetic value within generative art. Thus, we analyze noise by using the Shannon’s binary entropy function, and then apply a mutation to that function. The analysis shows that the uncertainty due to mutations can create the biological complexity in keeping with the certainty due to redundancy."
+      },
+      "venue": {
+        "ko": "Generative Art Conference - GA2014",
+        "en": "Generative Art Conference - GA2014",
+        "zh": "Generative Art Conference - GA2014"
+      },
+      "keywords": {
+        "ko": "Genetic aesthetics, Noise, Mutation, Bio information",
+        "en": "Genetic aesthetics, Noise, Mutation, Bio information",
+        "zh": "Genetic aesthetics, Noise, Mutation, Bio information"
+      },
+      "year": 2014,
+      "category": "conference",
+      "authors": {
+        "ko": "Jongcheon Shin, Joonsung Yoon",
+        "en": "Jongcheon Shin, Joonsung Yoon",
+        "zh": "Jongcheon Shin, Joonsung Yoon"
+      },
+      "pdfUrl": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://generativeart.com/GA2014papers/Jongcheon_Shin_Joonsung_Yoon_2014.pdf",
+      "externalUrl": "https://generativeart.com/GA2014papers/GA2014_program_1.htm",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780482885034",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "유전 미학: 생성 예술과 생명 정보의 통합",
+        "en": "Genetic Aesthetics: The Integration of Generative Art and Bio Information",
+        "zh": "基因美学：生成艺术与生物信息的融合"
+      },
+      "abstract": {
+        "ko": "본 연구는 컴퓨터 기반 생성예술의 심미적 목적에 생명정보가 영감을 제공할 수 있다는 사실을 토대로 유전미학(genetic aesthetics)의 의미와 잠재성을 제시하는 것이다. 본 연구에서 돌연변이는 중요한 미학적 요소이다. 그것은 생명정보의 잘 짜여진 데이터베이스 하에서 혁신 또는 일탈의 가능성을 만들어내는 것이기 때문이다. 따라서 생성미학의 지향점이 규범으로부터 벗어난 혁신 또는 일탈 가능성의 생산이라는 점에서, 돌연변이는 컴퓨터 기반 생성예술의 심미적 가치를 설명하기 위한 대상이 될 수 있다. 그리고 그것은 예술가의 직관을 뛰어넘을 수 있는 생성미학이 생명정보와 결합되어 유전미학으로 발전될 수 있다는 것을 보여준다.",
+        "en": "This study presents the meaning and potential of genetic aesthetics based on the fact that biological information can provide inspiration for the aesthetic purposes of computer-based generative art. In this study, mutation is a significant aesthetic element. This is because it generates the possibility of innovation or deviation within a well-structured database of biological information. Therefore, given that the aim of generative aesthetics is the production of possibilities for innovation or deviation that deviate from norms, mutation can serve as a subject to explain the aesthetic value of computer-based generative art. Furthermore, this demonstrates that generative aesthetics, capable of transcending the artist's intuition, can evolve into genetic aesthetics when combined with biological information.",
+        "zh": "本研究基于生物信息能够为计算机生成艺术的美学目的提供灵感这一事实，阐述了基因美学的意义和潜力。在本研究中，突变是一个重要的美学元素。这是因为突变能够在结构完善的生物信息数据库中产生创新或偏离的可能性。因此，鉴于生成美学的目标是产生偏离常规的创新或偏离的可能性，突变可以作为解释计算机生成艺术美学价值的主题。此外，这表明，当生成美学与生物信息相结合时，它能够超越艺术家的直觉，并演化为基因美学。"
+      },
+      "venue": {
+        "ko": "숭실대학교 대학원",
+        "en": "Soongsil University Graduate School",
+        "zh": "崇实大学研究生院"
+      },
+      "keywords": {
+        "ko": "전미학, 생성 예술, 생명 정보, 노이즈, 돌연변",
+        "en": "Genetic Aesthetics, Generative Art, Bio Information, Noise, Mutation",
+        "zh": "基因美学、生成艺术、生物信息、噪声、突变"
+      },
+      "year": 2015,
+      "category": "thesis",
+      "authors": {
+        "ko": "신종천",
+        "en": "Jongcheon Shin",
+        "zh": "辛鍾天"
+      },
+      "pdfUrl": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://oasis.dcollection.net/public_resource/pdf/000001896912_20260603194044.pdf",
+      "externalUrl": "https://www.dbpia.co.kr/pdf/cpViewer?nodeId=T13687615",
+      "featured": false,
+      "published": true,
+      "id": "pub-1780483334774",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
     }
   ],
   "teaching": [
     {
       "id": "teach-1",
       "title": {
-        "ko": "디지털 미디어 아트 실습",
-        "en": "Digital Media Art Practice",
-        "zh": "数字媒体艺术实践"
+        "ko": "영상콘텐츠와 제작실습",
+        "en": "Video Contents Production Practice",
+        "zh": "视频内容制作实践"
       },
       "category": "undergraduate",
       "summary": {
-        "ko": "디지털 도구와 AI 기술을 활용한 미디어 아트 창작 실습. 개념 기획부터 최종 작품 제작까지 전 과정을 경험합니다.",
-        "en": "Media art creation practice utilizing digital tools and AI technology. Experience the entire process from concept planning to final artwork production.",
-        "zh": "利用数字工具和AI技术进行媒体艺术创作实践。体验从概念规划到最终作品制作的全过程。"
+        "ko": "본 과목은 영상 촬영 및 편집에 관한 개념 습득 및 실습 이후 사회적 이슈 관련 콘텐츠를 직접 제작함으로써 영상콘텐츠 제작을 위한 기획실행역량을 배양할 수 있게 돕는다.",
+        "en": "Students can cultivate planning and execution capabilities for video content production by acquiring concepts and practicing video shooting and editing, and then directly producing content related to social issues.",
+        "zh": "学生将通过学习视频拍摄和剪辑的概念并进行实践，培养视频内容制作的策划和执行能力，并直接制作与社会议题相关的视频内容。"
       },
       "description": {
-        "ko": "본 과목은 디지털 미디어 아트의 이론적 배경과 실습을 결합한 창작 중심 교과입니다. 학생들은 Processing, TouchDesigner, AI 생성 도구 등을 활용하여 인터랙티브 설치, 데이터 시각화, 생성 예술 등 다양한 형태의 디지털 아트를 제작합니다.\n\n매주 새로운 기술과 개념을 학습하고, 개인 프로젝트와 팀 프로젝트를 통해 실제 작품을 완성합니다. 학기말에는 전시회를 개최하여 작품을 발표합니다.",
-        "en": "This course is a creation-centered curriculum combining theoretical background and practice in digital media art. Students create various forms of digital art including interactive installations, data visualization, and generative art using Processing, TouchDesigner, AI generation tools, and more.\n\nStudents learn new techniques and concepts each week and complete actual works through individual and team projects. An exhibition is held at the end of the semester to present works.",
-        "zh": "本课程是将数字媒体艺术理论背景与实践相结合的创作中心课程。学生利用Processing、TouchDesigner、AI生成工具等制作交互式装置、数据可视化、生成艺术等各种形式的数字艺术。\n\n每周学习新技术和概念，通过个人项目和团队项目完成实际作品。学期末举办展览，展示作品成果。"
+        "ko": "본 교과목은 영상촬영장비 및 편집프로그램을 원활하게 다루어 자신의 콘텐츠를 직접 제작·편집할 수 있도록 만드는데 초점을 맞춘다. 최근의 디지털생태계 안에서 영상콘텐츠를 제작하고 배포할 수 있는 능력은 중요하다. 특히, 자신이 사회적으로 공감하는 이슈를 영상콘텐츠로 만들어 다른 사람들과 공유할 수 있는 능력은 경쟁력이 된다. 따라서 본 교과목은 학생들의 촬영 및 편집 실력을 높이고 학생들 스스로 사회적 관심 분야를 발굴하여 영상콘텐츠로 표현할 수 있게 만든다.",
+        "en": "This course focuses on enabling students to proficiently handle video shooting equipment and editing software to produce and edit their own content. In today's digital ecosystem, the ability to create and distribute video content is crucial. In particular, the ability to create video content about socially relevant issues and share it with others serves as a competitive edge. Therefore, this course enhances students' shooting and editing skills and enables them to identify areas of social interest on their own and express them through video content.",
+        "zh": "本课程旨在使学生能够熟练操作视频拍摄设备和剪辑软件，制作和剪辑自己的视频内容。在当今的数字生态系统中，创作和传播视频内容的能力至关重要。尤其能够创作与社会议题相关的视频内容并与他人分享，更是一项极具竞争力的优势。因此，本课程旨在提升学生的拍摄和剪辑技能，并帮助他们自主发现社会关注点，并通过视频内容进行表达。"
       },
-      "semester": "2024 Spring",
-      "courseType": "전공필수",
+      "semester": "2026 Spring",
+      "courseType": "전공선택",
       "keywords": {
-        "ko": "디지털 아트, 미디어 아트, 인터랙티브, AI 창작",
-        "en": "Digital Art, Media Art, Interactive, AI Creation",
-        "zh": "数字艺术, 媒体艺术, 互动, AI创作"
+        "ko": "사회적 이슈 공감, Adobe Premiere Pro 중심 영상편집, DSLR 카메라 중심 촬영",
+        "en": "Empathy for Social Issues, Video Editing Centered on Adobe Premiere Pro, Shooting Centered on DSLR Cameras",
+        "zh": "培养对社会议题的同理心，以Adobe Premiere Pro为核心的视频剪辑，以单反相机为核心的拍摄。"
       },
       "featured": true,
       "published": true,
       "createdAt": "2024-01-01",
-      "updatedAt": "2024-03-01"
+      "updatedAt": "2026-06-03"
     },
     {
       "id": "teach-2",
       "title": {
-        "ko": "AI와 창의적 콘텐츠 기획",
-        "en": "AI and Creative Content Planning",
-        "zh": "AI与创意内容策划"
+        "ko": "슬기로운 AI 생활",
+        "en": "Wise AI Life",
+        "zh": "智慧人工智能生活"
       },
-      "category": "graduate",
+      "category": "undergraduate",
       "summary": {
-        "ko": "AI 기술의 이해를 바탕으로 문화콘텐츠 기획 능력을 배양하는 대학원 과목. 이론과 실무를 병행합니다.",
-        "en": "A graduate course that cultivates cultural content planning abilities based on understanding AI technology. Combines theory and practice.",
-        "zh": "以理解AI技术为基础，培养文化内容策划能力的研究生课程。理论与实务并重。"
+        "ko": "본 과목은 학생들이 AI 학습을 통해 전문성을 강화하고 융합적 사고역량을 길러 실생활에 활용할 수 있도록 돕는다.",
+        "en": "This course helps students strengthen their expertise and cultivate convergent thinking skills through AI learning, enabling them to apply these capabilities to real life.",
+        "zh": "本课程旨在通过人工智能学习，帮助学生强化专业知识，培养融合思维能力，并将这些能力应用于现实生活。"
       },
       "description": {
-        "ko": "대학원 수준의 본 과목은 AI 기술의 기본 원리와 문화콘텐츠 기획 방법론을 결합합니다. 생성형 AI, 추천 시스템, 자연어 처리 등 핵심 AI 기술의 작동 원리를 이해하고, 이를 만화, 애니메이션, 게임, 영상 등 다양한 콘텐츠 기획에 적용하는 방법을 학습합니다.\n\n매 학기 실제 산업 프로젝트 또는 연구 프로젝트를 수행하며, 논문 작성과 발표 능력도 함께 배양합니다.",
-        "en": "This graduate-level course combines the basic principles of AI technology with cultural content planning methodologies. Students understand the operational principles of core AI technologies such as generative AI, recommendation systems, and natural language processing, and learn how to apply them to planning various content including comics, animation, games, and video.\n\nEach semester, students conduct actual industry or research projects and cultivate paper writing and presentation skills.",
-        "zh": "本研究生课程将AI技术基本原理与文化内容策划方法论相结合。理解生成式AI、推荐系统、自然语言处理等核心AI技术的工作原理，学习如何将其应用于漫画、动画、游戏、影像等各种内容策划。\n\n每学期开展实际行业项目或研究项目，同时培养论文写作和展示能力。"
+        "ko": "본 교과목은 인공지능(AI) 발전에 따라 미래사회에 대한 낙관과 비관적 전망이 동시에 나오고 있는 현실 속에서 학생들이 균형잡힌 사고와 실행력을 갖출 수 있도록 만든다. 현실에서는 AI가 널리 확산되면서 인간이 AI를 잘 이용하고자 하는 노력이 중요한 시대가 되었다. 이 강의에서는 사회적으로 관심이 높은 AI의 기초와 기본 원리, 심리적 상호작용, 그리고 사회적 영향을 통합적으로 파악하고자 하는 목적에서 개설되었다. 교양과목으로서 AI에 대한 대학생으로서의 소양을 넓히고 AI와 인간의 공존 가능성을 탐구하고자 한다.",
+        "en": "In a reality where both optimistic and pessimistic outlooks on future society are emerging simultaneously due to the development of artificial intelligence (AI), this course is designed to help students develop balanced thinking and execution skills. As AI becomes widely adopted, we have entered an era where human efforts to utilize AI effectively are crucial. This course was established with the purpose of providing an integrated understanding of the fundamentals and basic principles of AI, psychological interactions, and social impacts—topics of high social interest. As a liberal arts course, it aims to broaden university students' knowledge of AI and explore the possibilities of AI-human coexistence.",
+        "zh": "在人工智能（AI）发展导致人们对未来社会既有乐观也有悲观的双重观点的当下，本课程旨在帮助学生培养平衡的思考和执行能力。随着人工智能的广泛应用，我们已进入一个人类如何有效利用人工智能至关重要的时代。本课程旨在提供对人工智能基础知识、基本原理、心理互动和社会影响等高度社会关注话题的综合理解。作为一门人文课程，本课程旨在拓展大学生的人工智能知识，并探索人工智能与人类共存的可能性。"
       },
-      "semester": "2024 Fall",
-      "courseType": "전공선택",
+      "semester": "2026 Spring",
+      "courseType": "교양선택",
       "keywords": {
-        "ko": "AI, 콘텐츠 기획, 생성형 AI, 문화산업",
-        "en": "AI, Content Planning, Generative AI, Cultural Industry",
-        "zh": "AI, 内容策划, 生成式AI, 文化产业"
+        "ko": "AI 사회 시스템, AI 균형 사고, AI 작동원리, AI-인간 공존",
+        "en": "AI Social Systems, AI Balanced Thinking, AI Operating Principles, AI-Human Coexistence",
+        "zh": "人工智能社会系统、人工智能平衡思维、人工智能运行原理、人工智能与人类共存"
       },
       "featured": true,
       "published": true,
       "createdAt": "2024-01-01",
-      "updatedAt": "2024-08-01"
+      "updatedAt": "2026-06-03"
     },
     {
       "id": "teach-3",
       "title": {
-        "ko": "만화·웹툰 스토리텔링",
-        "en": "Comics & Webtoon Storytelling",
-        "zh": "漫画·网络漫画叙事创作"
+        "ko": "AI와 나: 생성형 AI 시대의 이해와 활용",
+        "en": "AI and Me: Understanding and Utilizing the Era of Generative AI",
+        "zh": "AI与我：理解并运用生成式AI时代"
       },
       "category": "undergraduate",
       "summary": {
-        "ko": "만화와 웹툰의 서사 구조와 스토리텔링 기법을 학습하고, AI 도구를 활용한 새로운 내러티브 실험을 합니다.",
-        "en": "Learning narrative structure and storytelling techniques of comics and webtoons, with new narrative experiments using AI tools.",
-        "zh": "学习漫画和网络漫画的叙事结构与讲故事技巧，利用AI工具进行新型叙事实验。"
+        "ko": "본 과목은 생성형 AI 시대 속에 살고 있는 학생들이 AI를 이해하고 AI 도구를 활용해 융복합적으로 사고할 수 있게 돕는다.",
+        "en": "This course helps students living in the era of Generative AI to understand AI independently and think in an interdisciplinary manner.",
+        "zh": "本课程旨在帮助生活在生成式AI时代的学生独立理解AI，并培养跨学科思维。"
       },
       "description": {
-        "ko": "만화와 웹툰의 서사 구조, 장르별 스토리텔링 기법, 캐릭터 개발, 세계관 구축 등을 체계적으로 학습합니다. 전통적인 스토리텔링 방법론과 함께 AI 기반 내러티브 생성 도구를 활용한 실험적 창작도 진행합니다.\n\n학생들은 개인 작품을 기획하고 완성하며, 동료 리뷰와 크리틱을 통해 창작 역량을 발전시킵니다.",
-        "en": "Systematically learning narrative structure of comics and webtoons, genre-specific storytelling techniques, character development, and world-building. Along with traditional storytelling methodologies, students also engage in experimental creation using AI-based narrative generation tools.\n\nStudents plan and complete individual works, developing creative capabilities through peer reviews and critiques.",
-        "zh": "系统学习漫画和网络漫画的叙事结构、各类型讲故事技巧、角色开发、世界观构建等内容。除传统故事讲述方法论外，还开展利用AI叙事生成工具的实验性创作。\n\n学生规划并完成个人作品，通过同伴评审和批评发展创作能力。"
+        "ko": "본 교과목은 생성형 AI(Generative AI)의 개념과 활용법을 중심으로, AI가 바꾸는 사회와 미래에 대한 통찰력을 기르고자 한다. 학생들은 다양한 최신 생성형 AI 도구를 직접 체험하며 실습 중심의 학습을 통해 디지털 문해력을 강화한다. 또한 AI 윤리, 보안, 데이터의 이해, 산업 적용 사례를 종합적으로 학습함으로써, AI 시대에 필요한 비판적 사고력과 문제 해결 능력을 갖춘 인재로 성장할 수 있도록 지도다.",
+        "en": "Focusing on the concepts and applications of Generative AI, this course aims to cultivate insights into the society and future transformed by AI. Students will strengthen their digital literacy through hands-on learning by directly experiencing various cutting-edge Generative AI tools. Furthermore, by comprehensively studying AI ethics, security, data understanding, and industrial application examples, the course guides students to grow into talents equipped with the critical thinking and problem-solving skills necessary for the AI ​​era.",
+        "zh": "本课程聚焦生成式AI的概念和应用，旨在培养学生对AI如何改变社会和未来的深刻洞察。学生将通过实践学习，直接体验各种前沿的生成式AI工具，从而提升数字素养。此外，本课程还将全面学习AI伦理、安全、数据理解和产业应用案例，引导学生成长为具备AI时代所需的批判性思维和问题解决能力的人才。"
       },
-      "semester": "2024 Spring",
-      "courseType": "전공필수",
+      "semester": "2026 Spring",
+      "courseType": "교양선택",
       "keywords": {
-        "ko": "만화, 웹툰, 스토리텔링, 내러티브, AI",
-        "en": "Comics, Webtoon, Storytelling, Narrative, AI",
-        "zh": "漫画, 网络漫画, 讲故事, 叙事, AI"
+        "ko": "생성형 AI, 프롬프트 작성, AI 저작도구, AI 윤리 및 보안",
+        "en": "Generative AI, Prompt Writing, AI Authoring Tools, AI Ethics and Security",
+        "zh": "生成式AI、写作提示、AI创作工具、AI伦理与安全"
       },
-      "featured": false,
+      "featured": true,
       "published": true,
       "createdAt": "2024-01-01",
-      "updatedAt": "2024-03-01"
+      "updatedAt": "2026-06-03"
     },
     {
       "id": "teach-4",
       "title": {
-        "ko": "문화콘텐츠와 기술 융합 세미나",
-        "en": "Cultural Content and Technology Convergence Seminar",
-        "zh": "文化内容与技术融合研讨会"
+        "ko": "AI 기반 콘텐츠 제작 실습",
+        "en": "AI-Based Content Creation Practice",
+        "zh": "基于人工智能的内容创作实践"
       },
-      "category": "seminar",
+      "category": "graduate",
       "summary": {
-        "ko": "문화콘텐츠 산업에서의 최신 기술 동향과 사례를 분석하고 토론하는 대학원 세미나.",
-        "en": "A graduate seminar analyzing and discussing latest technology trends and cases in the cultural content industry.",
-        "zh": "分析讨论文化内容产业最新技术动态与案例的研究生研讨会。"
+        "ko": "본 과목은 생성형 AI 기술을 활용한 콘텐츠 제작 과정을 학습하고 나만의 콘텐츠를 직접 개발하는 과정을 경험합니다.",
+        "en": "This course teaches the content creation process utilizing generative AI technology and allows students to experience the process of developing their own content.",
+        "zh": "本课程教授如何利用生成式人工智能技术进行内容创作，并让学生体验开发自身内容的过程。"
       },
       "description": {
-        "ko": "매주 문화콘텐츠와 기술 융합 관련 최신 논문, 산업 사례, 기술 동향을 발표하고 토론합니다. AI, XR, 블록체인, 메타버스 등 신기술이 문화콘텐츠 산업에 미치는 영향을 다각도로 분석합니다.\n\n초청 강연과 현장 방문도 포함되며, 학기말에는 개인 연구 주제에 대한 논문 발표를 진행합니다.",
-        "en": "Weekly presentations and discussions on the latest papers, industry cases, and technology trends related to cultural content and technology convergence. Multi-faceted analysis of the impact of new technologies such as AI, XR, blockchain, and metaverse on the cultural content industry.\n\nIncludes invited lectures and field visits, with paper presentations on individual research topics at the end of the semester.",
-        "zh": "每周发表并讨论与文化内容和技术融合相关的最新论文、行业案例、技术动态。多角度分析AI、XR、区块链、元宇宙等新技术对文化内容产业的影响。\n\n包含特邀讲座和现场参观，学期末进行个人研究课题的论文发表。"
+        "ko": "본 교과목은 생성형 AI 저작도구들의 사용법을 학습하고, 학생들 스스로 그것들을 활용하여 스토리텔링, 캐릭터 디자인, 이미지 생성, 사운드 제작, 비디오 편집 등의 과정을 경험할 수 있게 안내합니다. 단순한 도구 사용법을 넘어 AI와 인간 창작자 간의 협업 방식, 윤리적 고려사항, 그리고 AI를 활용한 창의적 표현 방법에 대해 이론과 실습을 병행합니다.",
+        "en": "This course teaches the usage of generative AI authoring tools and guides students to independently utilize them to experience processes such as storytelling, character design, image generation, sound production, and video editing. Beyond simple tool usage, the course combines theory and practice regarding collaboration methods between AI and human creators, ethical considerations, and creative expression methods using AI.",
+        "zh": "本课程教授生成式人工智能创作工具的使用方法，并指导学生独立运用这些工具体验故事创作、角色设计、图像生成、声音制作和视频剪辑等流程。除了简单的工具使用之外，本课程还将人工智能与人类创作者的协作方法、伦理考量以及利用人工智能进行创意表达的方法等理论与实践相结合。"
       },
-      "semester": "2024 Fall",
-      "courseType": "전공선택",
+      "semester": "2025 Fall",
+      "courseType": "전공기초",
       "keywords": {
-        "ko": "세미나, 기술 융합, 문화콘텐츠, 연구 방법론",
-        "en": "Seminar, Technology Convergence, Cultural Content, Research Methodology",
-        "zh": "研讨会, 技术融合, 文化内容, 研究方法论"
+        "ko": "AI 기반 창작, AI 스토리텔링, AI 이미지 생성, AI 사운드 제작, AI 비디오 편집",
+        "en": "AI-Based Creation, AI Storytelling, AI Image Generation, AI Sound Production, AI Video Editing",
+        "zh": "人工智能创作、人工智能故事创作、人工智能图像生成、人工智能声音制作、人工智能视频剪辑"
       },
       "featured": false,
       "published": true,
       "createdAt": "2024-01-01",
-      "updatedAt": "2024-08-01"
+      "updatedAt": "2026-06-03"
+    },
+    {
+      "title": {
+        "ko": "영상편집 심화실습",
+        "en": "Advanced Video Editing Practice",
+        "zh": "高级视频剪辑练习"
+      },
+      "summary": {
+        "ko": "본 과목은 모션그래픽을 실습하고 생성형 인공지능 저작도구들을 활용하여 자신의 콘텐츠를 제작함으로써 영상 심화 제작을 위한 기획실행역량을 배양할 수 있게 돕는다.",
+        "en": "By practicing motion graphics and creating their own content using generative AI authoring tools, students can cultivate planning and execution capabilities for advanced video content production.",
+        "zh": "通过练习动态图形并使用生成式人工智能创作工具创建自己的内容，学生可以培养高级视频内容制作的规划和执行能力。"
+      },
+      "description": {
+        "ko": "본 교과목은 영상에 모션그래픽을 더할 수 있는 편집프로그램을 원활하게 다루고 인공지능을 활용하여 자신의 콘텐츠를 직접 제작할 수 있도록 만드는데 초점을 맞춘다. 사회로 진출하는 학생들에게 자신의 관심 내용을 구체적으로 표현하고 콘텐츠로 제작할 줄 아는 능력은 중요하다. 특히, 최근 등장한 AI 저작도구들을 활용하여 콘텐츠를 만들 수 있는 능력은 경쟁력이 된다. 따라서 본 교과목은 학생들이 모션그래픽 편집프로그램 및 인공지능 저작도구를 이용하여 자기만의 영상콘텐츠를 완성할 수 있게 만든다.",
+        "en": "This course focuses on enabling students to proficiently handle editing programs that add motion graphics to videos and to directly produce their own content using artificial intelligence. For students entering the workforce, the ability to concretely express their interests and produce content is crucial. In particular, the ability to create content using recently emerged AI authoring tools serves as a competitive advantage. Therefore, this course is designed to enable students to complete their own unique video content using motion graphics editing programs and AI authoring tools.",
+        "zh": "本课程旨在使学生能够熟练地使用为视频添加动态图形的剪辑软件，并直接利用人工智能制作自己的内容。对于即将步入职场的学生而言，能够具体表达自己的兴趣并制作内容至关重要。尤其重要的是，能够使用新兴的人工智能创作工具来创作内容，这将成为一项竞争优势。因此，本课程旨在帮助学生使用动态图形编辑软件和人工智能创作工具完成自己独特的视频内容。"
+      },
+      "keywords": {
+        "ko": "AI 활용 창작, After Effect 중심 영상편집",
+        "en": "AI-based Creation, After Effects-focused Video Editing",
+        "zh": "基于人工智能的创作，以 After Effects 为重点的视频剪辑"
+      },
+      "category": "undergraduate",
+      "semester": "2026 Spring",
+      "courseType": "전공선택",
+      "featured": true,
+      "published": true,
+      "id": "teach-1780495973809",
+      "createdAt": "2026-06-03",
+      "updatedAt": "2026-06-03"
     }
   ],
   "activities": [
@@ -500,164 +1322,220 @@
         "zh": "东京，日本"
       },
       "summary": {
-        "ko": "AI 기반 인터랙티브 미디어 아트에 관한 연구 논문을 SIGGRAPH Asia 2024에서 발표했습니다.",
-        "en": "Presented a research paper on AI-based interactive media art at SIGGRAPH Asia 2024.",
-        "zh": "在SIGGRAPH Asia 2024上发表了关于AI交互媒体艺术的研究论文。"
+        "ko": "한국콘텐츠진흥원의 콘텐츠원캠퍼스 구축운영사업을 진행하면서 작성한 \"교역지대로서의 AI 생성 예술\"에 관한 연구 논문을 SIGGRAPH Asia 2024에서 발표했습니다.",
+        "en": "Presented a research paper titled \"AI-Generated Art as a Trading Zone,\" which I authored while conducting the Korea Creative Content Agency's Content One Campus construction and operation project, at SIGGRAPH Asia 2024.",
+        "zh": "在 SIGGRAPH Asia 2024 上发表了一篇题为《人工智能生成艺术作为交易区》的研究论文，该论文是我在参与韩国文化产业振兴院 (KCCA) 的 Content One Campus 建设和运营项目期间撰写的。"
       },
       "description": {
-        "ko": "SIGGRAPH Asia 2024의 Art Papers 세션에서 \"AI와 인터랙티브 미디어 아트: 관객 참여형 생성 예술의 새로운 패러다임\"이라는 제목의 논문을 발표했습니다. 실시간 AI 생성과 관객 인터랙션을 결합한 실험적 작품의 설계와 구현 과정을 공유했습니다.",
-        "en": "Presented a paper titled \"AI and Interactive Media Art: A New Paradigm of Participatory Generative Art\" at the Art Papers session of SIGGRAPH Asia 2024. Shared the design and implementation process of experimental works combining real-time AI generation with audience interaction.",
-        "zh": "在SIGGRAPH Asia 2024的艺术论文环节发表了题为\"AI与互动媒体艺术：参与型生成艺术新范式\"的论文。分享了将实时AI生成与观众互动相结合的实验性作品的设计与实现过程。"
+        "ko": "SIGGRAPH Asia 2024의 Art Papers 세션에서 \"AI-Generated Art as a Trading Zone ： A Creolization between the MZ Generation and Traditional Culture\"이라는 제목의 논문을 발표했습니다. 실시간 AI 생성과 관객 인터랙션을 결합한 실험적 작품의 설계와 구현 과정을 공유했습니다.",
+        "en": "Presented a paper titled \"AI-Generated Art as a Trading Zone: A Creolization between the MZ Generation and Traditional Culture\" in the Art Papers session of SIGGRAPH Asia 2024. I shared the design and implementation process of an experimental work that combines real-time AI generation with audience interaction.",
+        "zh": "在 SIGGRAPH Asia 2024 的艺术论文环节发表了一篇题为《人工智能生成艺术作为交易区：MZ 世代与传统文化的融合》的论文。我分享了将实时人工智能生成与观众互动相结合的实验作品的设计和实现过程。"
       },
       "featured": true,
       "published": true,
       "createdAt": "2024-12-03",
-      "updatedAt": "2024-12-03"
+      "updatedAt": "2026-06-03",
+      "relatedLink": "https://dl.acm.org/doi/10.1145/3680530.3695455",
+      "imageUrl": "/uploads/1780502243343-srms2t.png"
     },
     {
       "id": "act-2",
       "title": {
-        "ko": "서울 미디어 아트 비엔날레 참여",
-        "en": "Seoul Media Art Biennale Participation",
-        "zh": "首尔媒体艺术双年展参展"
+        "ko": "천진미술대학(Tianjin Academy of Fine Arts) 초청 강의",
+        "en": "Invited Lecture at Tianjin Academy of Fine Arts",
+        "zh": "应邀在天津美术学院举办讲座"
       },
-      "type": "exhibition",
-      "date": "2024-09-15",
+      "type": "talk",
+      "date": "2025-05-28",
       "location": {
-        "ko": "서울시립미술관, 서울",
-        "en": "Seoul Museum of Art, Seoul",
-        "zh": "首尔市立美术馆，首尔"
+        "ko": "천진미술대학(TAFA), 천진, 중국",
+        "en": "TAFA, Tianjin, China",
+        "zh": "天津美术学院，中国天津"
       },
       "summary": {
-        "ko": "서울 미디어 아트 비엔날레에 AI 생성 인터랙티브 설치 작품을 출품했습니다.",
-        "en": "Exhibited an AI-generated interactive installation at the Seoul Media Art Biennale.",
-        "zh": "在首尔媒体艺术双年展上参展了AI生成互动装置作品。"
+        "ko": "중국의 8대 미술대학 중 하나인 천진미술대학(Tianjin Academy of Fine Arts)에서 초청 강의와 세미나를 진행했습니다.",
+        "en": "Delivered an invited lecture and seminar at Tianjin Academy of Fine Arts, one of China's top eight art universities.",
+        "zh": "我应邀在天津美术学院（中国八大顶尖艺术院校之一）举办讲座和研讨会。"
       },
       "description": {
-        "ko": "\"디지털 의식(Digital Consciousness)\"이라는 제목의 인터랙티브 설치 작품을 출품했습니다. 관객의 움직임과 음성을 실시간으로 분석하여 AI가 시각적 반응을 생성하는 몰입형 공간을 구성했습니다. 약 3,000명의 관객이 참여했습니다.",
-        "en": "Exhibited an interactive installation work titled \"Digital Consciousness.\" Created an immersive space where AI generates visual responses by analyzing audience movement and voice in real-time. Approximately 3,000 visitors participated.",
-        "zh": "参展了题为\"数字意识\"的互动装置作品。构建了一个通过实时分析观众动作和声音，AI生成视觉反馈的沉浸式空间。约3000名观众参与了体验。"
+        "ko": "중국 천진미술대학 테크놀로지아트학과에서 \"교역지대로서의 AI 생성예술(AI Generated Art as Trading Zone)\"과 \"포스트 휴머니즘으로서의 바이오아트(Bio-Art as Post-Humanism)\"을 주제로 강의와 세미나를 진행했습니다.",
+        "en": "Conducted lectures and seminars at the Department of Technology Art at Tianjin Academy of Fine Arts on the topics of \"AI Generated Art as Trading Zone\" and \"Bio-Art as Post-Humanism.\"",
+        "zh": "我在天津美术学院科技艺术系举办了题为“人工智能生成的艺术作为交易平台”和“生物艺术作为后人类主义”的讲座和研讨会。"
       },
       "featured": true,
       "published": true,
       "createdAt": "2024-09-15",
-      "updatedAt": "2024-09-15"
+      "updatedAt": "2026-06-03",
+      "imageUrl": "/uploads/1780505484397-0k6ct7.jpg"
     },
     {
       "id": "act-3",
       "title": {
-        "ko": "AI와 예술의 미래 초청 강연",
-        "en": "Invited Lecture: Future of AI and Art",
-        "zh": "AI与艺术的未来特邀演讲"
+        "ko": "한국문화예술경영학회 2026년 춘계학술대회 패널 토의",
+        "en": "Panel Discussion at the 2026 Spring Conference of the Korean Association of Arts & Culture Management",
+        "zh": "2026年韩国艺术文化管理学会春季会议专题讨论会"
       },
-      "type": "talk",
-      "date": "2024-06-20",
+      "type": "conference",
+      "date": "2026-04-24",
       "location": {
-        "ko": "국립현대미술관, 서울",
-        "en": "National Museum of Modern and Contemporary Art, Seoul",
-        "zh": "国立现代美术馆，首尔"
+        "ko": "숙명여자대학교, 서울",
+        "en": "Sookmyung Women's University, Seoul",
+        "zh": "淑明女子大学，首尔"
       },
       "summary": {
-        "ko": "국립현대미술관에서 AI 기술이 예술 창작에 미치는 영향에 대한 초청 강연을 진행했습니다.",
-        "en": "Delivered an invited lecture at MMCA on the impact of AI technology on artistic creation.",
-        "zh": "在国立现代美术馆进行了关于AI技术对艺术创作影响的特邀演讲。"
+        "ko": "한국문화예술경영학회의 2026년 춘계학술대회에서 라운드테이블 패널로 참여했습니다.",
+        "en": "Participated as a roundtable panelist at the 2026 Spring Conference of the Korean Association of Arts & Culture Management.",
+        "zh": "我作为圆桌讨论嘉宾参加了2026年韩国艺术文化管理学会春季会议。"
       },
       "description": {
-        "ko": "국립현대미술관의 \"기술과 예술\" 시리즈 강연에 초청되어 \"AI 시대의 예술가: 도구에서 파트너로\"라는 주제로 강연했습니다. AI가 예술 창작의 도구를 넘어 협업 파트너로서 어떤 역할을 할 수 있는지를 사례와 함께 논의했습니다.",
-        "en": "Invited to the \"Technology and Art\" lecture series at MMCA, delivered a lecture titled \"Artists in the AI Era: From Tool to Partner.\" Discussed with examples how AI can serve as a collaborative partner beyond being a tool for artistic creation.",
-        "zh": "受邀参加国立现代美术馆\"技术与艺术\"系列讲座，以\"AI时代的艺术家：从工具到伙伴\"为主题进行演讲。结合案例探讨了AI如何超越创作工具的角色，成为艺术创作的协作伙伴。"
-      },
-      "featured": true,
-      "published": true,
-      "createdAt": "2024-06-20",
-      "updatedAt": "2024-06-20"
-    },
-    {
-      "id": "act-4",
-      "title": {
-        "ko": "한일 디지털 아트 교류 워크숍",
-        "en": "Korea-Japan Digital Art Exchange Workshop",
-        "zh": "韩日数字艺术交流工作坊"
-      },
-      "type": "workshop",
-      "date": "2024-04-10",
-      "location": {
-        "ko": "오사카 예술대학, 오사카",
-        "en": "Osaka University of Arts, Osaka",
-        "zh": "大阪艺术大学，大阪"
-      },
-      "summary": {
-        "ko": "한일 대학 간 디지털 아트 교류 워크숍을 공동 기획하고 진행했습니다.",
-        "en": "Co-organized and conducted a digital art exchange workshop between Korean and Japanese universities.",
-        "zh": "联合策划并开展了韩日大学间数字艺术交流工作坊。"
-      },
-      "description": {
-        "ko": "조선대학교와 오사카 예술대학 학생들이 참여하는 3일간의 디지털 아트 교류 워크숍을 기획·진행했습니다. 양국 학생들이 팀을 구성하여 AI 도구를 활용한 공동 창작 프로젝트를 수행했으며, 문화적 차이와 공통점을 예술적으로 탐구하는 작품을 완성했습니다.",
-        "en": "Organized and conducted a 3-day digital art exchange workshop with students from Chosun University and Osaka University of Arts. Students from both countries formed teams to collaborate on creative projects using AI tools, completing works that artistically explored cultural differences and commonalities.",
-        "zh": "策划并主持了为期3天的朝鲜大学与大阪艺术大学学生参与的数字艺术交流工作坊。两国学生组队开展利用AI工具的联合创作项目，完成了从艺术角度探索文化差异与共同点的作品。"
+        "ko": "한국문화예술경영학회의 2026년 춘계학술대회에서 주제세션 라운드테이블 토의에 패널로 초청되어 \"디지털전환기, 문화예술경영의 정체성과 미래\"라는 주제를 함께 논의했습니다.",
+        "en": "Invited as a panelist to the thematic session roundtable discussion at the 2026 Spring Conference of the Korean Association of Arts & Culture Management, where we discussed the topic \"The Identity and Future of Arts & Culture Management in the Era of Digital Transformation.\"",
+        "zh": "我受邀参加了2026年韩国艺术文化管理学会春季会议的主题圆桌讨论会，我们探讨了“数字化转型时代艺术文化管理的定位与未来”这一主题。"
       },
       "featured": false,
       "published": true,
-      "createdAt": "2024-04-10",
-      "updatedAt": "2024-04-10"
+      "createdAt": "2024-06-20",
+      "updatedAt": "2026-06-03",
+      "imageUrl": "/uploads/1780506776364-gtivj0.png"
     },
     {
       "id": "act-5",
       "title": {
-        "ko": "광주 AI 아트 페스티벌 심사위원",
-        "en": "Gwangju AI Art Festival Jury Member",
-        "zh": "光州AI艺术节评审委员"
+        "ko": "베트남 RMIT 대학 초청 강의",
+        "en": "Invited Lecture at RMIT University Vietnam",
+        "zh": "应邀在RMIT大学越南分校进行讲座"
       },
-      "type": "collaboration",
-      "date": "2024-11-01",
+      "type": "talk",
+      "date": "2026-05-12",
       "location": {
-        "ko": "광주 문화예술회관",
-        "en": "Gwangju Culture & Art Center",
-        "zh": "光州文化艺术会馆"
+        "ko": "RMIT 대학 SCD 센터, 호치민, 베트남 ",
+        "en": "SCD Center, RMIT University Ho Chi Minh City, Vietnam",
+        "zh": "RMIT大学传播与设计学院，越南胡志明市"
       },
       "summary": {
-        "ko": "제3회 광주 AI 아트 페스티벌에서 심사위원으로 참여했습니다.",
-        "en": "Served as a jury member at the 3rd Gwangju AI Art Festival.",
-        "zh": "参与了第3届光州AI艺术节，担任评审委员。"
+        "ko": "베트남 호치민에 위치한 RMIT 대학의 School of Communication & Design에서 초청 강의를 했습니다.",
+        "en": "Delivered an invited lecture at the School of Communication & Design at RMIT University in Ho Chi Minh City, Vietnam.",
+        "zh": "我应邀在RMIT大学越南胡志明市分校传播与设计学院进行了讲座。"
       },
       "description": {
-        "ko": "광주광역시가 주최하는 제3회 AI 아트 페스티벌에 심사위원으로 참여했습니다. 전국에서 출품된 AI 기반 예술 작품을 평가하고, \"AI 예술의 현재와 미래\" 주제의 패널 토론에도 참여했습니다.",
-        "en": "Participated as a jury member at the 3rd AI Art Festival hosted by Gwangju Metropolitan City. Evaluated AI-based artworks submitted from across the country and participated in a panel discussion on \"The Present and Future of AI Art.\"",
-        "zh": "参与了光州广域市主办的第3届AI艺术节，担任评审委员。对全国各地参赛的AI艺术作品进行评审，并参与了以\"AI艺术的现在与未来\"为主题的小组讨论。"
+        "ko": "베트남 호치민에 위치한 RMIT 대학의 School of Communication & Design에서 \"시몽동의 기술철학으로 본 AI 생성 예술과 대학 교육의 방향성(AI Generative Art Viewed Through Simondon's Philosophy of Technology, and the Direction of University Education)\"을 주제로 강의를 진행했습니다.",
+        "en": "Gave a lecture at the School of Communication & Design at RMIT University in Ho Chi Minh City, Vietnam, on the topic of \"AI Generative Art Viewed Through Simondon's Philosophy of Technology, and the Direction of University Education.\"",
+        "zh": "我在RMIT大学越南胡志明市分校传播与设计学院就“从西蒙东的技术哲学视角看人工智能生成艺术及其对大学教育方向的影响”这一主题进行了讲座。"
       },
-      "featured": false,
+      "featured": true,
       "published": true,
       "createdAt": "2024-11-01",
-      "updatedAt": "2024-11-01"
-    },
-    {
-      "id": "act-6",
-      "title": {
-        "ko": "유럽 디지털 문화 연구 네트워크 참여",
-        "en": "European Digital Culture Research Network Participation",
-        "zh": "参与欧洲数字文化研究网络"
-      },
-      "type": "exchange",
-      "date": "2024-07-15",
-      "location": {
-        "ko": "베를린, 독일",
-        "en": "Berlin, Germany",
-        "zh": "柏林，德国"
-      },
-      "summary": {
-        "ko": "유럽 디지털 문화 연구 네트워크에 아시아 대표 연구자로 참여했습니다.",
-        "en": "Participated as an Asian representative researcher in the European Digital Culture Research Network.",
-        "zh": "作为亚洲代表研究者参与了欧洲数字文化研究网络。"
-      },
-      "description": {
-        "ko": "유럽연합 지원 디지털 문화 연구 네트워크의 연례 회의에 아시아 지역 대표 연구자로 초청되어 참석했습니다. \"동아시아의 AI와 문화콘텐츠\" 주제의 기조 발표를 진행하고, 국제 공동 연구 프로젝트의 가능성을 논의했습니다.",
-        "en": "Invited as an Asian regional representative researcher to the annual meeting of the EU-funded Digital Culture Research Network. Delivered a keynote presentation on \"AI and Cultural Content in East Asia\" and discussed possibilities for international collaborative research projects.",
-        "zh": "受邀以亚洲地区代表研究者身份出席欧盟资助的数字文化研究网络年会。进行了以\"东亚的AI与文化内容\"为主题的主旨发表，并探讨了国际联合研究项目的可能性。"
-      },
-      "featured": false,
-      "published": true,
-      "createdAt": "2024-07-15",
-      "updatedAt": "2024-07-15"
+      "updatedAt": "2026-06-03",
+      "imageUrl": "/uploads/1780503650496-zefjr9.png"
     }
-  ]
+  ],
+  "settings": {
+    "siteName": {
+      "ko": "",
+      "en": ""
+    },
+    "siteDescription": {
+      "ko": "",
+      "en": ""
+    },
+    "defaultLanguage": "ko",
+    "contactEmail": "",
+    "researchKeyTopics": [
+      {
+        "title": {
+          "ko": "인공지능과 예술",
+          "en": "Artificial Intelligence and Art",
+          "zh": "人工智能与艺术"
+        }
+      },
+      {
+        "title": {
+          "ko": "교육과 기술",
+          "en": "Education and Technology",
+          "zh": "教育与科技"
+        }
+      },
+      {
+        "title": {
+          "ko": "인터랙티브 미디어 콘텐츠",
+          "en": "Interactive Media Contents",
+          "zh": "互动媒体内容"
+        }
+      },
+      {
+        "title": {
+          "ko": "문화콘텐츠와 인문학",
+          "en": "Cultural Content and Humanities",
+          "zh": "文化内容与人文学科"
+        }
+      }
+    ],
+    "teachingPhilosophy": {
+      "paragraph1": {
+        "ko": "교육은 단순한 지식 전달이 아닌, 학생들이 스스로 사고하고 창조할 수 있는 역량을 키우는 과정입니다. 기술과 인문학의 경계를 넘나들며, 학생들이 AI 시대에 필요한 융합적 사고력과 창의성을 갖출 수 있도록 지도합니다.",
+        "en": "Education is not merely knowledge transfer, but a process of cultivating students' ability to think and create independently. Crossing the boundaries between technology and humanities, I guide students to develop the convergent thinking and creativity needed in the AI era.",
+        "zh": "教育不仅仅是知识传授，而是培养学生自主思考和创造能力的过程。跨越技术与人文学的界限，引导学生具备AI时代所需的融合思维和创造力。"
+      },
+      "paragraph2": {
+        "ko": "",
+        "en": "",
+        "zh": ""
+      },
+      "principles": [
+        {
+          "title": {
+            "ko": "창의적 사고",
+            "en": "Creative Thinking ",
+            "zh": "创意思维 "
+          },
+          "desc": {
+            "ko": "고정관념을 넘어선 새로운 시각",
+            "en": "New perspectives beyond stereotypes",
+            "zh": "超越固有观念的新视角"
+          }
+        },
+        {
+          "title": {
+            "ko": "기술적 역량",
+            "en": "Technical Competency",
+            "zh": "技术能力 "
+          },
+          "desc": {
+            "ko": "도구를 다루는 실질적 능력",
+            "en": "Practical ability to handle tools",
+            "zh": "掌握工具的实际能力"
+          }
+        },
+        {
+          "title": {
+            "ko": "비판적 분석 ",
+            "en": "Critical Analysis ",
+            "zh": "批判性分析 "
+          },
+          "desc": {
+            "ko": "깊이 있는 사고와 평가 능력",
+            "en": "In-depth thinking and evaluation",
+            "zh": "深度思考与评价能力"
+          }
+        },
+        {
+          "title": {
+            "ko": "협업과 소통 ",
+            "en": "Collaboration & Communication",
+            "zh": "协作与沟通"
+          },
+          "desc": {
+            "ko": "다양한 환경 속 적응 능력",
+            "en": "Adaptability in diverse environments",
+            "zh": "在各种环境中的适应能力"
+          }
+        }
+      ]
+    },
+    "teachingCoursesTitle": {
+      "ko": "2026년 1학기",
+      "en": "2026 Spring",
+      "zh": "2026年 第一学期"
+    }
+  }
 }

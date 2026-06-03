@@ -39,10 +39,12 @@ export default function PublicationsPage() {
   const filtered = publications.filter(pub => {
     const matchCategory = filter === 'all' || pub.category === filter;
     const q = search.toLowerCase();
+    const authors = pub.authors as any;
     const matchSearch = !search ||
       pub.title.ko.toLowerCase().includes(q) ||
       pub.title.en.toLowerCase().includes(q) ||
-      pub.authors.toLowerCase().includes(q) ||
+      (authors?.ko || '').toLowerCase().includes(q) ||
+      (authors?.en || '').toLowerCase().includes(q) ||
       pub.keywords.ko.toLowerCase().includes(q) ||
       pub.keywords.en.toLowerCase().includes(q);
     return matchCategory && matchSearch;
@@ -85,7 +87,7 @@ export default function PublicationsPage() {
                   <h3 className="font-semibold text-base mb-2">
                     {getLocalizedText(pub.title, locale)}
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-2">{pub.authors}</p>
+                  <p className="text-sm text-muted-foreground mb-2">{getLocalizedText(pub.authors, locale)}</p>
                   <p className="text-sm text-muted-foreground italic">
                     {getLocalizedText(pub.venue, locale)}
                   </p>
@@ -146,7 +148,7 @@ export default function PublicationsPage() {
                       <h3 className="font-semibold text-base mb-1 group-hover:underline underline-offset-4">
                         {getLocalizedText(pub.title, locale)}
                       </h3>
-                      <p className="text-sm text-muted-foreground mb-1">{pub.authors}</p>
+                      <p className="text-sm text-muted-foreground mb-1">{getLocalizedText(pub.authors, locale)}</p>
                       <p className="text-sm text-muted-foreground italic mb-2">
                         {getLocalizedText(pub.venue, locale)}
                       </p>

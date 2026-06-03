@@ -42,7 +42,7 @@ export default function AdminPublicationsPage() {
     keywords: { ko: '', en: '', zh: '' },
     year: new Date().getFullYear(),
     category: 'journal',
-    authors: '',
+    authors: { ko: '', en: '', zh: '' },
     pdfUrl: '',
     externalUrl: '',
     featured: false,
@@ -145,7 +145,11 @@ export default function AdminPublicationsPage() {
         return <span className="font-medium max-w-xs truncate block">{v?.ko || ''}</span>;
       },
     },
-    { key: 'authors', label: '저자' },
+    {
+      key: 'authors',
+      label: '저자',
+      render: (value: any) => value?.ko || value?.en || '',
+    },
     { key: 'year', label: '연도' },
     {
       key: 'category',
@@ -208,11 +212,15 @@ export default function AdminPublicationsPage() {
               onChange={handleChange}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div>
-                <label className="block text-sm font-medium mb-1.5">저자</label>
-                <input type="text" value={form.authors || ''} onChange={e => setForm(prev => ({ ...prev, authors: e.target.value }))} className="input-field" />
-              </div>
+            <BilingualInput
+              label="저자" nameKo="authors_ko" nameEn="authors_en" nameZh="authors_zh"
+              valueKo={(form.authors as any)?.ko || ''}
+              valueEn={(form.authors as any)?.en || ''}
+              valueZh={(form.authors as any)?.zh || ''}
+              onChange={handleChange}
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium mb-1.5">연도</label>
                 <input type="number" value={form.year || ''} onChange={e => setForm(prev => ({ ...prev, year: parseInt(e.target.value) }))} className="input-field" />

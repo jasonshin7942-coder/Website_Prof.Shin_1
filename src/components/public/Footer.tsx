@@ -26,10 +26,10 @@ export default function Footer({ lang }: FooterProps) {
           {/* Identity */}
           <div>
             <p className="font-semibold text-sm mb-2">
-              {lang === 'ko' ? '신종천' : lang === 'zh' ? '申钟天' : 'Jongcheon Shin'}
+              {lang === 'ko' ? '신종천' : lang === 'zh' ? '辛鍾天' : 'Jongcheon Shin'}
             </p>
             <p className="text-muted-foreground text-sm">
-              {lang === 'ko' ? '상지대학교 문화콘텐츠학과 교수' : lang === 'zh' ? '朝鲜大学漫画动画系 教授' : 'Professor of Cultural Content, Sangji University'}
+              {lang === 'ko' ? '상지대학교 문화콘텐츠학과 교수' : lang === 'zh' ? '尙志大学 文化信息系 教授' : 'Professor of Cultural Content, Sangji University'}
             </p>
           </div>
 

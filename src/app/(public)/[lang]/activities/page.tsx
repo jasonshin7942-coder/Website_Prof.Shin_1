@@ -98,28 +98,42 @@ export default function ActivitiesPage() {
                         </span>
                       )}
                     </div>
-                    <h3 className="font-semibold text-lg mb-2">
-                      {getLocalizedText(act.title, locale)}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      📍 {getLocalizedText(act.location, locale)}
-                    </p>
-                    <p className="text-sm text-muted-foreground mb-3">
-                      {getLocalizedText(act.summary, locale)}
-                    </p>
-                    <p className="body-sm text-muted-foreground leading-relaxed whitespace-pre-line">
-                      {getLocalizedText(act.description, locale)}
-                    </p>
-                    {act.relatedLink && (
-                      <a
-                        href={act.relatedLink}
-                        className="inline-block mt-3 text-sm font-medium hover:underline underline-offset-4"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {dict.common.readMore} →
-                      </a>
-                    )}
+
+                    <div className={act.imageUrl ? 'flex flex-col md:flex-row gap-5' : ''}>
+                      {act.imageUrl && (
+                        <div className="md:w-56 shrink-0">
+                          <img
+                            src={act.imageUrl}
+                            alt={getLocalizedText(act.title, locale)}
+                            className="w-full h-auto object-cover border border-border"
+                          />
+                        </div>
+                      )}
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-semibold text-lg mb-2">
+                          {getLocalizedText(act.title, locale)}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          📍 {getLocalizedText(act.location, locale)}
+                        </p>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          {getLocalizedText(act.summary, locale)}
+                        </p>
+                        <p className="body-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                          {getLocalizedText(act.description, locale)}
+                        </p>
+                        {act.relatedLink && (
+                          <a
+                            href={act.relatedLink}
+                            className="inline-block mt-3 text-sm font-medium hover:underline underline-offset-4"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {dict.common.readMore} →
+                          </a>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </article>
               ))}

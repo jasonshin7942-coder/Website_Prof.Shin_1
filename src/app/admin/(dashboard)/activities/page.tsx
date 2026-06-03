@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import AdminPageHeader from '@/components/admin/AdminPageHeader';
 import BilingualInput from '@/components/admin/BilingualInput';
 import ContentTable from '@/components/admin/ContentTable';
+import ImageUpload from '@/components/admin/ImageUpload';
 import type { Activity } from '@/types/content';
 
 const typeOptions = [
@@ -44,6 +45,7 @@ export default function AdminActivitiesPage() {
     type: 'conference',
     date: '',
     relatedLink: '',
+    imageUrl: '',
     featured: false,
     published: false,
   };
@@ -190,6 +192,12 @@ export default function AdminActivitiesPage() {
                 <input type="url" value={form.relatedLink || ''} onChange={e => setForm(prev => ({ ...prev, relatedLink: e.target.value }))} className="input-field" />
               </div>
             </div>
+
+            <ImageUpload
+              label="활동 이미지"
+              value={form.imageUrl || ''}
+              onChange={url => setForm(prev => ({ ...prev, imageUrl: url }))}
+            />
 
             <div className="flex items-center gap-4">
               <label className="flex items-center gap-2 cursor-pointer">

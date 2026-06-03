@@ -116,7 +116,8 @@ export async function getPublicationList(options?: {
     items = items.filter(i =>
       i.title.ko.toLowerCase().includes(q) ||
       i.title.en.toLowerCase().includes(q) ||
-      i.authors.toLowerCase().includes(q)
+      (i.authors.ko || '').toLowerCase().includes(q) ||
+      (i.authors.en || '').toLowerCase().includes(q)
     );
   }
   return items.sort((a, b) => b.year - a.year);
@@ -171,7 +172,12 @@ export async function getTeachingList(options?: {
   if (options?.published !== undefined) items = items.filter(i => i.published === options.published);
   if (options?.featured !== undefined) items = items.filter(i => i.featured === options.featured);
   if (options?.category) items = items.filter(i => i.category === options.category);
-  return items;
+  return items.sort((a, b) => {
+    const aOrder = a.sortOrder ?? 9999;
+    const bOrder = b.sortOrder ?? 9999;
+    if (aOrder !== bOrder) return aOrder - bOrder;
+    return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+  });
 }
 
 export async function getTeachingById(id: string): Promise<Teaching | null> {

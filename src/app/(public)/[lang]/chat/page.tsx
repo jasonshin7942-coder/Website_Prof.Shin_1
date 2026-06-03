@@ -213,7 +213,7 @@ export default function ChatPage() {
                 {locale === 'ko'
                   ? 'AI 어시스턴트는 신종천 교수의 연구, 교육, 활동, 저서·논문 정보를 바탕으로 답변합니다. 응답은 참고용이며, 정확한 정보는 직접 확인해 주세요.'
                   : locale === 'zh'
-                  ? 'AI助手基于申钟天教授的研究、教育、活动及著作·论文信息进行回答。回答仅供参考，请自行核实准确信息。'
+                  ? 'AI助手基于辛鍾天教授的研究、教育、活动及著作·论文信息进行回答。回答仅供参考，请自行核实准确信息。'
                   : 'The AI assistant answers based on Professor Shin\'s research, teaching, activities, and publication information. Responses are for reference; please verify for accuracy.'}
               </p>
             </div>

@@ -7,6 +7,8 @@ import {
   getTeachingList,
   getActivityList,
   getDashboardStats,
+  getSettings,
+  updateSettings,
   createResearch,
   updateResearch,
   deleteResearch,
@@ -45,6 +47,8 @@ export async function GET(request: NextRequest) {
         return NextResponse.json(await getActivityList(isAdmin ? undefined : { published: true }));
       case 'stats':
         return NextResponse.json(await getDashboardStats());
+      case 'settings':
+        return NextResponse.json(await getSettings());
       default:
         return NextResponse.json({ error: 'Invalid type' }, { status: 400 });
     }
@@ -82,7 +86,7 @@ export async function PUT(request: NextRequest) {
   const type = searchParams.get('type');
   const id = searchParams.get('id');
 
-  if (!id && type !== 'profile') {
+  if (!id && type !== 'profile' && type !== 'settings') {
     return NextResponse.json({ error: 'ID is required' }, { status: 400 });
   }
 
@@ -92,6 +96,8 @@ export async function PUT(request: NextRequest) {
     switch (type) {
       case 'profile':
         return NextResponse.json(await updateProfile(body));
+      case 'settings':
+        return NextResponse.json(await updateSettings(body));
       case 'research':
         return NextResponse.json(await updateResearch(id!, body));
       case 'publications':

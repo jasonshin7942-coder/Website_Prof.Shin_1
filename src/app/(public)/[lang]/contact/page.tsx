@@ -46,7 +46,7 @@ export default function ContactPage() {
   const displayOffice = profile?.office || '';
   const displayName = profile?.name
     ? (locale === 'ko' ? profile.name.ko : locale === 'zh' ? (profile.name.zh || profile.name.en) : profile.name.en)
-    : (locale === 'ko' ? '신종천' : locale === 'zh' ? '申钟天' : 'Jongcheon Shin');
+    : (locale === 'ko' ? '신종천' : locale === 'zh' ? '辛鍾天' : 'Jongcheon Shin');
   const displayTitle = profile?.title
     ? (locale === 'ko' ? profile.title.ko : locale === 'zh' ? (profile.title.zh || profile.title.en) : profile.title.en)
     : (locale === 'ko' ? '교수' : locale === 'zh' ? '教授' : 'Professor');

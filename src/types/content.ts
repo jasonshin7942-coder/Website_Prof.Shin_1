@@ -63,7 +63,7 @@ export interface Publication extends BaseContent {
   category: 'journal' | 'conference' | 'book' | 'chapter' | 'thesis' | 'other';
   venue: BilingualText;
   keywords: BilingualText;
-  authors: string;
+  authors: BilingualText;
   pdfUrl?: string;
   externalUrl?: string;
   doi?: string;
@@ -142,6 +142,7 @@ export interface SiteSettings {
   analyticsId?: string;
   teachingPhilosophy?: TeachingPhilosophy;
   researchKeyTopics?: ResearchKeyTopic[];
+  teachingCoursesTitle?: BilingualText;
 }
 
 // Chat Message

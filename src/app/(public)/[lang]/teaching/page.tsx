@@ -35,45 +35,32 @@ export default async function TeachingPage({ params }: { params: Promise<{ lang:
       </section>
 
       {/* Teaching Philosophy */}
-      <section className="py-20 border-b border-border">
+      <section className="py-14 border-b border-border">
         <div className="container-wide">
           <SectionHeader
             label="// PHILOSOPHY"
             title={dict.teaching.philosophy}
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <p className="body-md text-muted-foreground leading-relaxed whitespace-pre-line">
-                {phil ? getLocalizedText(phil.paragraph1, locale) : (locale === 'ko'
-                  ? '교육은 단순한 지식 전달이 아닌, 학생들이 스스로 사고하고 창조할 수 있는 역량을 키우는 과정입니다. 기술과 인문학의 경계를 넘나들며, 학생들이 AI 시대에 필요한 융합적 사고력과 창의성을 갖출 수 있도록 안내합니다.'
-                  : locale === 'zh'
-                  ? '教育不仅仅是知识传授，而是培养学生自主思考和创造能力的过程。跨越技术与人文学的界限，引导学生具备AI时代所需的融合思维和创造力。'
-                  : 'Education is not merely knowledge transfer, but a process of cultivating students\' ability to think and create independently. Crossing the boundaries between technology and humanities, we guide students to develop the convergent thinking and creativity needed in the AI era.')}
-              </p>
-              <p className="body-md text-muted-foreground leading-relaxed whitespace-pre-line">
-                {phil ? getLocalizedText(phil.paragraph2, locale) : (locale === 'ko'
-                  ? '프로젝트 기반 학습을 통해 이론과 실습을 유기적으로 연결하며, 동료 학습과 멘토링을 통해 협업 능력을 강화합니다.'
-                  : locale === 'zh'
-                  ? '通过项目式学习，将理论与实践有机结合，并通过同伴学习和指导来强化协作能力。'
-                  : 'Through project-based learning, we organically connect theory and practice, while strengthening collaboration skills through peer learning and mentoring.')}
-              </p>
-            </div>
-            <div className="space-y-4">
-              {(phil?.principles || [
-                { title: { ko: '창의적 사고', en: 'Creative Thinking' }, desc: { ko: '고정관념을 넘어선 새로운 시각', en: 'New perspectives beyond stereotypes' } },
-                { title: { ko: '기술적 역량', en: 'Technical Competency' }, desc: { ko: '도구를 다루는 실질적 능력', en: 'Practical ability to handle tools' } },
-                { title: { ko: '비판적 분석', en: 'Critical Analysis' }, desc: { ko: '깊이 있는 사고와 평가 능력', en: 'In-depth thinking and evaluation' } },
-                { title: { ko: '협업과 소통', en: 'Collaboration' }, desc: { ko: '다양한 배경의 팀원과 함께', en: 'Working with diverse team members' } },
-              ]).map((val, i) => (
-                <div key={i} className="card flex items-start gap-4">
-                  <span className="text-lg mt-0.5">◇</span>
-                  <div>
-                    <h4 className="font-semibold text-sm mb-1">{getLocalizedText(val.title, locale)}</h4>
-                    <p className="text-sm text-muted-foreground">{getLocalizedText(val.desc, locale)}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <p className="body-md text-muted-foreground leading-relaxed whitespace-pre-line max-w-4xl mb-10">
+            {phil ? getLocalizedText(phil.paragraph1, locale) : (locale === 'ko'
+              ? '교육은 단순한 지식 전달이 아닌, 학생들이 스스로 사고하고 창조할 수 있는 역량을 키우는 과정입니다. 기술과 인문학의 경계를 넘나들며, 학생들이 AI 시대에 필요한 융합적 사고력과 창의성을 갖출 수 있도록 안내합니다.'
+              : locale === 'zh'
+              ? '教育不仅仅是知识传授，而是培养学生自主思考和创造能力的过程。跨越技术与人文学的界限，引导学生具备AI时代所需的融合思维和创造力。'
+              : 'Education is not merely knowledge transfer, but a process of cultivating students\' ability to think and create independently. Crossing the boundaries between technology and humanities, we guide students to develop the convergent thinking and creativity needed in the AI era.')}
+          </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {(phil?.principles || [
+              { title: { ko: '창의적 사고', en: 'Creative Thinking', zh: '创意思维' }, desc: { ko: '고정관념을 넘어선 새로운 시각', en: 'New perspectives beyond stereotypes', zh: '超越固有观念的新视角' } },
+              { title: { ko: '기술적 역량', en: 'Technical Competency', zh: '技术能力' }, desc: { ko: '도구를 다루는 실질적 능력', en: 'Practical ability to handle tools', zh: '掌握工具的实际能力' } },
+              { title: { ko: '비판적 분석', en: 'Critical Analysis', zh: '批判性分析' }, desc: { ko: '깊이 있는 사고와 평가 능력', en: 'In-depth thinking and evaluation', zh: '深度思考与评价能力' } },
+              { title: { ko: '협업과 소통', en: 'Collaboration', zh: '协作与沟通' }, desc: { ko: '다양한 배경의 팀원과 함께', en: 'Working with diverse team members', zh: '与不同背景的团队成员合作' } },
+            ]).map((val, i) => (
+              <div key={i} className="border border-border p-4">
+                <span className="text-sm text-muted-foreground block mb-2">◇</span>
+                <h4 className="font-semibold text-base mb-1">{getLocalizedText(val.title, locale)}</h4>
+                <p className="text-sm text-muted-foreground leading-snug">{getLocalizedText(val.desc, locale)}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -83,7 +70,7 @@ export default async function TeachingPage({ params }: { params: Promise<{ lang:
         <div className="container-wide">
           <SectionHeader
             label="// COURSES"
-            title={dict.teaching.courses}
+            title={settings?.teachingCoursesTitle ? getLocalizedText(settings.teachingCoursesTitle, locale) : dict.teaching.courses}
           />
           <div className="space-y-6">
             {featured.map((course) => (

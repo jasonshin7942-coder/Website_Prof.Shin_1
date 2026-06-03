@@ -329,8 +329,8 @@ export const dictionaries = {
       english: 'English',
     },
     footer: {
-      copyright: '© 2026 申钟天. All rights reserved.',
-      affiliation: '朝鲜大学漫画动画系',
+      copyright: '© 2026 辛鍾天. All rights reserved.',
+      affiliation: '尙志大学 文化信息系',
     },
   },
 } as const;
