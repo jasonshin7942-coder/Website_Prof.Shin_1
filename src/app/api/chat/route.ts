@@ -1,112 +1,84 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import {
-  getProfile, getResearchList, getPublicationList,
-  getTeachingList, getActivityList,
-} from '@/content';
-import { getLocalizedText } from '@/types/content';
+import { db } from '@/lib/supabase';
 import type { Locale } from '@/i18n/config';
 
-async function buildSystemPrompt(locale: Locale): Promise<string> {
-  const [profile, research, publications, teaching, activities] = await Promise.all([
-    getProfile(),
-    getResearchList({ published: true }),
-    getPublicationList({ published: true }),
-    getTeachingList({ published: true }),
-    getActivityList({ published: true }),
-  ]);
-
-  const t = (field: any) => getLocalizedText(field, locale);
-
-  const researchBlock = research.map(r =>
-    `- [${r.year}] ${t(r.title)}: ${t(r.summary)}`
-  ).join('\n');
-
-  const pubBlock = publications.slice(0, 20).map(p =>
-    `- [${p.year}] ${t(p.title)} / ${t(p.authors as any)} / ${t(p.venue)}`
-  ).join('\n');
-
-  const teachBlock = teaching.map(c =>
-    `- ${t(c.title)} (${c.semester || ''} ${c.courseType || ''}): ${t(c.summary)}`
-  ).join('\n');
-
-  const actBlock = activities.map(a =>
-    `- [${a.date}] ${t(a.title)} @ ${t(a.location)}: ${t(a.summary)}`
-  ).join('\n');
-
-  const instructions: Record<Locale, string> = {
-    ko: `당신은 신종천 교수의 공식 웹사이트 AI 어시스턴트입니다.
-아래 교수님 정보를 바탕으로 방문자 질문에 친절하고 구체적으로 답변하세요.
+const SYSTEM_INSTRUCTIONS: Record<Locale, string> = {
+  ko: `당신은 신종천 교수의 공식 웹사이트 AI 어시스턴트입니다.
+아래 [관련 정보]를 최대한 활용하여 질문에 구체적이고 상세하게 답변하세요.
 - 반드시 한국어로 답변하세요.
-- 모르는 내용은 추측하지 말고 "확인이 어렵습니다"라고 답하세요.
-- 2~4문단 정도로 상세하게 작성하세요.`,
-    en: `You are the AI assistant for Professor Jongcheon Shin's official website.
-Answer visitors' questions kindly and specifically based on the professor's information below.
+- 관련 정보에 없는 내용은 "해당 정보는 확인이 어렵습니다"라고 답하세요.
+- 연구, 논문, 강의, 활동 등 구체적인 제목과 내용을 적극 인용하세요.
+- 답변은 2~4문단으로 작성하세요.`,
+
+  en: `You are the AI assistant for Professor Jongcheon Shin's official website.
+Use the [Relevant Information] below to answer questions specifically and in detail.
 - Always respond in English.
-- Do not guess; say "I cannot confirm that" for unknown information.
+- For information not in the context, say "I cannot confirm that information."
+- Actively cite specific titles and details from research, publications, teaching, and activities.
 - Write 2-4 detailed paragraphs.`,
-    zh: `您是辛鍾天教授官方网站的AI助手。
-请根据以下教授信息，友善且具体地回答访客问题。
+
+  zh: `您是辛鍾天教授官方网站的AI助手。
+请充分利用下方[相关信息]，具体详细地回答问题。
 - 请务必用中文回答。
-- 不确定的信息请回答"无法确认"。
-- 请详细写2-4段。`,
-  };
+- 对于信息中没有的内容，请回答"无法确认该信息"。
+- 积极引用研究、论文、课程、活动等的具体标题和内容。
+- 请写2-4段详细内容。`,
+};
 
-  return `${instructions[locale] || instructions.ko}
+async function searchRelevantContent(question: string, locale: Locale, topK = 8) {
+  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
+  const embModel = genAI.getGenerativeModel({ model: 'gemini-embedding-001' });
 
-=== 교수 정보 ===
+  const embResult = await embModel.embedContent(question);
+  const queryEmbedding = embResult.embedding.values;
 
-【기본 정보】
-이름: ${t(profile.name)}
-소속: ${t(profile.affiliation)}
-직위: ${t(profile.title)}
-이메일: ${profile.email || ''}
-소개: ${t(profile.shortIntro)}
-약력: ${t(profile.biography)}
-키워드: ${t(profile.keywords)}
+  const { data, error } = await db.rpc('search_content', {
+    query_embedding: JSON.stringify(queryEmbedding),
+    match_count: topK,
+    filter_locale: locale,
+  });
 
-【연구 (${research.length}건)】
-${researchBlock || '없음'}
-
-【저서·논문 (${publications.length}건)】
-${pubBlock || '없음'}
-
-【강의 (${teaching.length}건)】
-${teachBlock || '없음'}
-
-【활동 (${activities.length}건)】
-${actBlock || '없음'}`;
+  if (error) throw new Error(`Vector search failed: ${error.message}`);
+  return data ?? [];
 }
 
 export async function POST(request: NextRequest) {
   const { message, history = [], locale = 'ko' } = await request.json();
 
-  if (!message) {
-    return NextResponse.json({ error: 'Message required' }, { status: 400 });
-  }
+  if (!message) return NextResponse.json({ error: 'Message required' }, { status: 400 });
 
   if (!process.env.GEMINI_API_KEY) {
     return NextResponse.json({
-      id: Date.now().toString(),
-      role: 'assistant',
-      content: locale === 'ko'
-        ? 'AI 어시스턴트가 아직 설정되지 않았습니다.'
-        : locale === 'zh' ? 'AI助手尚未配置。'
-        : 'The AI assistant is not yet configured.',
-      sources: [],
-      timestamp: new Date().toISOString(),
+      id: Date.now().toString(), role: 'assistant',
+      content: locale === 'ko' ? 'AI 어시스턴트가 설정되지 않았습니다.' : 'AI assistant not configured.',
+      sources: [], timestamp: new Date().toISOString(),
     });
   }
 
   try {
-    const systemPrompt = await buildSystemPrompt(locale as Locale);
+    // 1. 질문과 관련된 콘텐츠 검색 (RAG)
+    const relevant = await searchRelevantContent(message, locale as Locale);
+
+    // 2. 검색 결과로 컨텍스트 구성
+    const contextBlock = relevant.length > 0
+      ? relevant.map((r: any, i: number) =>
+          `[${i + 1}] (${r.content_type})\n${r.text_chunk}`
+        ).join('\n\n')
+      : '관련 정보를 찾을 수 없습니다.';
+
+    const systemPrompt = `${SYSTEM_INSTRUCTIONS[locale as Locale] || SYSTEM_INSTRUCTIONS.ko}
+
+[관련 정보]
+${contextBlock}`;
+
+    // 3. Gemini에 전달
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({
       model: 'gemini-2.5-flash',
       systemInstruction: systemPrompt,
     });
 
-    // Convert history to Gemini format
     const geminiHistory = history
       .filter((m: any) => m.role === 'user' || m.role === 'assistant')
       .map((m: any) => ({
@@ -118,15 +90,22 @@ export async function POST(request: NextRequest) {
     const result = await chat.sendMessage(message);
     const content = result.response.text();
 
+    // 4. 참고 출처 구성
+    const sources = relevant.slice(0, 3).map((r: any) => ({
+      title: r.metadata?.title || r.content_type,
+      type: r.content_type,
+      excerpt: r.text_chunk.split('\n').slice(0, 2).join(' ').substring(0, 120),
+    }));
+
     return NextResponse.json({
       id: Date.now().toString(),
       role: 'assistant',
       content,
-      sources: [],
+      sources,
       timestamp: new Date().toISOString(),
     });
   } catch (error: any) {
-    console.error('Gemini API error:', error?.message || error);
+    console.error('Chat API error:', error?.message);
     const fallback = locale === 'ko'
       ? '일시적인 오류가 발생했습니다. 잠시 후 다시 시도해주세요.'
       : locale === 'zh' ? '发生临时错误，请稍后再试。'
