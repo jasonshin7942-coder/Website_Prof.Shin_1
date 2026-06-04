@@ -20,6 +20,8 @@ export default function ContactPage() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   useEffect(() => {
     fetch('/api/content?type=profile')
@@ -36,9 +38,27 @@ export default function ContactPage() {
     { value: 'general', label: dict.contact.general },
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setSubmitError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, locale }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await res.json();
+        setSubmitError(data.error || (locale === 'zh' ? '提交失败，请重试。' : locale === 'ko' ? '전송에 실패했습니다. 다시 시도해주세요.' : 'Submission failed. Please try again.'));
+      }
+    } catch {
+      setSubmitError(locale === 'zh' ? '网络错误，请重试。' : locale === 'ko' ? '네트워크 오류가 발생했습니다.' : 'Network error. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const displayEmail = profile?.email || 'jcshin@chosun.ac.kr';
@@ -232,8 +252,13 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <button type="submit" className="btn-primary">
-                    {dict.contact.sendMessage} →
+                  {submitError && (
+                    <p className="text-sm text-red-500">{submitError}</p>
+                  )}
+                  <button type="submit" disabled={submitting} className="btn-primary disabled:opacity-50">
+                    {submitting
+                      ? (locale === 'zh' ? '发送中...' : locale === 'ko' ? '전송 중...' : 'Sending...')
+                      : `${dict.contact.sendMessage} →`}
                   </button>
                 </form>
               )}

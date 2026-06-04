@@ -161,6 +161,19 @@ export interface ChatSource {
   url?: string;
 }
 
+// Contact Message
+export interface ContactMessage {
+  id: string;
+  name: string;
+  email: string;
+  inquiryType: string;
+  subject: string;
+  message: string;
+  locale: string;
+  read: boolean;
+  createdAt: string;
+}
+
 // Locale type
 export type Locale = 'ko' | 'en' | 'zh';
 

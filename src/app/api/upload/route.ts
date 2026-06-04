@@ -1,14 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { db } from '@/lib/supabase';
 
-const UPLOAD_DIR = path.join(process.cwd(), 'public', 'uploads');
+const BUCKET = 'uploads';
 
 export async function POST(request: NextRequest) {
   try {
-    // Ensure upload directory exists
-    await fs.mkdir(UPLOAD_DIR, { recursive: true });
-
     const formData = await request.formData();
     const file = formData.get('file') as File | null;
 
@@ -16,32 +12,35 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'No file provided' }, { status: 400 });
     }
 
-    // Validate file type
     const allowedTypes = ['image/jpeg', 'image/png', 'image/webp', 'image/gif'];
     if (!allowedTypes.includes(file.type)) {
-      return NextResponse.json({ error: 'Invalid file type. Only JPG, PNG, WebP, GIF allowed.' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'Invalid file type. Only JPG, PNG, WebP, GIF allowed.' },
+        { status: 400 }
+      );
     }
 
-    // Validate file size (max 5MB)
-    const maxSize = 5 * 1024 * 1024;
-    if (file.size > maxSize) {
+    if (file.size > 5 * 1024 * 1024) {
       return NextResponse.json({ error: 'File too large. Maximum 5MB.' }, { status: 400 });
     }
 
-    // Generate unique filename
     const ext = file.name.split('.').pop() || 'jpg';
     const fileName = `${Date.now()}-${Math.random().toString(36).substring(2, 8)}.${ext}`;
-    const filePath = path.join(UPLOAD_DIR, fileName);
 
-    // Write file to disk
     const bytes = await file.arrayBuffer();
-    await fs.writeFile(filePath, Buffer.from(bytes));
+    const { error } = await db.storage
+      .from(BUCKET)
+      .upload(fileName, bytes, { contentType: file.type, upsert: false });
 
-    // Return public URL
-    const url = `/uploads/${fileName}`;
-    return NextResponse.json({ url, fileName });
+    if (error) {
+      console.error('Supabase Storage upload error:', error);
+      return NextResponse.json({ error: 'Upload failed' }, { status: 500 });
+    }
+
+    const { data: urlData } = db.storage.from(BUCKET).getPublicUrl(fileName);
+    return NextResponse.json({ url: urlData.publicUrl, fileName });
   } catch (error) {
-    console.error('Upload failed:', error);
+    console.error('Upload error:', error);
     return NextResponse.json({ error: 'Upload failed' }, { status: 500 });
   }
 }

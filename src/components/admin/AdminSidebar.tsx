@@ -10,6 +10,7 @@ const navItems = [
   { href: '/admin/publications', label: '저서·논문 관리', icon: '◇' },
   { href: '/admin/teaching', label: '교육 관리', icon: '◇' },
   { href: '/admin/activities', label: '활동 관리', icon: '◇' },
+  { href: '/admin/messages', label: '메시지함', icon: '✉' },
   { href: '/admin/media', label: '미디어 라이브러리', icon: '◇' },
   { href: '/admin/chatbot', label: '챗봇 소스 관리', icon: '◇' },
   { href: '/admin/settings', label: '설정', icon: '◇' },
