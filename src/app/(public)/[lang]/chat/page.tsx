@@ -56,38 +56,43 @@ export default function ChatPage() {
     setInput('');
     setLoading(true);
 
-    // Simulated AI response - will be replaced with real API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message,
+          locale,
+          history: messages.map(m => ({ role: m.role, content: m.content })),
+        }),
+      });
 
-    const mockSources: ChatSource[] = [
-      {
-        title: locale === 'ko' ? 'AI 기반 디지털 미디어 아트 창작 연구' : 'AI-Based Digital Media Art Creation Research',
-        type: 'research',
-        excerpt: locale === 'ko'
-          ? '생성형 AI 기술을 활용한 새로운 형태의 디지털 미디어 아트 창작 방법론...'
-          : 'New methodologies for digital media art creation utilizing generative AI technology...',
-      },
-      {
-        title: locale === 'ko' ? '생성형 AI를 활용한 디지털 미디어 아트 창작 방법론 연구' : 'A Study on Digital Media Art Creation Methodology Using Generative AI',
-        type: 'publication',
-        excerpt: locale === 'ko'
-          ? '본 연구는 생성형 AI 기술, 특히 GAN과 Diffusion Model을 활용한...'
-          : 'This study proposes a new creative methodology for digital media art...',
-      },
-    ];
+      if (!res.ok) throw new Error('API error');
+      const data = await res.json();
 
-    const assistantMsg: ChatMessage = {
-      id: (Date.now() + 1).toString(),
-      role: 'assistant',
-      content: locale === 'ko'
-        ? `신종천 교수의 연구에 대한 질문을 주셨네요. 관련된 정보를 찾았습니다.\n\n신종천 교수는 인공지능, 예술, 문화의 교차점에서 기술과 인문학의 창조적 융합을 연구하고 있습니다. 특히 생성형 AI를 활용한 디지털 미디어 아트 창작, 문화콘텐츠 내러티브 생성, 융합 예술 교육 등이 주요 연구 분야입니다.\n\n이 답변은 데모 응답입니다. 실제 AI 백엔드 연결 후 RAG 기반의 정확한 답변이 제공될 예정입니다.`
-        : `Thank you for your question about Professor Shin's research. Here's what I found.\n\nProfessor Jongcheon Shin researches the creative convergence of technology and humanities at the intersection of AI, art, and culture. Key research areas include digital media art creation using generative AI, cultural content narrative generation, and convergence art education.\n\nThis is a demo response. Accurate RAG-based answers will be provided after connecting to the actual AI backend.`,
-      sources: mockSources,
-      timestamp: new Date().toISOString(),
-    };
-
-    setMessages(prev => [...prev, assistantMsg]);
-    setLoading(false);
+      const assistantMsg: ChatMessage = {
+        id: data.id || (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: data.error || data.content || '',
+        sources: data.sources || [],
+        timestamp: data.timestamp || new Date().toISOString(),
+      };
+      setMessages(prev => [...prev, assistantMsg]);
+    } catch {
+      const errMsg: ChatMessage = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: locale === 'ko'
+          ? '오류가 발생했습니다. 잠시 후 다시 시도해주세요.'
+          : locale === 'zh' ? '发生错误，请稍后再试。'
+          : 'An error occurred. Please try again.',
+        sources: [],
+        timestamp: new Date().toISOString(),
+      };
+      setMessages(prev => [...prev, errMsg]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
